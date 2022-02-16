@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+$color1: rgba(250, 200, 142, 0.884);
+$color2: rgb(240, 243, 39);
+$color3: rgb(252, 126, 53);
+$color4: rgb(223, 55, 43);
+$color5: rgba(128, 92, 48, 0.562);
+$color6: rgb(152, 212, 112);
+
+.section__article--color1{
+    background-color: $color1;
+}
+.section__article--color2{
+    background-color: $color2;
+}
+.section__article--color3{
+    background-color: $color3;
+}
+.section__article--color4{
+    background-color: $color4;
+}
+.section__article--color5{
+    background-color: $color5;
+}
+.section__article--color6{
+    background-color: $color6;
+}

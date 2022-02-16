@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+.navcontacto{
+    float:right;
+    ul{
+        list-style: none;
+        li{
+            display:inline-block;
+            margin-right: 10px;
+            text-transform: capitalize;
+            font-family: 'Montserrat', sans-serif;
+            a{
+                text-decoration:none;
+                color: rgb(244, 228, 252);
+                font-size: 18px; 
+                text-decoration: underline;
+            }
+            
+        }
+    
+    }
+}
+
+
+.headercontacto{
+    background-color: rgba(93, 28, 112, 0.562);
+    min-height: 50px;
+}
+.logocontacto{
+    color: rgb(16, 1, 22);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float:left;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: underline;
+}
+.bodycontacto{
+    background-color: rgb(194, 115, 194);
+}
+h2{
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 1px 10px 3px 19px;
+}
+
+
+.form{
+    height: 80px;
+    width: 100%;
+    background-color: rgba(177, 93, 180, 0.788);
+}
+.form {
+    text-align:start;
+    font-size: 18px;
+    text-decoration: underline rgb(36, 2, 56);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.form .ficha{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(191, 133, 245);
+    border: 2px dashed rgb(153, 4, 153);
+    display:grid;
+}
+
+.datos{
+    height: 10px;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    line-height: 7px;
+    justify-content: space-between; 
+    justify-items: left;
+    align-content: flex-end;
+    align-content: space-between;
+}
+.datos2{
+    height: 10px;
+    margin-left: 3rem;
+    line-height: 5px;
+    justify-content: space-between; 
+    justify-items: left;
+    align-content: flex-end;
+    align-content: space-between;
+}
+.mail{
+    height: 10px;
+    margin-left: 3rem;
+    line-height: 5px;
+    justify-content: left; 
+    justify-items: left;
+    align-content: flex-end;
+    align-content: space-between;
+}
+.mensaje{
+    height: 30px;
+    margin-top: 2px;
+    margin-left: 3rem;
+    line-height: 2px;
+    justify-content: space-around; 
+    justify-items: left;
+    align-content: flex-end;
+    align-content: space-between; 
+}
+.mensaje h4{
+    height: 10px;
+    margin-top: 1px;
+    margin-left: 2px;
+    align-content: flex-end;
+    align-content: space-between;
+}
+.mensaje1{
+    margin-top: 2px;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+    align-content: space-between;
+}
+.botones{  
+    height: 10px;
+    margin-top: 3px;
+    margin-left: 3rem;
+    line-height: 10px;
+    justify-content: space-between; 
+    justify-items: left;
+    align-content: flex-end;
+    align-content: space-between;
+}

@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
+.navtienda{
+    float:right;
+    ul{
+        list-style: none;
+        li{
+            display:inline-block;
+            margin-right: 10px;
+            text-transform: capitalize;
+            font-family: 'Montserrat', sans-serif;
+            a{
+                text-decoration:none;
+                color: rgb(10, 10, 10);
+                font-size: 18px; 
+                text-decoration: underline;
+            }
+
+        }
+}
+}
+
+/*.tienda{
+    background-color: rgba(92, 165, 207, 0.562);
+    margin-bottom: 50px;
+    min-height: 50px;
+}
+
+/*.logotienda{
+    color: rgb(15, 69, 85);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float:left;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: underline;
+}*/
+
+.bodytienda{
+    background-color:rgb(176, 198, 212);
+}
+
+.sectiontienda2{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(125, 147, 160);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin-bottom: 0px;
+    h1{
+        margin-left: 16px;
+    }
+}
+.encabezadotienda{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 16px;
+    margin-bottom: 2px;
+    margin-top: 25px;
+}
+
+.condorandino-icon,
+.acuarelayuya-icon,
+.torsoyeso-icon {
+    height: 370px;
+    width: 293px;
+    border: 2px solid, rgb(35, 35, 36);
+}
+
+@each $venta in acuarelayuya, condorandino, torsoyeso{
+    .#{$venta}-icon {
+    background-image: url("../img3/#{$venta}.jpg");
+    background-size: cover;
+    background-position: center;
+    float: left;
+    justify-content: space-around;
+    margin: 35px 40px 50px 85px;
+    padding-left: 190px;
+    padding-top: 50px;
+    justify-content: center;
+    align-content: center;
+    }
+}
+
+
+$base-color: rgb(117, 162, 245);
+
+@for $in from 1 through 3 {
+    .buclet-#{$in} {
+        width: 310px;
+        height: 30px;
+        background-color: darken($base-color, $in * 10%);
+        border: 1px solid rgba(37, 37, 148, 0.808);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 16px;
+        font-weight: bolder;
+        line-height: 25px;
+        text-align: center;
+        float: left;
+        justify-content: space-around;
+        margin: 2px 10px 30px 91px;
+        align-content: center;
+    }
+}
+
+$redes: (
+red1: cursive,
+red2: monospace,
+red3: fantasy,
+);
+
+@each $red, $font in $redes {
+    .btn--#{$red} {
+        background-color: rgba(107, 166, 201, 0.932);
+        height: 30px;
+        width: 310px;
+        border: 2px solid #111;
+        font-weight: bolder;
+        line-height: 30px;
+        text-align: center;
+        font-size: 18px;
+        font-family: $font;
+        float: left;
+        text-transform: uppercase;
+        text-decoration: underline;
+        justify-content: space-around;
+        margin: 1px 10px 30px 90px;
+        align-content: center;
+    }
+    
+}
+
