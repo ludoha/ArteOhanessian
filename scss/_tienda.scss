@@ -96,9 +96,10 @@ $base-color: rgb(117, 162, 245);
     .buclet-#{$in} {
         width: 310px;
         height: 30px;
-        background-color: darken($base-color, $in * 10%);
+        background-color: darken($base-color, $in * 2%);
         border: 1px solid rgba(37, 37, 148, 0.808);
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
         font-size: 16px;
         font-weight: bolder;
         line-height: 25px;
@@ -112,8 +113,8 @@ $base-color: rgb(117, 162, 245);
 
 $redes: (
 red1: cursive,
-red2: monospace,
-red3: fantasy,
+red2: cursive,
+red3: cursive,
 );
 
 @each $red, $font in $redes {
