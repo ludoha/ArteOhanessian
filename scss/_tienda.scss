@@ -72,12 +72,12 @@
 .mujerfelina-icon,
 .oleo-icon,
 .terracota-icon {
-    height: 370px;
-    width: 293px;
+    height: 360px;
+    width: 280px;
     border: 2px solid, rgb(35, 35, 36);
 }
 
-@each $venta in acuarelayuya, condorandino, torsoyeso{
+@each $venta in acuarelayuya, condorandino, torsoyeso, mujerfelina, oleo, terracota{
     .#{$venta}-icon {
     background-image: url("../img3/#{$venta}.jpg");
     background-size: cover;
