@@ -35,7 +35,8 @@
 
 h1{
     color: rgb(1, 0, 12);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
     float:left;
     font-size: 25px;
     font-weight: bold;
@@ -47,12 +48,12 @@ h1{
 
 
 .headerexposiciones{
-    background-color: rgba(109, 154, 216, 0.959);
+    background-color: rgba(109, 154, 216, 0.568);
     min-height: 50px;
 }
 
 .bodyexpo{
-    background-color:rgb(114, 153, 179)
+    background-color:rgb(178, 218, 245);
 }
 
 .box {
@@ -65,13 +66,15 @@ h1{
     padding: 20px 25px 25px 25px;
 }
 
-.textobox{
+.textobox2{
     text-decoration: underline;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
 }
 .textobox1{
-    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
     text-decoration: underline;
     line-height: 30px;
     margin-bottom: 25px;
@@ -130,14 +133,14 @@ h1{
     }
 }
 
-$base-color: rgb(117, 162, 245);
+$base-color: rgba(144, 181, 248, 0.685);
 
 @for $in from 1 through 2{
     .bucle-#{$in}{
         width: 450px;
         height: 50px;
         background-color: darken($base-color, $in * 10%);
-        border: 1px solid darkblue;
+        border: 1px solid rgb(95, 95, 202);
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 15px;
         line-height: 25px;
