@@ -207,8 +207,8 @@ footer {
   margin-top: 25px;
 }
 
-@media only screen and (max-width: 576px) {
-  .imagenesTienda {
+@media (max-width: 576px) {
+  .imagenesTiendadeventa {
     width: 100%;
     text-align: center;
   }
@@ -226,18 +226,18 @@ footer {
 }
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
-  .imagenesTienda {
-    width: 100%;
+  .imagenesTiendadeventa {
+    width: 90%;
   }
   .texto__h4__tienda {
-    width: 60px;
     background-color: rgba(60, 127, 253, 0.637);
+    height: 5vh;
+    width: 50%;
     border: 1px solid rgba(192, 192, 245, 0.808);
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 15px;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
   }
 }
 
@@ -245,17 +245,16 @@ footer {
   .texto__h4__tienda {
     background-color: rgba(60, 127, 253, 0.637);
     height: 5vh;
-    width: 314px;
+    width: 100px;
     border: 1px solid rgba(192, 192, 245, 0.808);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     line-height: 30px;
     font-size: 16px;
-    margin-left: 3rem;
   }
 }
 
-.imagenesTienda {
+.imagenesTiendadeventa {
   text-align: center;
   border: 2px solid, #f5f5f7;
   margin-top: 1rem;
@@ -269,7 +268,6 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 30px;
   font-size: 16px;
-  margin-left: 3rem;
 }
 
 .footer__tienda--estilo {
