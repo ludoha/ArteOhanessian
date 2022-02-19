@@ -208,41 +208,38 @@ footer {
 }
 
 @media (max-width: 576px) {
-  .section__article__tienda .imagenesTiendadeventa {
-    width: 100%;
+  .imagenesTiendadeventa {
+    width: 80%;
     text-align: center;
   }
-  .section__article__tienda .texto__h4__tienda {
+  .texto__tienda {
     background-color: rgba(60, 127, 253, 0.637);
     height: 5vh;
-    width: 314px;
+    width: 114px;
     border: 1px solid rgba(192, 192, 245, 0.808);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     line-height: 30px;
-    font-size: 16px;
-    margin-left: 1rem;
+    font-size: 15px;
+    margin-left: 4px;
+  }
+  .footer__tienda--estilo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    text-align: center;
   }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
-  .section__article__tienda .imagenesTiendadeventa {
-    width: 90%;
-  }
-  .section__article__tienda .texto__h4__tienda {
-    background-color: rgba(60, 127, 253, 0.637);
-    height: 5vh;
-    width: 10%;
-    border: 1px solid rgba(192, 192, 245, 0.808);
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    line-height: 30px;
-    font-size: 16px;
+  .texto__tienda {
+    width: 40%;
+    margin-left: 0px;
+    padding-left: 0px;
   }
 }
 
 @media only screen and (min-width: 993px) {
-  .section__article__tienda .texto__h4__tienda {
+  .texto__tienda {
     background-color: rgba(60, 127, 253, 0.637);
     height: 5vh;
     width: 100%;
@@ -260,15 +257,14 @@ footer {
   margin-top: 1rem;
 }
 
-.texto__h4__tienda {
+.texto__tienda {
   background-color: rgba(60, 127, 253, 0.637);
   height: 5vh;
-  width: 314px;
+  width: 100%;
   border: 1px solid rgba(192, 192, 245, 0.808);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 30px;
   font-size: 16px;
-  margin-left: 50px;
 }
 
 .footer__tienda--estilo {
