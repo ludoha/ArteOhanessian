@@ -56,9 +56,11 @@ h1{
 
 @media only screen and (max-width: 576px) {
     .section__tituloexpo{
+        height: 50px;
         h1{ 
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 18px;
+        line-height: 25px;
     }
     }
     
@@ -73,14 +75,16 @@ h1{
         text-decoration: underline;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 12px;
-        margin-bottom: 10px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
         margin-top: 10px;
     }
     .textobox1{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 12px;
         text-decoration: underline;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
         margin-top: 10px;
     }
     
@@ -90,25 +94,27 @@ h1{
     background-color: $bcolor;
 }
 .box {
-    @include sizes(100%, 80vh, rgba(192, 231, 225, 0.842));
+    @include sizes(100%, 40vh, rgba(192, 231, 225, 0.842));
     display:grid;
     justify-content: center;
     line-height: 14px;
-    font-size: 11px;
+    font-size: 12px;
+    padding: 20px 25px 25px 15px;
 }
 
 .box2 {
-    @include sizes(100%, 70vh, rgb(167, 218, 209));
+    @include sizes(100%, 30vh, rgb(167, 218, 209));
     color: rgb(22, 22, 22);
     display:grid;
     justify-content: center;
     text-align: center;
     line-height: 12px;
     font-size: 11px;
+    padding-left: 20px;
 }
 
 .box3 {
-    @include sizes(100%, 110vh,  rgba(192, 231, 225, 0.842));
+    @include sizes(100%, 40vh,  rgba(192, 231, 225, 0.842));
     color: rgb(29, 29, 29);
     display:grid;
     justify-content: center;
@@ -132,7 +138,7 @@ h1{
     background-size: cover;
     background-position: center;
     float: left;
-    margin: 10px 35px 35px 120px;
+    margin: 30px 35px 35px 9rem;
     padding-left: 5px;
     display: grid;
     justify-content: space-around;
@@ -166,20 +172,14 @@ $base-color: rgba(230, 244, 245, 0.719);
         text-decoration: underline;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 15px;
-        margin-bottom: 1px;
-        margin-top: 10px;
+        margin: 0px 0px 0px 0px;
+        padding-bottom: 0px;
     }
     .textobox1{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 15px;
         text-decoration: underline;
     }
-    .section__box--diseño {
-        width: 100%;
-        color:rgb(24, 24, 24);
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-weight: bold;
-        text-align: center;
     
 @mixin sizes($width, $height, $bcolor) {
     height: $height;
@@ -187,50 +187,50 @@ $base-color: rgba(230, 244, 245, 0.719);
     background-color: $bcolor;
 }
 .box {
-    @include sizes(100%, 80vh, rgba(192, 231, 225, 0.842));
+    @include sizes(100%, 60vh, rgba(192, 231, 225, 0.842));
     display:grid;
     justify-content: center;
-    line-height: 14px;
+    line-height: 22px;
     font-size: 13px;
+    padding: 30px 35px 35px 25px;
 }
 
 .box2 {
-    @include sizes(100%, 70vh, rgb(167, 218, 209));
+    @include sizes(100%, 40vh, rgb(167, 218, 209));
     color: rgb(22, 22, 22);
     display:grid;
     justify-content: center;
     text-align: center;
     line-height: 14px;
     font-size: 13px;
+    padding: 30px 35px 35px 25px;
 }
 
 .box3 {
-    @include sizes(100%, 110vh,  rgba(192, 231, 225, 0.842));
+    @include sizes(100%, 80vh,  rgba(192, 231, 225, 0.842));
     color: rgb(29, 29, 29);
     display:grid;
     justify-content: center;
     text-align: center;
     line-height: 14px;
     font-size: 13px;
-}
+    padding: 30px 35px 35px 25px;
 }
 
 .article__fotosalpie{
 .expoarmenia-icon,
 .expoescultura-icon {
-    height: 350px;
-    width: 300px;
+    height: 320px;
+    width: 280px;
     border: 2px solid, rgb(35, 35, 36);
 }
 @each $expo in expoarmenia , expoescultura{
     .#{$expo}-icon {
     background-image: url("../img2/#{$expo}.jpg");
     background-size: cover;
-    background-position: center;
-    float: left;
-    margin: 10px 35px 35px 7rem;
-    padding-left: 5px;
+    text-align: center;
     display: grid;
+    margin: 35px 35px 35px 3rem;
     justify-content: space-around;
     }
 }
@@ -261,14 +261,13 @@ $base-color: rgba(230, 244, 245, 0.719);
     .textobox2{
         text-decoration: underline;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 18px;
         margin-bottom: 1px;
         margin-top: 10px;
     }
     .textobox1{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 18px;
         text-decoration: underline;
+        margin-bottom: 15px;
     }
     .section__box--diseño {
         width: 100%;
@@ -284,39 +283,41 @@ $base-color: rgba(230, 244, 245, 0.719);
     background-color: $bcolor;
 }
 .box {
-    @include sizes(100%, 80vh, rgba(192, 231, 225, 0.842));
+    @include sizes(100%, 60vh, rgba(192, 231, 225, 0.842));
     display:grid;
     justify-content: center;
-    line-height: 18px;
-    font-size: 16px;
+    line-height: 30px;
+    font-size: 20px;
+    padding: 30px 50px 50px 30px;
 }
 
 .box2 {
-    @include sizes(100%, 70vh, rgb(167, 218, 209));
+    @include sizes(100%, 50vh, rgb(167, 218, 209));
     color: rgb(22, 22, 22);
     display:grid;
     justify-content: center;
     text-align: center;
-    line-height: 18px;
-    font-size: 16px;
+    line-height: 30px;
+    font-size: 20px;
+    padding: 30px 50px 50px 30px;
 }
 
 .box3 {
-    @include sizes(100%, 110vh,  rgba(192, 231, 225, 0.842));
+    @include sizes(100%, 80vh,  rgba(192, 231, 225, 0.842));
     color: rgb(29, 29, 29);
     display:grid;
     justify-content: center;
     text-align: center;
-    line-height: 18px;
-    font-size: 16px;
+    line-height: 30px;
+    font-size: 21px;
+    padding: 30px 50px 50px 30px;
 }
 }
-
 .article__fotosalpie{
 .expoarmenia-icon,
 .expoescultura-icon {
-    height: 400px;
-    width: 360px;
+    height: 410px;
+    width: 370px;
     border: 2px solid, rgb(35, 35, 36);
 }
 @each $expo in expoarmenia , expoescultura{
@@ -325,7 +326,7 @@ $base-color: rgba(230, 244, 245, 0.719);
     background-size: cover;
     background-position: center;
     float: left;
-    margin: 15px 35px 30px 7rem;
+    margin: 40px 35px 30px 7rem;
     padding-left: 5px;
     display: grid;
     justify-content: space-around;
@@ -341,8 +342,8 @@ $base-color: rgba(230, 244, 245, 0.719);
         background-color: darken($base-color, $in * 3%);
         border: 1px inset  rgba(197, 235, 235, 0.911);
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 13px;
-        line-height: 15px;
+        font-size: 16px;
+        line-height: 25px;
         text-align: center;
     }
 }
@@ -357,9 +358,6 @@ $base-color: rgba(230, 244, 245, 0.719);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
     text-align: center;
-    line-height: 30px;
-    font-size: 15px;
-
 }
 
 .textobox2{
@@ -373,9 +371,8 @@ $base-color: rgba(230, 244, 245, 0.719);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
     text-decoration: underline;
-    line-height: 30px;
-    margin-bottom: 10px;
-    margin-top: 25px;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 @mixin sizes($width, $height, $bcolor) {
@@ -384,10 +381,10 @@ $base-color: rgba(230, 244, 245, 0.719);
     background-color: $bcolor;
 }
 .box {
-    @include sizes(100% , 70vh, rgba(192, 231, 225, 0.842));
+    @include sizes(100% , 60vh, rgba(192, 231, 225, 0.842));
     display:grid;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 1px;
 }
 
 .box2 {
@@ -395,9 +392,9 @@ $base-color: rgba(230, 244, 245, 0.719);
     color: rgb(22, 22, 22);
     font-weight: bold;
     text-align: center;
-    line-height: 35px;
+    line-height: 25px;
     font-size: 15px;
-    padding: 3px 25px 10px 10px;
+    padding: 32px 25px 10px 10px;
     display:grid;
     justify-content: center;
 }
