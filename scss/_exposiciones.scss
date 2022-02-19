@@ -292,7 +292,7 @@ $base-color: rgba(230, 244, 245, 0.719);
 }
 
 .box2 {
-    @include sizes(100%, 50vh, rgb(167, 218, 209));
+    @include sizes(100%, 50vh, rgba(167, 218, 209, 0.315));
     color: rgb(22, 22, 22);
     display:grid;
     justify-content: center;

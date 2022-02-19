@@ -188,7 +188,9 @@ footer {
 
 .sectiontienda2 {
   width: 100%;
-  height: 50px;
+  height: 80vh;
+  background-image: url(../img/pinceles.jpg);
+  background-size: cover;
   background-color: rgba(60, 127, 253, 0.637);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: left;
@@ -196,19 +198,28 @@ footer {
 }
 
 .sectiontienda2 h1 {
-  margin-left: 16px;
+  text-overflow: #fdfdfd;
   font-size: 25px;
 }
 
 .encabezadoTienda {
-  font-size: 15px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin-left: 16px;
-  margin-bottom: 2px;
-  margin-top: 25px;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(253, 252, 250, 0.274);
+  font-size: 25px;
 }
 
 @media (max-width: 576px) {
+  .sectiontienda2 {
+    width: 100%;
+    height: 30vh;
+  }
+  .encabezadoTienda {
+    width: 100%;
+    height: 20px;
+    background-color: rgba(253, 252, 250, 0.274);
+    font-size: 12px;
+  }
   h1 {
     font-size: 19px;
   }
@@ -930,7 +941,7 @@ h1 {
   .section__box--diseño .box2 {
     height: 50vh;
     width: 100%;
-    background-color: #a7dad1;
+    background-color: rgba(167, 218, 209, 0.315);
     color: #161616;
     display: -ms-grid;
     display: grid;
