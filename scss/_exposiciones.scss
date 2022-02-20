@@ -71,23 +71,6 @@ h1{
         font-weight: bold;
         text-align: center;
     
-    .textobox2{
-        text-decoration: underline;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 12px;
-        padding-bottom: 0px;
-        margin-bottom: 0px;
-        margin-top: 10px;
-    }
-    .textobox1{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 12px;
-        text-decoration: underline;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-        margin-top: 10px;
-    }
-    
 @mixin sizes($width, $height, $bcolor) {
     height: $height;
     width: $width;
@@ -100,6 +83,14 @@ h1{
     line-height: 11px;
     font-size: 9px;
     padding: 20px 25px 25px 15px;
+    .textobox1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 12px;
+        text-decoration: underline;
+        margin-bottom: 12px;
+        padding-bottom: 0px;
+        margin-top: 10px;
+    }
 }
 
 .box2 {
@@ -111,10 +102,18 @@ h1{
     line-height: 11px;
     font-size: 9px;
     padding: 20px 25px 25px 15px;
+    .textobox2{
+        text-decoration: underline;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 12px;
+        padding-bottom: 0px;
+        margin-bottom: 12px;
+        margin-top: 10px;
+    }
 }
 
 .box3 {
-    @include sizes(100%, 50vh,  rgba(192, 231, 225, 0.842));
+    @include sizes(100%, 46vh,  rgba(192, 231, 225, 0.842));
     color: rgb(29, 29, 29);
     display:grid;
     justify-content: center;
@@ -122,6 +121,14 @@ h1{
     line-height: 11px;
     font-size: 9px;
     padding: 20px 25px 25px 15px;
+    .textobox2{
+        text-decoration: underline;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 12px;
+        padding-bottom: 0px;
+        margin-bottom: 12px;
+        margin-top: 10px;
+    }
 }
 }
 
@@ -171,18 +178,7 @@ $base-color: rgba(230, 244, 245, 0.719);
         padding: 0px;
     }
     }
-    .textobox2{
-        text-decoration: underline;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 15px;
-        margin: 0px;
-        padding: 0px;
-    }
-    .textobox1{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 15px;
-        text-decoration: underline;
-    }
+
 .section__box--diseño {
         width: 100%;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -195,16 +191,21 @@ $base-color: rgba(230, 244, 245, 0.719);
     background-color: $bcolor;
 }
 .box {
-    @include sizes(100%, 60vh, rgba(192, 231, 225, 0.842));
+    @include sizes(100%, 65vh, rgba(192, 231, 225, 0.842));
     display:grid;
     justify-content: center;
     line-height: 28px;
     font-size: 15px;
     padding: 30px 35px 35px 25px;
+    .textobox1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        text-decoration: underline;
+    }
 }
 
 .box2 {
-    @include sizes(100%, 40vh, rgb(167, 218, 209));
+    @include sizes(100%, 45vh, rgb(167, 218, 209));
     color: rgb(22, 22, 22);
     display:grid;
     justify-content: center;
@@ -212,15 +213,29 @@ $base-color: rgba(230, 244, 245, 0.719);
     line-height: 28px;
     font-size: 15px;
     padding: 30px 35px 35px 25px;
+    .textobox2{
+        text-decoration: underline;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        margin: 0px;
+        padding: 0px;
+    }
 }
 
 .box3 {
-    @include sizes(100%, 80vh,  rgba(192, 231, 225, 0.842));
+    @include sizes(100%, 93vh,  rgba(192, 231, 225, 0.842));
     color: rgb(29, 29, 29);
     text-align: center;
     line-height: 35px;
     font-size: 15px;
     padding: 30px 35px 35px 25px;
+    .textobox2{
+        text-decoration: underline;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        margin: 0px;
+        padding: 0px;
+    }
 }
 }
 
@@ -265,17 +280,7 @@ $base-color: rgba(230, 244, 245, 0.719);
         font-size: 20px;
     }
     }
-    .textobox2{
-        text-decoration: underline;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        margin-bottom: 1px;
-        margin-top: 10px;
-    }
-    .textobox1{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-decoration: underline;
-        margin-bottom: 15px;
-    }
+    
     .section__box--diseño {
         width: 100%;
         color:rgb(24, 24, 24);
@@ -296,6 +301,12 @@ $base-color: rgba(230, 244, 245, 0.719);
     line-height: 30px;
     font-size: 20px;
     padding: 30px 50px 50px 30px;
+    .textobox1{
+        font-size: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration: underline;
+        margin-bottom: 35px;
+    }
 }
 
 .box2 {
@@ -307,6 +318,12 @@ $base-color: rgba(230, 244, 245, 0.719);
     line-height: 30px;
     font-size: 20px;
     padding: 30px 50px 50px 30px;
+    .textobox2{
+        font-size: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration: underline;
+        margin-bottom: 35px;
+    }
 }
 
 .box3 {
@@ -318,6 +335,12 @@ $base-color: rgba(230, 244, 245, 0.719);
     line-height: 30px;
     font-size: 21px;
     padding: 30px 50px 50px 30px;
+    .textobox2{
+        font-size: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration: underline;
+        margin-bottom: 35px;
+    }
 }
 }
 .article__fotosalpie{
