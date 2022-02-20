@@ -240,7 +240,7 @@ footer {
   }
   .footer__tienda--estilo {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 8px;
+    font-size: 6px;
     text-align: center;
   }
 }
@@ -709,12 +709,12 @@ h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    line-height: 14px;
-    font-size: 12px;
+    line-height: 11px;
+    font-size: 9px;
     padding: 20px 25px 25px 15px;
   }
   .section__box--diseño .box2 {
-    height: 30vh;
+    height: 25vh;
     width: 100%;
     background-color: #a7dad1;
     color: #161616;
@@ -724,12 +724,12 @@ h1 {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
-    line-height: 12px;
-    font-size: 11px;
-    padding-left: 20px;
+    line-height: 11px;
+    font-size: 9px;
+    padding: 20px 25px 25px 15px;
   }
   .section__box--diseño .box3 {
-    height: 40vh;
+    height: 50vh;
     width: 100%;
     background-color: rgba(192, 231, 225, 0.842);
     color: #1d1d1d;
@@ -739,8 +739,9 @@ h1 {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
-    line-height: 12px;
-    font-size: 11px;
+    line-height: 11px;
+    font-size: 9px;
+    padding: 20px 25px 25px 15px;
   }
   .article__fotosalpie .expoarmenia-icon,
   .article__fotosalpie .expoescultura-icon {
@@ -753,7 +754,7 @@ h1 {
     background-size: cover;
     background-position: center;
     float: left;
-    margin: 30px 35px 35px 9rem;
+    margin: 30px 35px 35px 2rem;
     padding-left: 5px;
     display: -ms-grid;
     display: grid;
@@ -765,7 +766,7 @@ h1 {
     background-size: cover;
     background-position: center;
     float: left;
-    margin: 30px 35px 35px 9rem;
+    margin: 30px 35px 35px 2rem;
     padding-left: 5px;
     display: -ms-grid;
     display: grid;
@@ -798,20 +799,28 @@ h1 {
   .section__tituloexpo h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
+    margin: 0px;
+    padding: 0px;
   }
   .textobox2 {
     text-decoration: underline;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
-    margin: 0px 0px 0px 0px;
-    padding-bottom: 0px;
+    margin: 0px;
+    padding: 0px;
   }
   .textobox1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
     text-decoration: underline;
   }
-  .box {
+  .section__box--diseño {
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+  .section__box--diseño .box {
     height: 60vh;
     width: 100%;
     background-color: rgba(192, 231, 225, 0.842);
@@ -820,11 +829,11 @@ h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    line-height: 22px;
-    font-size: 13px;
+    line-height: 28px;
+    font-size: 15px;
     padding: 30px 35px 35px 25px;
   }
-  .box2 {
+  .section__box--diseño .box2 {
     height: 40vh;
     width: 100%;
     background-color: #a7dad1;
@@ -835,29 +844,24 @@ h1 {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
-    line-height: 14px;
-    font-size: 13px;
+    line-height: 28px;
+    font-size: 15px;
     padding: 30px 35px 35px 25px;
   }
-  .box3 {
+  .section__box--diseño .box3 {
     height: 80vh;
     width: 100%;
     background-color: rgba(192, 231, 225, 0.842);
     color: #1d1d1d;
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     text-align: center;
-    line-height: 14px;
-    font-size: 13px;
+    line-height: 35px;
+    font-size: 15px;
     padding: 30px 35px 35px 25px;
   }
   .article__fotosalpie .expoarmenia-icon,
   .article__fotosalpie .expoescultura-icon {
-    height: 320px;
-    width: 280px;
+    height: 350px;
+    width: 310px;
     border: 2px solid, #232324;
   }
   .article__fotosalpie .expoarmenia-icon {
@@ -866,7 +870,7 @@ h1 {
     text-align: center;
     display: -ms-grid;
     display: grid;
-    margin: 35px 35px 35px 3rem;
+    margin: 35px 35px 35px 5rem;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -876,7 +880,7 @@ h1 {
     text-align: center;
     display: -ms-grid;
     display: grid;
-    margin: 35px 35px 35px 3rem;
+    margin: 35px 35px 35px 5rem;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -886,8 +890,8 @@ h1 {
     background-color: rgba(219, 239, 241, 0.719);
     border: 1px inset rgba(197, 235, 235, 0.911);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 11px;
-    line-height: 13px;
+    font-size: 17px;
+    line-height: 15px;
     text-align: center;
   }
   .article__fotosalpie .bucle-2 {
@@ -896,8 +900,8 @@ h1 {
     background-color: rgba(208, 234, 236, 0.719);
     border: 1px inset rgba(197, 235, 235, 0.911);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 11px;
-    line-height: 13px;
+    font-size: 17px;
+    line-height: 15px;
     text-align: center;
   }
 }
