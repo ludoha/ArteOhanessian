@@ -219,7 +219,7 @@ footer {
     background-color: rgba(253, 252, 250, 0.274);
   }
   .section__encabezadoTienda .encabezadoTienda {
-    font-size: 12px;
+    font-size: 14px;
   }
   h1 {
     font-size: 19px;
@@ -241,7 +241,7 @@ footer {
   }
   .footer__tienda--estilo {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 6px;
+    font-size: 5px;
     text-align: center;
   }
 }
