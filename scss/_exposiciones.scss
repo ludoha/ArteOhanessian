@@ -83,7 +83,7 @@ h1{
     background-color: $bcolor;
 }
 .box {
-    @include sizes(100%, 45vh, rgba(192, 231, 225, 0.842));
+    @include sizes(100%, 50vh, rgba(192, 231, 225, 0.842));
     display:grid;
     justify-content: center;
     line-height: 11px;
@@ -100,7 +100,7 @@ h1{
 }
 
 .box2 {
-    @include sizes(100%, 34vh, rgb(167, 218, 209));
+    @include sizes(100%, 36vh, rgb(167, 218, 209));
     color: rgb(22, 22, 22);
     display:grid;
     justify-content: center;
@@ -119,7 +119,7 @@ h1{
 }
 
 .box3 {
-    @include sizes(100%, 65vh,  rgba(192, 231, 225, 0.842));
+    @include sizes(100%, 70vh,  rgba(192, 231, 225, 0.842));
     color: rgb(29, 29, 29);
     display:grid;
     justify-content: center;

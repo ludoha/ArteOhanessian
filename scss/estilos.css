@@ -721,7 +721,7 @@ h1 {
     text-align: center;
   }
   .section__box--diseño .box {
-    height: 45vh;
+    height: 50vh;
     width: 100%;
     background-color: rgba(192, 231, 225, 0.842);
     display: -ms-grid;
@@ -742,7 +742,7 @@ h1 {
     margin-top: 10px;
   }
   .section__box--diseño .box2 {
-    height: 34vh;
+    height: 36vh;
     width: 100%;
     background-color: #a7dad1;
     color: #161616;
@@ -765,7 +765,7 @@ h1 {
     margin-top: 10px;
   }
   .section__box--diseño .box3 {
-    height: 65vh;
+    height: 70vh;
     width: 100%;
     background-color: rgba(192, 231, 225, 0.842);
     color: #1d1d1d;
