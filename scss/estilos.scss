@@ -2,17 +2,24 @@
     margin: 0;
     padding: 0;
 }
-
+.bodyindex{
+    background-color: rgba(250, 159, 186, 0.904);
+}
 .main__h1--colorfondo{
     width: 100%;
     text-align: center;
-    text-transform: uppercase;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    background-color: rgb(253, 105, 130);
 }
 .titulo__h1--font{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.titulo__h1--size{
+    font-size: 40px;
+    margin-left: 10rem;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
 }
 .section__parrafo__h2--style {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -27,7 +34,7 @@ h4{
     font-weight: bold;
 }
 .nav__menu--colorfondo{
-    background-color: rgba(250, 159, 186, 0.904);
+    background-color:  rgba(250, 159, 186, 0.904);
 }   
 .ul__navbar--decoration{
         text-decoration: underline;

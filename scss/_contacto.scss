@@ -25,115 +25,104 @@
     }
 }
 
-
-.headercontacto{
-    background-color: rgba(93, 28, 112, 0.562);
-    min-height: 50px;
-}
-.logocontacto{
-    color: rgb(16, 1, 22);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    float:left;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: left;
-    text-decoration: underline;
-}
 .bodycontacto{
-    background-color: rgb(194, 115, 194);
+    background-color: rgba(135, 216, 189, 0.822);
 }
-h2{
-    font-size: 18px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 1px 10px 3px 19px;
+.main__h1--colorcontacto{
+    width: 100%;
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
+.titulo__h1--fontcontacto{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.titulo__h1--sizecontacto{
+    font-size: 40px;
+    margin-left: 10rem;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+}
+.section__contacto{ 
+    background-color: rgba(78, 158, 111, 0.274);
+    .h2__contacto{
+        font-size: 25px;
+        text-decoration: underline;
+        margin-left: 15px;
+        margin-top: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
 
 .form{
-    height: 80px;
+    height: 100vh;
     width: 100%;
-    background-color: rgba(177, 93, 180, 0.788);
-    margin-bottom: 50px;
-    padding-bottom: 50px;
+    margin-bottom: 3px;
+    padding: 1rem;
 }
-.form {
-    text-align:start;
-    font-size: 18px;
-    text-decoration: underline rgb(36, 2, 56);
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
+
 .form .ficha{
     width: 100%;
-    height: 600px;
-    background-color: rgb(191, 133, 245);
-    border: 2px dashed rgb(153, 4, 153);
-    display:grid;
+    height: 80vh;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid rgba(26, 104, 61, 0.432);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 .datos{
-    height: 10px;
+    height: 40px;
     margin-top: 2rem;
-    margin-left: 3rem;
-    line-height: 7px;
-    justify-content: space-between; 
-    justify-items: left;
-    align-content: flex-end;
-    align-content: space-between;
+    margin-left: 1rem;
+    line-height: 5px;
+    border-radius: 10px;
 }
 .datos2{
     height: 10px;
-    margin-left: 3rem;
+    margin-left: 1rem;
     line-height: 5px;
-    justify-content: space-between; 
-    justify-items: left;
-    align-content: flex-end;
-    align-content: space-between;
+    border-radius: 10px;
 }
 .mail{
     height: 10px;
-    margin-left: 3rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
     line-height: 5px;
-    justify-content: left; 
-    justify-items: left;
-    align-content: flex-end;
-    align-content: space-between;
+    border-radius: 10px;
 }
 .mensaje{
-    height: 30px;
-    margin-top: 2px;
-    margin-left: 3rem;
-    line-height: 2px;
-    justify-content: space-around; 
-    justify-items: left;
-    align-content: flex-end;
-    align-content: space-between; 
+    height: 20px;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    line-height: 5px;
+    border-radius: 10px;
 }
 .mensaje h4{
-    height: 10px;
-    margin-top: 1px;
-    margin-left: 2px;
-    align-content: flex-end;
-    align-content: space-between;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-top: 10px;
+
 }
 .mensaje1{
-    margin-top: 2px;
-    margin-bottom: 2rem;
-    margin-left: 3rem;
-    align-content: space-between;
+    margin-top: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#texto{
+    width: 90%;
+    height: 30vh;
 }
 .botones{  
-    height: 10px;
-    margin-top: 3px;
-    margin-left: 3rem;
-    line-height: 10px;
-    justify-content: space-between; 
-    justify-items: left;
-    align-content: flex-end;
-    align-content: space-between;
+    width: 80px;
+    height: 60px;
+    margin-top: 13rem;
+    margin-left: 1rem;
+    line-height: 25px;
 }
 .footer__contactos{
-    background-color:rgba(215, 128, 250, 0.637) ;
+    background-color:rgba(36, 88, 54, 0.637) ;
     width: 100%;
     height: 30px;
     color: #050505;
@@ -141,5 +130,4 @@ h2{
     font-size: 14px;
     text-align: center;
     font-variant: small-caps;
-    padding-top: 2rem;
 }

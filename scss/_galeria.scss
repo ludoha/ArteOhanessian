@@ -25,23 +25,39 @@
     }
 }
 
-
 .bodygaleria{
     background-color: rgba(202, 143, 236, 0.61);
+}
+.main__h1--colorgaleria{
+    width: 100%;
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.titulo__h1--fontgaleria{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.titulo__h1--sizegaleria{
+    font-size: 30px;
+    margin-left: 10rem;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
 }
 .galeriadefotos{
     height: 800px;
     width: 100%;
     background-color: rgba(214, 136, 250, 0.788);
     margin-bottom: 50px;
-    h1{
-        text-align:start;
+    margin-top: 10px;
+    h2{
+        min-height: 30px;
         font-size: 25px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         text-decoration: underline rgb(36, 2, 56);
-        text-align: 50px;
+        float:left;
         margin-left: 16px;
-        
+        margin-top: 14px;
     }   
 }
 
@@ -63,6 +79,15 @@
 
 
 @media only screen and (min-width:320px) and (max-width:479px){
+    .titulo__h1--sizegaleria {
+        font-size: 21px;
+        text-align: center;
+        margin-left: 1rem;
+        margin-top: 8px;
+            .titulo__h1--colorgaleria {
+            text-align: center;
+        }  
+    }
     .galeriadefotos .contenedor{ 
         grid-template-columns: repeat(2, 1fr);
         }
@@ -115,10 +140,22 @@
         background-image: url(../GaleriadeFotos/terracota.jpg);
         background-size: cover;
         background-position:center;
-}
+    }
+    .footer__galeria{
+        font-size: 10px;
+    }
 }
 
 @media only screen and (min-width:480px) and (max-width:768px){
+    .titulo__h1--sizegaleria {
+        font-size: 35px;
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 8px;
+            .titulo__h1--colorgaleria {
+            text-align: center;
+        }  
+    }
     .galeriadefotos .contenedor{ 
     grid-template-columns: repeat(3, 1fr);
     }
@@ -175,6 +212,15 @@
 
 
 @media only screen and (min-width:768px){
+    .titulo__h1--sizegaleria {
+        font-size: 40px;
+        text-align: center;
+        margin-left: 10rem;
+        margin-top: 8px;
+            .titulo__h1--colorgaleria {
+            text-align: center;
+        }  
+    }
     .galeriadefotos .contenedor{
         grid-template-columns: repeat(4, 1fr);
 }  

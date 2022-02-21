@@ -6,16 +6,26 @@
   padding: 0;
 }
 
+.bodyindex {
+  background-color: rgba(250, 159, 186, 0.904);
+}
+
 .main__h1--colorfondo {
   width: 100%;
   text-align: center;
-  text-transform: uppercase;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: #fd6982;
 }
 
 .titulo__h1--font {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.titulo__h1--size {
+  font-size: 40px;
+  margin-left: 10rem;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  letter-spacing: 5px;
 }
 
 .section__parrafo__h2--style {
@@ -147,9 +157,9 @@ footer {
 
 @media only screen and (min-width: 993px) {
   .titulo__h1--size {
-    font-size: 30px;
-    margin-left: 18rem;
-    margin-top: 15px;
+    font-size: 40px;
+    margin-left: 10rem;
+    margin-top: 8px;
     margin-bottom: 15px;
     letter-spacing: 5px;
   }
@@ -186,6 +196,25 @@ footer {
   background-color: #b0c6d4;
 }
 
+.main__h1--colortienda {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.titulo__h1--fonttienda {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.titulo__h1--sizetienda {
+  font-size: 40px;
+  margin-left: 10rem;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  letter-spacing: 5px;
+}
+
 .sectiontienda2 {
   width: 100%;
   height: 80vh;
@@ -197,9 +226,17 @@ footer {
   margin-bottom: 0px;
 }
 
-.sectiontienda2 h1 {
-  text-overflow: #fdfdfd;
+.section__bienvenida {
+  background-color: rgba(117, 164, 252, 0.637);
+  margin-top: 10px;
+}
+
+.section__bienvenida .h2__bienvenida {
   font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+  margin-left: 16px;
+  margin-top: 10px;
 }
 
 .section__encabezadoTienda {
@@ -211,6 +248,12 @@ footer {
 }
 
 @media (max-width: 576px) {
+  .titulo__h1--size {
+    font-size: 18px;
+    text-align: center;
+    margin-left: 6px;
+    margin-top: 6px;
+  }
   .sectiontienda2 {
     width: 100%;
     height: 30vh;
@@ -221,7 +264,7 @@ footer {
   .section__encabezadoTienda .encabezadoTienda {
     font-size: 14px;
   }
-  h1 {
+  .h2__bienvenida {
     font-size: 19px;
   }
   .imagenesTiendadeventa {
@@ -239,19 +282,29 @@ footer {
     font-size: 15px;
     margin-left: 4px;
   }
-  .footer__tienda--estilo {
+  .footer__tienda {
+    height: 35px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 5px;
+    line-height: 20px;
     text-align: center;
   }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
+  .titulo__h1--sizetienda {
+    font-size: 35px;
+    margin-left: 5rem;
+    margin-top: 8px;
+  }
+  .titulo__h1--sizetienda .titulo__h1--color {
+    text-align: center;
+  }
   .sectiontienda2 {
     width: 100%;
     height: 49vh;
   }
-  .sectiontienda2 h1 {
+  .h2__bienvenida {
     font-size: 30px;
   }
   .section__encabezadoTienda {
@@ -268,11 +321,18 @@ footer {
 }
 
 @media only screen and (min-width: 993px) {
+  .titulo__h1--sizetienda {
+    font-size: 40px;
+    margin-left: 10rem;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+  }
   .sectiontienda2 {
     width: 100%;
     height: 80vh;
   }
-  .sectiontienda2 h1 {
+  .h2__bienvenida {
     font-size: 40px;
   }
   .section__encabezadoTienda {
@@ -310,7 +370,7 @@ footer {
   text-align: center;
 }
 
-.footer__tienda--estilo {
+.footer__tienda {
   background-color: rgba(117, 164, 252, 0.637);
   height: 30px;
   color: #050505;
@@ -352,21 +412,41 @@ footer {
   background-color: rgba(202, 143, 236, 0.61);
 }
 
+.main__h1--colorgaleria {
+  width: 100%;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.titulo__h1--fontgaleria {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.titulo__h1--sizegaleria {
+  font-size: 30px;
+  margin-left: 10rem;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  letter-spacing: 5px;
+}
+
 .galeriadefotos {
   height: 800px;
   width: 100%;
   background-color: rgba(214, 136, 250, 0.788);
   margin-bottom: 50px;
+  margin-top: 10px;
 }
 
-.galeriadefotos h1 {
-  text-align: start;
+.galeriadefotos h2 {
+  min-height: 30px;
   font-size: 25px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   -webkit-text-decoration: underline #240238;
           text-decoration: underline #240238;
-  text-align: 50px;
+  float: left;
   margin-left: 16px;
+  margin-top: 14px;
 }
 
 .galeriadefotos .contenedor {
@@ -389,6 +469,15 @@ footer {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
+  .titulo__h1--sizegaleria {
+    font-size: 21px;
+    text-align: center;
+    margin-left: 1rem;
+    margin-top: 8px;
+  }
+  .titulo__h1--sizegaleria .titulo__h1--colorgaleria {
+    text-align: center;
+  }
   .galeriadefotos .contenedor {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -470,9 +559,21 @@ footer {
     background-size: cover;
     background-position: center;
   }
+  .footer__galeria {
+    font-size: 10px;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
+  .titulo__h1--sizegaleria {
+    font-size: 35px;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 8px;
+  }
+  .titulo__h1--sizegaleria .titulo__h1--colorgaleria {
+    text-align: center;
+  }
   .galeriadefotos .contenedor {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -557,6 +658,15 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+  .titulo__h1--sizegaleria {
+    font-size: 40px;
+    text-align: center;
+    margin-left: 10rem;
+    margin-top: 8px;
+  }
+  .titulo__h1--sizegaleria .titulo__h1--colorgaleria {
+    text-align: center;
+  }
   .galeriadefotos .contenedor {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
@@ -657,6 +767,24 @@ footer {
   padding: 0;
 }
 
+.main__h1--colorexpo {
+  width: 100%;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.titulo__h1--fontexpo {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.titulo__h1--sizeexpo {
+  font-size: 40px;
+  margin-left: 10rem;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  letter-spacing: 5px;
+}
+
 .navexpo {
   float: right;
 }
@@ -681,28 +809,19 @@ footer {
 }
 
 .section__tituloexpo {
-  width: 100%;
-  height: 10vh;
-  background-color: rgba(87, 160, 156, 0.603);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-h1 {
-  color: #01000c;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  float: left;
-  font-size: 25px;
-  font-weight: bold;
-  text-align: lef;
-  text-decoration: underline;
-  margin-left: 16px;
-  margin-top: 8px;
-}
-
-.headerexposiciones {
   background-color: #7db8ae;
   min-height: 50px;
+  margin-top: 15px;
+}
+
+.section__tituloexpo h2 {
+  color: #01000c;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  float: left;
+  font-size: 25px;
+  text-decoration: underline;
+  margin-left: 16px;
+  margin-top: 10px;
 }
 
 .bodyexpo {
@@ -714,10 +833,16 @@ h1 {
 }
 
 @media only screen and (max-width: 576px) {
+  .titulo__h1--size {
+    font-size: 18px;
+    text-align: center;
+    margin-left: 6px;
+    margin-top: 6px;
+  }
   .section__tituloexpo {
     height: 50px;
   }
-  .section__tituloexpo h1 {
+  .section__tituloexpo h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 18px;
     line-height: 25px;
@@ -855,7 +980,15 @@ h1 {
 }
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
-  .section__tituloexpo h1 {
+  .titulo__h1--sizeexpo {
+    font-size: 35px;
+    margin-left: 8rem;
+    margin-top: 8px;
+  }
+  .titulo__h1--sizeexpo .titulo__h1--colorexpo {
+    text-align: center;
+  }
+  .section__tituloexpo h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
     margin: 0px;
@@ -977,7 +1110,14 @@ h1 {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .section__tituloexpo h1 {
+  .titulo__h1--sizeexpo {
+    font-size: 40px;
+    margin-left: 10rem;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+  }
+  .section__tituloexpo h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
   }
@@ -1271,149 +1411,115 @@ h1 {
   text-decoration: underline;
 }
 
-.headercontacto {
-  background-color: rgba(93, 28, 112, 0.562);
-  min-height: 50px;
-}
-
-.logocontacto {
-  color: #100116;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  float: left;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: left;
-  text-decoration: underline;
-}
-
 .bodycontacto {
-  background-color: #c273c2;
+  background-color: rgba(135, 216, 189, 0.822);
 }
 
-h2 {
-  font-size: 18px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin: 1px 10px 3px 19px;
-}
-
-.form {
-  height: 80px;
+.main__h1--colorcontacto {
   width: 100%;
-  background-color: rgba(177, 93, 180, 0.788);
-  margin-bottom: 50px;
-  padding-bottom: 50px;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.titulo__h1--fontcontacto {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.titulo__h1--sizecontacto {
+  font-size: 40px;
+  margin-left: 10rem;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  letter-spacing: 5px;
+}
+
+.section__contacto {
+  background-color: rgba(78, 158, 111, 0.274);
+}
+
+.section__contacto .h2__contacto {
+  font-size: 25px;
+  text-decoration: underline;
+  margin-left: 15px;
+  margin-top: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .form {
-  text-align: start;
-  font-size: 18px;
-  -webkit-text-decoration: underline #240238;
-          text-decoration: underline #240238;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 3px;
+  padding: 1rem;
 }
 
 .form .ficha {
   width: 100%;
-  height: 600px;
-  background-color: #bf85f5;
-  border: 2px dashed #990499;
-  display: -ms-grid;
-  display: grid;
+  height: 80vh;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 2px solid rgba(26, 104, 61, 0.432);
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
 }
 
 .datos {
-  height: 10px;
+  height: 40px;
   margin-top: 2rem;
-  margin-left: 3rem;
-  line-height: 7px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  justify-items: left;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  margin-left: 1rem;
+  line-height: 5px;
+  border-radius: 10px;
 }
 
 .datos2 {
   height: 10px;
-  margin-left: 3rem;
+  margin-left: 1rem;
   line-height: 5px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  justify-items: left;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  border-radius: 10px;
 }
 
 .mail {
   height: 10px;
-  margin-left: 3rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
   line-height: 5px;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  justify-items: left;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  border-radius: 10px;
 }
 
 .mensaje {
-  height: 30px;
-  margin-top: 2px;
-  margin-left: 3rem;
-  line-height: 2px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  justify-items: left;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  height: 20px;
+  margin-top: 3rem;
+  margin-left: 1rem;
+  line-height: 5px;
+  border-radius: 10px;
 }
 
 .mensaje h4 {
-  height: 10px;
-  margin-top: 1px;
-  margin-left: 2px;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-top: 10px;
 }
 
 .mensaje1 {
-  margin-top: 2px;
-  margin-bottom: 2rem;
-  margin-left: 3rem;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  margin-top: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#texto {
+  width: 90%;
+  height: 30vh;
 }
 
 .botones {
-  height: 10px;
-  margin-top: 3px;
-  margin-left: 3rem;
-  line-height: 10px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  justify-items: left;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  width: 80px;
+  height: 60px;
+  margin-top: 13rem;
+  margin-left: 1rem;
+  line-height: 25px;
 }
 
 .footer__contactos {
-  background-color: rgba(215, 128, 250, 0.637);
+  background-color: rgba(36, 88, 54, 0.637);
   width: 100%;
   height: 30px;
   color: #050505;
@@ -1421,6 +1527,5 @@ h2 {
   font-size: 14px;
   text-align: center;
   font-variant: small-caps;
-  padding-top: 2rem;
 }
 /*# sourceMappingURL=estilos.css.map */

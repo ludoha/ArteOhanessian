@@ -14,9 +14,17 @@
     <meta name="city" content="Buenos Aires">
     <meta name="country" content="Argentina">
 </head>
-<body class="bodycontacto">
 
-    <nav class="navbar navbar-expand-sm navbar-light navbar-default"
+<body class="bodycontacto">
+<main class="main__h1--colorcontacto">
+        <div class="container">
+            <section class="row">
+            <h1 class="titulo__h1--sizecontacto titulo__h1--fontcontacto titulo__h1--color border border-dark"> Ludmila Ohanessian Artista Plastica</h1>
+            </section>
+        </div>
+</main>
+
+<nav class="navbar navbar-expand-sm navbar-light navbar-default"
     id="nav1">
         <!-- Brand -->
         <a class="navbar-brand" href="#">Contacto</a>
@@ -45,32 +53,54 @@
         </div>
     </nav>
 
+<section class="section__contacto container-fluid">
+    <div class="row col-xs-12 col-sm-12 col-md-12 mt-3">
+        <h2 class="h2__contacto text-center ml-1">Contactame para encargar tu obra!</h2>
+    </div>
+</section>
 
-<h2>Deja tu mensaje y nos comunicamos!</h2>
+<section class="section__contactoredes container-fluid">
+    <h2 class="section__redes text-center pt-4">Seguime en mis redes!</h2>
+    <div class="row justify-content-around ml-4"> 
+        <div class="imagenes col-xs-12 col-sm-6 col-md-3 m-5">
+            <img src="../img/facebook.png" alt="facebook class="img-thumbnail" class="img-fluid">>
+        </div>
+        <div class="imagenes col-xs-12 col-sm-6 col-md-3 m-5">
+            <img src="../img/instagram.png" alt="instagram" class="img-thumbnail" class="img-fluid">
+        </div>  
+        <div class="imagenes col-xs-12 col-sm-6 col-md-3 m-5">
+            <img src="../img/youtube.png" alt="youtube" class="img-thumbnail"  class="img-fluid">
+        </div>
+    </div>
+</section>
 
-<section class="form">  
-    <div class="ficha">
+<div class="section__formulariocontainer-fluid">
+    <section class="section__form--style row">
+    <div class="m-5 mb-6" class="img-fluid">
+        <section class="form">  
+        <div class="ficha">
         <div class="datos">
         <label for="">Nombre y Apellido:</label>
-        <input type="text" placeholder="Escribe tu Nombre y Apellido"></div>
+        <input type="text" placeholder="Ingrese su nombre"></div>
         <div class="datos2">
         <label for="">Teléfono:</label>
-        <input type="numero" placeholder="+54 9 11..."></div>
+        <input type="numero" placeholder="+54 9 011"></div>
         <div class="mail">
         <label for="">Mail:</label>
-        <input for="correo" placeholder="Correo electronico"></div>
+        <input for="correo" placeholder="Ingrese su correo"></div>
         <div class="mensaje">
         <h4 clas="mensaje1">Escribe tu mensaje:<h4>
-        <textarea name="areadetexto" id="texto" cols="50" rows="7" placeholder="Escribe tu comentario"> 
+        <textarea name="areadetexto" id="texto" cols="50" rows="7" placeholder="Escribe tu mensaje"> 
         </textarea> </div>
     
         <div class="botones">
-            <input type="reset" value="Borrar">
             <input type="submit" value="Enviar">
         </div>
-
-    </div>
-</section>
+        </div>
+        </section>
+    </div>    
+    </section>
+</div> 
 
 <footer class="footer__contactos">
     <p>Ludmila Ohanessian Rau. Todos los derechos reservados.2022</p>
