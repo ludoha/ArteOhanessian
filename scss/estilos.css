@@ -349,13 +349,14 @@ footer {
 }
 
 .bodygaleria {
-  background-color: rgba(104, 104, 248, 0.788);
+  background-color: rgba(202, 143, 236, 0.61);
 }
 
 .galeriadefotos {
   height: 800px;
   width: 100%;
-  background-color: rgba(104, 104, 248, 0.788);
+  background-color: rgba(214, 136, 250, 0.788);
+  margin-bottom: 50px;
 }
 
 .galeriadefotos h1 {
@@ -371,18 +372,18 @@ footer {
 .galeriadefotos .contenedor {
   width: 100%;
   height: 800px;
-  background-color: #a040fa;
+  background-color: #d7a0e7;
   display: -ms-grid;
   display: grid;
 }
 
 .galeriadefotos .img {
-  border: 2px solid white;
+  border: 2px solid rgba(255, 255, 255, 0.733);
 }
 
 .galeriadefotos .img .img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(3);
+          transform: scale(3);
   -webkit-transition: all 1.2s;
   transition: all 1.2s;
 }
@@ -637,6 +638,18 @@ footer {
     background-size: cover;
     background-position: center;
   }
+}
+
+.footer__galeria {
+  background-color: rgba(215, 128, 250, 0.637);
+  width: 100%;
+  height: 30px;
+  color: #050505;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  font-variant: small-caps;
+  padding-top: 2rem;
 }
 
 * {
@@ -1287,6 +1300,8 @@ h2 {
   height: 80px;
   width: 100%;
   background-color: rgba(177, 93, 180, 0.788);
+  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .form {
@@ -1395,5 +1410,17 @@ h2 {
       align-content: flex-end;
   -ms-flex-line-pack: justify;
       align-content: space-between;
+}
+
+.footer__contactos {
+  background-color: rgba(215, 128, 250, 0.637);
+  width: 100%;
+  height: 30px;
+  color: #050505;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  font-variant: small-caps;
+  padding-top: 2rem;
 }
 /*# sourceMappingURL=estilos.css.map */
