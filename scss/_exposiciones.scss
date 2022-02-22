@@ -65,8 +65,11 @@
     .titulo__h1--size{
         font-size: 18px;
         text-align: center;
-        margin-left: 6px;
         margin-top: 6px;
+    }
+    .titulo__h1--fontexpo{
+        font-size: 18px;
+        margin-left: 1px;
     }
     .section__tituloexpo{
         height: 50px;
@@ -94,7 +97,7 @@
     background-color: $bcolor;
 }
 .box {
-    @include sizes(100%, 50vh, rgba(192, 231, 225, 0.842));
+    @include sizes(100%, 60vh, rgba(192, 231, 225, 0.842));
     display:grid;
     justify-content: center;
     line-height: 11px;

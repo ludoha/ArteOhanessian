@@ -852,8 +852,11 @@ footer {
   .titulo__h1--size {
     font-size: 18px;
     text-align: center;
-    margin-left: 6px;
     margin-top: 6px;
+  }
+  .titulo__h1--fontexpo {
+    font-size: 18px;
+    margin-left: 1px;
   }
   .section__tituloexpo {
     height: 50px;
@@ -875,7 +878,7 @@ footer {
     text-align: center;
   }
   .section__box--diseño .box {
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     background-color: rgba(192, 231, 225, 0.842);
     display: -ms-grid;
