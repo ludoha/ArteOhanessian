@@ -16,7 +16,7 @@
 }
 .titulo__h1--size{
     font-size: 40px;
-    margin-left: 10rem;
+    margin-left: 9rem;
     margin-top: 8px;
     margin-bottom: 15px;
     letter-spacing: 5px;
@@ -58,6 +58,14 @@ h4{
     margin-bottom: 10px;
     text-decoration: underline;
 }
+.redes__index:hover{
+    transform:scale(1.2);
+}
+.imagenes:hover{
+    transform: scale(1.10);
+    transition: all 1.2s;
+}
+
 footer {
     background-color: rgba(43, 182, 117, 0.74);
     height: 30px;

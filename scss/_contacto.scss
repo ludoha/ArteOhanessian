@@ -44,6 +44,90 @@
     margin-bottom: 15px;
     letter-spacing: 5px;
 }
+.imagenes__redescont:hover{
+    transform:scale(1.2);
+}
+
+@media (max-width: 576px){
+    .titulo__h1--sizecontacto{
+        font-size: 21px;
+        text-align: center;
+        margin-left: 6px;
+        margin-top: 6px;
+    }
+    .form{
+        height: 80vh;
+        width: 100%;
+        margin-bottom: 3px;
+        padding: 1rem;
+        .datos .datos2 .mail{
+            margin-top: 5rem;
+            margin: bottom 50px;;
+        }
+    }
+    
+    .h2__contacto{
+        font-size: 19px;
+    }
+    #texto{
+        width: 100%;
+        height: 20vh;
+    }
+    .botones{  
+        margin-left: 0px;
+        padding-top: 4rem;
+        padding-left: 0px;
+        text-align: center;
+        line-height: 5px;
+    }
+    .mensaje1{
+        margin-top: 15px;
+        margin-bottom: 35px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px){
+    .titulo__h1--sizecontacto {
+        font-size: 35px;
+        margin-left: 5rem;
+        margin-top: 8px;
+            .titulo__h1--colorcontacto {
+            text-align: center;
+        }  
+    }
+    
+    .h2__contacto{
+        font-size: 30px;
+    }
+    .botones{  
+        margin-left: 0px;
+        padding-top: 4rem;
+        padding-left: 0px;
+        text-align: center;
+        line-height: 5px;
+    }
+}
+@media only screen and (min-width: 993px){
+    .titulo__h1--sizecontacto{
+        font-size: 40px;
+        margin-left: 10rem;
+        margin-top: 8px;
+        margin-bottom: 15px;
+        letter-spacing: 5px;
+    }
+    
+    .h2__contacto{
+        font-size: 40px;
+    }
+    .botones{  
+        margin-left: 0px;
+        padding-top: 4rem;
+        padding-left: 0px;
+        text-align: center;
+        line-height: 5px;
+    }
+
+}
 .section__contacto{ 
     background-color: rgba(78, 158, 111, 0.274);
     .h2__contacto{
@@ -64,7 +148,7 @@
 
 .form .ficha{
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 2px solid rgba(26, 104, 61, 0.432);
@@ -116,8 +200,8 @@
 }
 .botones{  
     width: 80px;
-    height: 60px;
-    margin-top: 13rem;
+    height: 60px; 
+    margin-top: 10rem;
     margin-left: 1rem;
     line-height: 25px;
 }

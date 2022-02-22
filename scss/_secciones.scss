@@ -9,6 +9,7 @@ $color3: rgb(252, 126, 53);
 $color4: rgb(223, 55, 43);
 $color5: rgba(128, 92, 48, 0.562);
 $color6: rgb(152, 212, 112);
+$color7: rgb(113, 206, 101);
 
 .section__article--color1{
     background-color: $color1;
@@ -27,4 +28,7 @@ $color6: rgb(152, 212, 112);
 }
 .section__article--color6{
     background-color: $color6;
+}
+.section__index__redes {
+    background-color: $color7;
 }

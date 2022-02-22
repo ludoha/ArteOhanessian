@@ -68,15 +68,13 @@
     display:grid;
 }
 
-
-.galeriadefotos .img{
+.galeriadefotos .imgg{
     border:2px solid rgba(255, 255, 255, 0.733);
-    .img:hover{
-        transform: scale(3);
-        transition: all 1.2s;
-    }
 }
-
+.imgg:hover{
+    transform: scale(1.10);
+    transition: all 1.2s;
+}
 
 @media only screen and (min-width:320px) and (max-width:479px){
     .titulo__h1--sizegaleria {
