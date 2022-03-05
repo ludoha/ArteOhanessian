@@ -193,12 +193,14 @@ $base-color: rgba(230, 244, 245, 0.719);
 @media only screen and (min-width: 577px) and (max-width: 992px) {
     .titulo__h1--sizeexpo {
         font-size: 35px;
-        margin-left: 8rem;
+        margin-left: 0px;
         margin-top: 8px;
+        text-align: center;
             .titulo__h1--colorexpo {
             text-align: center;
         }  
     }
+
     .section__tituloexpo{
         h2{ 
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
