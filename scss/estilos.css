@@ -331,9 +331,17 @@ footer {
     font-size: 22px;
   }
   .texto__tienda {
-    width: 40%;
-    margin-left: 0px;
-    padding-left: 0px;
+    background-color: rgba(252, 251, 248, 0.274);
+    height: 5vh;
+    width: 114px;
+    border: 1px solid rgba(192, 192, 245, 0.808);
+  }
+  .texto__tienda h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 30px;
+    font-size: 10px;
+    margin-left: 4px;
   }
 }
 
@@ -1505,8 +1513,9 @@ footer {
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   .titulo__h1--sizecontacto {
     font-size: 35px;
-    margin-left: 5rem;
+    margin-left: 0px;
     margin-top: 8px;
+    text-align: center;
   }
   .titulo__h1--sizecontacto .titulo__h1--colorcontacto {
     text-align: center;
@@ -1516,7 +1525,7 @@ footer {
   }
   .botones {
     margin-left: 0px;
-    padding-top: 4rem;
+    padding-top: 3rem;
     padding-left: 0px;
     text-align: center;
     line-height: 5px;
@@ -1621,7 +1630,7 @@ footer {
 }
 
 .botones {
-  width: 80px;
+  width: 70px;
   height: 60px;
   margin-top: 10rem;
   margin-left: 1rem;

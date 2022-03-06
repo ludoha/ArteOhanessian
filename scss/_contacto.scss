@@ -89,8 +89,9 @@
 @media only screen and (min-width: 577px) and (max-width: 992px){
     .titulo__h1--sizecontacto {
         font-size: 35px;
-        margin-left: 5rem;
+        margin-left: 0px;
         margin-top: 8px;
+        text-align: center;
             .titulo__h1--colorcontacto {
             text-align: center;
         }  
@@ -101,7 +102,7 @@
     }
     .botones{  
         margin-left: 0px;
-        padding-top: 4rem;
+        padding-top: 3rem;
         padding-left: 0px;
         text-align: center;
         line-height: 5px;
@@ -199,7 +200,7 @@
     height: 30vh;
 }
 .botones{  
-    width: 80px;
+    width: 70px;
     height: 60px; 
     margin-top: 10rem;
     margin-left: 1rem;
