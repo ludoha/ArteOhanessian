@@ -132,7 +132,7 @@ footer {
 
 @media only screen and (max-width: 576px) {
   .titulo__h1--size {
-    font-size: 18px;
+    font-size: 21px;
     text-align: center;
     margin-left: 6px;
     margin-top: 6px;
@@ -157,8 +157,9 @@ footer {
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   .titulo__h1--size {
     font-size: 35px;
-    margin-left: 8rem;
+    margin-left: 0px;
     margin-top: 8px;
+    text-align: center;
   }
   .titulo__h1--size .titulo__h1--color {
     text-align: center;
