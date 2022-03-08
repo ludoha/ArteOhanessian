@@ -908,7 +908,7 @@ footer {
     text-align: center;
   }
   .section__box--diseño .box {
-    height: 60vh;
+    height: 58vh;
     width: 100%;
     background-color: rgba(192, 231, 225, 0.842);
     display: -ms-grid;
@@ -916,7 +916,7 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    line-height: 11px;
+    line-height: 12px;
     font-size: 12px;
     padding: 20px 25px 25px 15px;
   }
@@ -929,7 +929,7 @@ footer {
     margin-top: 10px;
   }
   .section__box--diseño .box2 {
-    height: 36vh;
+    height: 65vh;
     width: 100%;
     background-color: #a7dad1;
     color: #161616;
@@ -938,8 +938,7 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    text-align: center;
-    line-height: 11px;
+    line-height: 12px;
     font-size: 12px;
     padding: 20px 25px 25px 15px;
   }
@@ -947,12 +946,9 @@ footer {
     text-decoration: underline;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16px;
-    padding-bottom: 0px;
-    margin-bottom: 12px;
-    margin-top: 10px;
   }
   .section__box--diseño .box3 {
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     background-color: rgba(192, 231, 225, 0.842);
     color: #1d1d1d;
@@ -975,7 +971,7 @@ footer {
     margin-top: 10px;
   }
   .section__box--diseño .box4 {
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     background-color: #a7dad1;
     color: #161616;
@@ -989,8 +985,16 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .section__box--diseño .box4 .notas {
-    margin-top: 12px;
+  .section__box--diseño .box4 .textobox2 {
+    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    padding-bottom: 0px;
+    margin-bottom: 12px;
+    margin-top: 10px;
+  }
+  .section__box--diseño .box4 .textobox2 .notas {
+    font-size: 12px;
   }
   .article__fotosalpie .expoarmenia-icon,
   .article__fotosalpie .expoescultura-icon {
@@ -1123,28 +1127,24 @@ footer {
     padding: 30px 35px 35px 25px;
   }
   .section__box--diseño .box3 .textobox2 {
-    text-decoration: underline;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16px;
     margin-bottom: 15px;
     padding: 0px;
   }
   .section__box--diseño .box4 {
-    height: 75vh;
+    height: 100vh;
     width: 100%;
     background-color: rgba(192, 231, 225, 0.842);
     color: #1d1d1d;
     text-align: center;
     line-height: 28px;
     font-size: 10px;
+    padding: 30px 35px 35px 25px;
   }
-  .section__box--diseño .box4 .textobox2 {
+  .section__box--diseño .box4 .textobox4 {
     font-size: 16px;
     padding: 0px;
     margin-bottom: 15px;
-  }
-  .section__box--diseño .box4 .notas {
-    margin-top: 0px;
   }
   .article__fotosalpie .expoarmenia-icon,
   .article__fotosalpie .expoescultura-icon {
@@ -1353,6 +1353,14 @@ footer {
   margin-top: 20px;
 }
 
+.textobox4 {
+  text-decoration: underline;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
 .box {
   height: 60vh;
   width: 100%;
@@ -1404,7 +1412,7 @@ footer {
 }
 
 .box4 {
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   background-color: #a7dad1;
   color: #161616;
@@ -1412,16 +1420,12 @@ footer {
   text-align: center;
   line-height: 25px;
   font-size: 15px;
-  padding-top: 25px;
+  padding: 20px 25px 25px 15px;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.box4 .notas {
-  margin-top: 30px;
 }
 
 .expoarmenia-icon,
