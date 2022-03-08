@@ -44,6 +44,17 @@
     margin-bottom: 15px;
     letter-spacing: 5px;
 }
+.section__contacto{ 
+    background-color: rgba(78, 158, 111, 0.274);
+    .h2__contacto{
+        font-size: 25px;
+        text-decoration: underline;
+        margin-left: 16px;
+        margin-top: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+
 .imagenes__redescont:hover{
     transform:scale(1.2);
 }
@@ -52,8 +63,9 @@
     .titulo__h1--sizecontacto{
         font-size: 21px;
         text-align: center;
-        margin-left: 6px;
-        margin-top: 6px;
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-top: 8px;
     }
     .form{
         height: 80vh;
@@ -65,9 +77,10 @@
             margin: bottom 50px;;
         }
     }
-    
-    .h2__contacto{
-        font-size: 19px;
+    .section__contacto{
+        .h2__contacto{
+            font-size: 19px;
+        }   
     }
     #texto{
         width: 100%;
@@ -126,17 +139,6 @@
         padding-left: 0px;
         text-align: center;
         line-height: 5px;
-    }
-
-}
-.section__contacto{ 
-    background-color: rgba(78, 158, 111, 0.274);
-    .h2__contacto{
-        font-size: 25px;
-        text-decoration: underline;
-        margin-left: 15px;
-        margin-top: 10px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 }
 

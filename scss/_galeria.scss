@@ -49,15 +49,15 @@
     width: 100%;
     background-color: rgba(214, 136, 250, 0.788);
     margin-bottom: 50px;
-    margin-top: 10px;
+    margin-top: 16px;
     h2{
-        min-height: 30px;
+        min-height: 19px;
         font-size: 25px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         text-decoration: underline rgb(36, 2, 56);
         float:left;
-        margin-left: 16px;
-        margin-top: 14px;
+        margin-left: 19px;
+        margin-top: 12px;
     }   
 }
 
@@ -77,15 +77,6 @@
 }
 
 @media only screen and (min-width:320px) and (max-width:479px){
-    .titulo__h1--sizegaleria {
-        font-size: 21px;
-        text-align: center;
-        margin-left: 1rem;
-        margin-top: 8px;
-            .titulo__h1--colorgaleria {
-            text-align: center;
-        }  
-    }
     .galeriadefotos .contenedor{ 
         grid-template-columns: repeat(2, 1fr);
         }
@@ -144,16 +135,40 @@
     }
 }
 
-@media only screen and (min-width:480px) and (max-width:768px){
+/*--Medias titulo de la pagina--*/
+
+@media (max-width: 576px){
+    .titulo__h1--sizegaleria{
+        font-size: 21px;
+        text-align: center;
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-top: 8px;
+    }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px){
     .titulo__h1--sizegaleria {
         font-size: 35px;
-        text-align: center;
         margin-left: 0px;
         margin-top: 8px;
-            .titulo__h1--colorgaleria {
+        text-align: center;
+            .titulo__h1--colorcontacto {
             text-align: center;
         }  
     }
+}
+@media only screen and (min-width: 993px){
+    .titulo__h1--sizegaleria{
+        font-size: 40px;
+        margin-left: 10rem;
+        margin-top: 8px;
+        margin-bottom: 15px;
+        letter-spacing: 5px;
+    }
+}
+/*--fin media titulo pagina--*/
+
+@media only screen and (min-width:480px) and (max-width:768px){
     .galeriadefotos .contenedor{ 
     grid-template-columns: repeat(3, 1fr);
     }

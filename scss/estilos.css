@@ -134,8 +134,9 @@ footer {
   .titulo__h1--size {
     font-size: 21px;
     text-align: center;
-    margin-left: 6px;
-    margin-top: 6px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 8px;
   }
   h2 {
     font-size: 20px;
@@ -239,7 +240,6 @@ footer {
   background-size: cover;
   background-color: rgba(60, 127, 253, 0.637);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-align: left;
   margin-bottom: 0px;
 }
 
@@ -268,8 +268,9 @@ footer {
   .titulo__h1--sizetienda {
     font-size: 21px;
     text-align: center;
-    margin-left: 6px;
-    margin-top: 6px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 8px;
   }
   .sectiontienda2 {
     width: 100%;
@@ -461,18 +462,18 @@ footer {
   width: 100%;
   background-color: rgba(214, 136, 250, 0.788);
   margin-bottom: 50px;
-  margin-top: 10px;
+  margin-top: 16px;
 }
 
 .galeriadefotos h2 {
-  min-height: 30px;
+  min-height: 19px;
   font-size: 25px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   -webkit-text-decoration: underline #240238;
           text-decoration: underline #240238;
   float: left;
-  margin-left: 16px;
-  margin-top: 14px;
+  margin-left: 19px;
+  margin-top: 12px;
 }
 
 .galeriadefotos .contenedor {
@@ -495,15 +496,6 @@ footer {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
-  .titulo__h1--sizegaleria {
-    font-size: 21px;
-    text-align: center;
-    margin-left: 1rem;
-    margin-top: 8px;
-  }
-  .titulo__h1--sizegaleria .titulo__h1--colorgaleria {
-    text-align: center;
-  }
   .galeriadefotos .contenedor {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -590,16 +582,41 @@ footer {
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+/*--Medias titulo de la pagina--*/
+@media (max-width: 576px) {
   .titulo__h1--sizegaleria {
-    font-size: 35px;
+    font-size: 21px;
     text-align: center;
-    margin-left: 0px;
+    margin-left: 35px;
+    margin-right: 35px;
     margin-top: 8px;
   }
-  .titulo__h1--sizegaleria .titulo__h1--colorgaleria {
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .titulo__h1--sizegaleria {
+    font-size: 35px;
+    margin-left: 0px;
+    margin-top: 8px;
     text-align: center;
   }
+  .titulo__h1--sizegaleria .titulo__h1--colorcontacto {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .titulo__h1--sizegaleria {
+    font-size: 40px;
+    margin-left: 10rem;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+  }
+}
+
+/*--fin media titulo pagina--*/
+@media only screen and (min-width: 480px) and (max-width: 768px) {
   .galeriadefotos .contenedor {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -836,18 +853,16 @@ footer {
 
 .section__tituloexpo {
   background-color: #7db8ae;
-  min-height: 50px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
-.section__tituloexpo h2 {
+.section__tituloexpo .h2__exposiciones {
   color: #01000c;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  float: left;
   font-size: 25px;
   text-decoration: underline;
   margin-left: 16px;
   margin-top: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .bodyexpo {
@@ -858,27 +873,32 @@ footer {
   border: 9px solid #e4faf5ce;
 }
 
-@media only screen and (max-width: 576px) {
-  .titulo__h1--size {
-    font-size: 18px;
-    text-align: center;
-    margin-top: 6px;
+@media only screen and (max-width: 420px) {
+  .fotocarousel {
+    width: 100%;
+    height: 45vh;
   }
-  .titulo__h1--fontexpo {
-    font-size: 18px;
-    margin-left: 1px;
+}
+
+@media only screen and (min-width: 421px) and (max-width: 576px) {
+  .fotocarousel {
+    width: 100%;
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .titulo__h1--sizeexpo {
+    font-size: 21px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 8px;
   }
   .section__tituloexpo {
     height: 50px;
   }
-  .section__tituloexpo h2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    line-height: 25px;
-  }
-  .fotocarousel {
-    width: 100%;
-    height: 41vh;
+  .section__tituloexpo .h2__exposiciones {
+    font-size: 19px;
   }
   .section__box--diseño {
     width: 100%;
@@ -954,6 +974,24 @@ footer {
     margin-bottom: 12px;
     margin-top: 10px;
   }
+  .section__box--diseño .box4 {
+    height: 50vh;
+    width: 100%;
+    background-color: #a7dad1;
+    color: #161616;
+    text-align: center;
+    line-height: 11px;
+    font-size: 12px;
+    padding-top: 25px;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section__box--diseño .box4 .notas {
+    margin-top: 12px;
+  }
   .article__fotosalpie .expoarmenia-icon,
   .article__fotosalpie .expoescultura-icon {
     height: 250px;
@@ -965,26 +1003,28 @@ footer {
     background-size: cover;
     background-position: center;
     float: left;
-    margin: 30px 35px 35px 6rem;
+    margin: 32px 35px 35px 12rem;
     padding-left: 5px;
     display: -ms-grid;
     display: grid;
     text-align: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .article__fotosalpie .expoescultura-icon {
     background-image: url("../img2/expoescultura.jpg");
     background-size: cover;
     background-position: center;
     float: left;
-    margin: 30px 35px 35px 6rem;
+    margin: 32px 35px 35px 12rem;
     padding-left: 5px;
     display: -ms-grid;
     display: grid;
     text-align: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .article__fotosalpie .bucle-1 {
     width: 100%;
@@ -1018,15 +1058,12 @@ footer {
   .titulo__h1--sizeexpo .titulo__h1--colorexpo {
     text-align: center;
   }
-  .section__tituloexpo h2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    margin: 0px;
-    padding: 0px;
+  .section__tituloexpo .h2__exposiciones {
+    font-size: 30px;
   }
   .fotocarousel {
     width: 100%;
-    height: 44vh;
+    height: 70vh;
   }
   .section__box--diseño {
     width: 100%;
@@ -1035,7 +1072,7 @@ footer {
     text-align: center;
   }
   .section__box--diseño .box {
-    height: 65vh;
+    height: 80vh;
     width: 100%;
     background-color: rgba(192, 231, 225, 0.842);
     display: -ms-grid;
@@ -1044,16 +1081,17 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     line-height: 28px;
-    font-size: 15px;
+    font-size: 10px;
     padding: 30px 35px 35px 25px;
   }
   .section__box--diseño .box .textobox1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     text-decoration: underline;
+    margin-bottom: 15px;
   }
   .section__box--diseño .box2 {
-    height: 45vh;
+    height: 55vh;
     width: 100%;
     background-color: #a7dad1;
     color: #161616;
@@ -1064,32 +1102,49 @@ footer {
             justify-content: center;
     text-align: center;
     line-height: 28px;
-    font-size: 15px;
+    font-size: 10px;
     padding: 30px 35px 35px 25px;
   }
   .section__box--diseño .box2 .textobox2 {
     text-decoration: underline;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    margin: 0px;
+    font-size: 16px;
+    margin-bottom: 15px;
     padding: 0px;
   }
   .section__box--diseño .box3 {
-    height: 93vh;
+    height: 95vh;
     width: 100%;
     background-color: rgba(192, 231, 225, 0.842);
     color: #1d1d1d;
     text-align: center;
-    line-height: 35px;
-    font-size: 15px;
+    line-height: 28px;
+    font-size: 10px;
     padding: 30px 35px 35px 25px;
   }
   .section__box--diseño .box3 .textobox2 {
     text-decoration: underline;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    margin: 0px;
+    font-size: 16px;
+    margin-bottom: 15px;
     padding: 0px;
+  }
+  .section__box--diseño .box4 {
+    height: 75vh;
+    width: 100%;
+    background-color: rgba(192, 231, 225, 0.842);
+    color: #1d1d1d;
+    text-align: center;
+    line-height: 28px;
+    font-size: 10px;
+  }
+  .section__box--diseño .box4 .textobox2 {
+    font-size: 16px;
+    padding: 0px;
+    margin-bottom: 15px;
+  }
+  .section__box--diseño .box4 .notas {
+    margin-top: 0px;
   }
   .article__fotosalpie .expoarmenia-icon,
   .article__fotosalpie .expoescultura-icon {
@@ -1103,7 +1158,7 @@ footer {
     text-align: center;
     display: -ms-grid;
     display: grid;
-    margin: 35px 35px 35px 5rem;
+    margin: 35px 35px 35px 2rem;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -1113,7 +1168,7 @@ footer {
     text-align: center;
     display: -ms-grid;
     display: grid;
-    margin: 35px 35px 35px 5rem;
+    margin: 35px 35px 35px 2rem;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -1123,7 +1178,7 @@ footer {
     background-color: rgba(219, 239, 241, 0.719);
     border: 1px inset rgba(197, 235, 235, 0.911);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 17px;
+    font-size: 12px;
     line-height: 15px;
     text-align: center;
   }
@@ -1133,7 +1188,7 @@ footer {
     background-color: rgba(208, 234, 236, 0.719);
     border: 1px inset rgba(197, 235, 235, 0.911);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 17px;
+    font-size: 12px;
     line-height: 15px;
     text-align: center;
   }
@@ -1147,9 +1202,8 @@ footer {
     margin-bottom: 15px;
     letter-spacing: 5px;
   }
-  .section__tituloexpo h2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
+  .section__tituloexpo .h2__exposiciones {
+    font-size: 40px;
   }
   .fotocarousel {
     width: 100%;
@@ -1214,7 +1268,7 @@ footer {
             justify-content: center;
     text-align: center;
     line-height: 30px;
-    font-size: 21px;
+    font-size: 20px;
     padding: 30px 50px 50px 30px;
   }
   .section__box--diseño .box3 .textobox2 {
@@ -1259,7 +1313,7 @@ footer {
     background-color: rgba(219, 239, 241, 0.719);
     border: 1px inset rgba(197, 235, 235, 0.911);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px;
+    font-size: 11px;
     line-height: 25px;
     text-align: center;
   }
@@ -1269,7 +1323,7 @@ footer {
     background-color: rgba(208, 234, 236, 0.719);
     border: 1px inset rgba(197, 235, 235, 0.911);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px;
+    font-size: 11px;
     line-height: 25px;
     text-align: center;
   }
@@ -1283,20 +1337,20 @@ footer {
   text-align: center;
 }
 
-.textobox2 {
-  text-decoration: underline;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
-
 .textobox1 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 20px;
   text-decoration: underline;
   margin-top: 20px;
   margin-bottom: 0px;
+}
+
+.textobox2 {
+  text-decoration: underline;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .box {
@@ -1312,7 +1366,7 @@ footer {
 }
 
 .box2 {
-  height: 65vh;
+  height: 50vh;
   width: 100%;
   background-color: #a7dad1;
   color: #161616;
@@ -1347,6 +1401,27 @@ footer {
 
 .box3 dl dd {
   margin-top: 15px;
+}
+
+.box4 {
+  height: 60vh;
+  width: 100%;
+  background-color: #a7dad1;
+  color: #161616;
+  font-weight: bold;
+  text-align: center;
+  line-height: 25px;
+  font-size: 15px;
+  padding-top: 25px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box4 .notas {
+  margin-top: 30px;
 }
 
 .expoarmenia-icon,
@@ -1469,6 +1544,18 @@ footer {
   letter-spacing: 5px;
 }
 
+.section__contacto {
+  background-color: rgba(78, 158, 111, 0.274);
+}
+
+.section__contacto .h2__contacto {
+  font-size: 25px;
+  text-decoration: underline;
+  margin-left: 16px;
+  margin-top: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .imagenes__redescont:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -1478,8 +1565,9 @@ footer {
   .titulo__h1--sizecontacto {
     font-size: 21px;
     text-align: center;
-    margin-left: 6px;
-    margin-top: 6px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 8px;
   }
   .form {
     height: 80vh;
@@ -1491,7 +1579,7 @@ footer {
     margin-top: 5rem;
     margin: bottom 50px;
   }
-  .h2__contacto {
+  .section__contacto .h2__contacto {
     font-size: 19px;
   }
   #texto {
@@ -1551,18 +1639,6 @@ footer {
     text-align: center;
     line-height: 5px;
   }
-}
-
-.section__contacto {
-  background-color: rgba(78, 158, 111, 0.274);
-}
-
-.section__contacto .h2__contacto {
-  font-size: 25px;
-  text-decoration: underline;
-  margin-left: 15px;
-  margin-top: 10px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .form {

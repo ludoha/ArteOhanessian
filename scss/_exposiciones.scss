@@ -42,18 +42,17 @@
 }
 .section__tituloexpo{
     background-color: rgb(125, 184, 174) ;
-    min-height: 50px;
-    margin-top: 15px;
-    h2{
+    margin-top: 10px;
+    .h2__exposiciones{
     color: rgb(1, 0, 12);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    float:left;
     font-size: 25px;
     text-decoration: underline;
     margin-left: 16px;
     margin-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 }
+
 
 .bodyexpo{
     background-color: rgb(202, 238, 231);
@@ -61,28 +60,34 @@
 .main__carousel__expos{
     border: 9px solid #e4faf5ce;
 }
+
+
+@media only screen and (max-width: 420px) {
+.fotocarousel{
+    width: 100%;
+    height: 45vh;
+}
+}
+@media only screen and (min-width: 421px) and (max-width: 576px) {
+.fotocarousel{
+    width: 100%;
+    height: 70vh;
+}
+}
 @media only screen and (max-width: 576px) {
-    .titulo__h1--size{
-        font-size: 18px;
-        text-align: center;
-        margin-top: 6px;
-    }
-    .titulo__h1--fontexpo{
-        font-size: 18px;
-        margin-left: 1px;
+    .titulo__h1--sizeexpo{
+        font-size: 21px;
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-top: 8px;
     }
     .section__tituloexpo{
         height: 50px;
-        h2{ 
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 18px;
-        line-height: 25px;
+        .h2__exposiciones{ 
+        font-size: 19px; 
         }
     }
-    .fotocarousel{
-        width: 100%;
-        height: 41vh;
-    }
+    
     
 .section__box--diseño {
         width: 100%;
@@ -150,6 +155,20 @@
         margin-top: 10px;
     }
 }
+.box4{
+    @include sizes(100%, 50vh, rgb(167, 218, 209));
+    color: rgb(22, 22, 22);
+
+    text-align: center;
+    line-height: 11px;
+    font-size: 12px;
+    padding-top: 25px;
+    display:grid;
+    justify-content: center;
+    .notas{
+        margin-top: 12px;
+    }
+}
 }
 
 .article__fotosalpie{
@@ -166,11 +185,11 @@
     background-size: cover;
     background-position: center;
     float: left;
-    margin: 30px 35px 35px 6rem;
+    margin: 32px 35px 35px 12rem;
     padding-left: 5px;
     display: grid;
     text-align: center;
-    justify-content: space-around;
+    justify-content:center;
     }
 }
 
@@ -202,16 +221,13 @@ $base-color: rgba(230, 244, 245, 0.719);
     }
 
     .section__tituloexpo{
-        h2{ 
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 20px;
-        margin: 0px;
-        padding: 0px;
+        .h2__exposiciones{ 
+        font-size: 30px;
     }
     }
 .fotocarousel{
         width: 100%;
-        height: 44vh;
+        height: 70vh;
 }
 .section__box--diseño {
         width: 100%;
@@ -225,54 +241,70 @@ $base-color: rgba(230, 244, 245, 0.719);
     background-color: $bcolor;
 }
 .box {
-    @include sizes(100%, 65vh, rgba(192, 231, 225, 0.842));
+    @include sizes(100%, 80vh, rgba(192, 231, 225, 0.842));
     display:grid;
     justify-content: center;
     line-height: 28px;
-    font-size: 15px;
+    font-size: 10px;
     padding: 30px 35px 35px 25px;
     .textobox1{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 15px;
+        font-size: 16px;
         text-decoration: underline;
+        margin-bottom: 15px;
     }
 }
 
 .box2 {
-    @include sizes(100%, 45vh, rgb(167, 218, 209));
+    @include sizes(100%, 55vh, rgb(167, 218, 209));
     color: rgb(22, 22, 22);
     display:grid;
     justify-content: center;
     text-align: center;
     line-height: 28px;
-    font-size: 15px;
+    font-size: 10px;
     padding: 30px 35px 35px 25px;
     .textobox2{
         text-decoration: underline;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 15px;
-        margin: 0px;
+        font-size: 16px;
+        margin-bottom: 15px;
         padding: 0px;
     }
 }
 
 .box3 {
-    @include sizes(100%, 93vh,  rgba(192, 231, 225, 0.842));
+    @include sizes(100%, 95vh,  rgba(192, 231, 225, 0.842));
     color: rgb(29, 29, 29);
     text-align: center;
-    line-height: 35px;
-    font-size: 15px;
+    line-height: 28px;
+    font-size: 10px;
     padding: 30px 35px 35px 25px;
     .textobox2{
         text-decoration: underline;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 15px;
-        margin: 0px;
+        font-size: 16px;
+        margin-bottom: 15px;
         padding: 0px;
     }
 }
-}
 
+.box4{
+    @include sizes(100%, 75vh,  rgba(192, 231, 225, 0.842));
+    color: rgb(29, 29, 29);
+    text-align: center;
+    line-height: 28px;
+    font-size: 10px;
+    .textobox2{
+        font-size: 16px;
+        padding: 0px;
+        margin-bottom: 15px;
+    }
+    .notas{
+        margin-top: 0px;
+    }
+}
+}
 .article__fotosalpie{
 .expoarmenia-icon,
 .expoescultura-icon {
@@ -286,7 +318,7 @@ $base-color: rgba(230, 244, 245, 0.719);
     background-size: cover;
     text-align: center;
     display: grid;
-    margin: 35px 35px 35px 5rem;
+    margin: 35px 35px 35px 2rem;
     justify-content: space-around;
     }
 }
@@ -300,7 +332,7 @@ $base-color: rgba(230, 244, 245, 0.719);
         background-color: darken($base-color, $in * 3%);
         border: 1px inset  rgba(197, 235, 235, 0.911);
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 17px;
+        font-size: 12px;
         line-height: 15px;
         text-align: center;
     }
@@ -316,9 +348,8 @@ $base-color: rgba(230, 244, 245, 0.719);
         letter-spacing: 5px;
     }
     .section__tituloexpo{
-        h2{ 
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 20px;
+        .h2__exposiciones{ 
+        font-size: 40px;
         }
     }
     .fotocarousel{
@@ -377,7 +408,7 @@ $base-color: rgba(230, 244, 245, 0.719);
     justify-content: center;
     text-align: center;
     line-height: 30px;
-    font-size: 21px;
+    font-size: 20px;
     padding: 30px 50px 50px 30px;
     .textobox2{
         font-size: 30px;
@@ -416,7 +447,7 @@ $base-color: rgba(230, 244, 245, 0.719);
         background-color: darken($base-color, $in * 3%);
         border: 1px inset  rgba(197, 235, 235, 0.911);
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 16px;
+        font-size: 11px;
         line-height: 25px;
         text-align: center;
     }
@@ -434,19 +465,19 @@ $base-color: rgba(230, 244, 245, 0.719);
     text-align: center;
 }
 
-.textobox2{
-    text-decoration: underline;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
 .textobox1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
     text-decoration: underline;
     margin-top: 20px;
     margin-bottom: 0px;
+}
+.textobox2{
+    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 @mixin sizes($width, $height, $bcolor) {
@@ -462,7 +493,7 @@ $base-color: rgba(230, 244, 245, 0.719);
 }
 
 .box2 {
-    @include sizes(100%, 65vh, rgb(167, 218, 209));
+    @include sizes(100%, 50vh, rgb(167, 218, 209));
     color: rgb(22, 22, 22);
     font-weight: bold;
     text-align: center;
@@ -487,7 +518,20 @@ $base-color: rgba(230, 244, 245, 0.719);
         margin-top: 15px;
     }
 }
-
+.box4{
+    @include sizes(100%, 60vh, rgb(167, 218, 209));
+    color: rgb(22, 22, 22);
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+    padding-top: 25px;
+    display:grid;
+    justify-content: center;
+    .notas{
+        margin-top: 30px;
+    }
+}
 
 .expoarmenia-icon,
 .expoescultura-icon {

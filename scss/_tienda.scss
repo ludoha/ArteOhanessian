@@ -55,7 +55,6 @@
     background-size: cover;
     background-color:rgba(60, 127, 253, 0.637);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: left;
     margin-bottom: 0px;
 }
 .section__bienvenida{
@@ -80,8 +79,9 @@
     .titulo__h1--sizetienda{
         font-size: 21px;
         text-align: center;
-        margin-left: 6px;
-        margin-top: 6px;
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-top: 8px;
     }
     .sectiontienda2{
         width: 100%;
