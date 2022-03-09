@@ -100,17 +100,18 @@
         width: 80%;
         text-align: center;
     }
-    
-    .texto__tienda{   
+    .imagenesTiendadeventa{
+        .texto__tienda{   
         background-color: rgba(252, 251, 248, 0.274);
-        height: 5vh;
-        width: 114px;
+        height: 6vh;
+        width: 99%;
         border: 1px solid rgba(192, 192, 245, 0.808);
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
         line-height: 30px;
-        font-size: 15px;
+        font-size: 14px;
         margin-left: 4px;
+    }
     }
     .footer__tienda{
         height: 35px;
@@ -143,19 +144,14 @@
             font-size: 22px;
         }
     }
-    
-    .texto__tienda{   
+    .imagenesTiendadeventa{
+        .texto__tienda{   
         background-color: rgba(252, 251, 248, 0.274);
         height: 5vh;
-        width: 114px;
+        width: 99%;
+        font-size: 13px;
         border: 1px solid rgba(192, 192, 245, 0.808);
-        h4{
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        line-height: 30px;
-        font-size: 10px;
-        margin-left: 4px;
-        }
+    }
     }
 }
     

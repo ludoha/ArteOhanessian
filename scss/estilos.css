@@ -289,15 +289,15 @@ footer {
     width: 80%;
     text-align: center;
   }
-  .texto__tienda {
+  .imagenesTiendadeventa .texto__tienda {
     background-color: rgba(252, 251, 248, 0.274);
-    height: 5vh;
-    width: 114px;
+    height: 6vh;
+    width: 99%;
     border: 1px solid rgba(192, 192, 245, 0.808);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     line-height: 30px;
-    font-size: 15px;
+    font-size: 14px;
     margin-left: 4px;
   }
   .footer__tienda {
@@ -332,18 +332,12 @@ footer {
   .section__encabezadoTienda .encabezadoTienda {
     font-size: 22px;
   }
-  .texto__tienda {
+  .imagenesTiendadeventa .texto__tienda {
     background-color: rgba(252, 251, 248, 0.274);
     height: 5vh;
-    width: 114px;
+    width: 99%;
+    font-size: 13px;
     border: 1px solid rgba(192, 192, 245, 0.808);
-  }
-  .texto__tienda h4 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    line-height: 30px;
-    font-size: 10px;
-    margin-left: 4px;
   }
 }
 
@@ -908,7 +902,7 @@ footer {
     text-align: center;
   }
   .section__box--diseño .box {
-    height: 58vh;
+    height: 60vh;
     width: 100%;
     background-color: rgba(192, 231, 225, 0.842);
     display: -ms-grid;
@@ -916,7 +910,7 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    line-height: 12px;
+    line-height: 13px;
     font-size: 12px;
     padding: 20px 25px 25px 15px;
   }
@@ -929,7 +923,7 @@ footer {
     margin-top: 10px;
   }
   .section__box--diseño .box2 {
-    height: 65vh;
+    height: 55vh;
     width: 100%;
     background-color: #a7dad1;
     color: #161616;
@@ -938,7 +932,7 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    line-height: 12px;
+    line-height: 13px;
     font-size: 12px;
     padding: 20px 25px 25px 15px;
   }
@@ -958,7 +952,7 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
-    line-height: 11px;
+    line-height: 12px;
     font-size: 12px;
     padding: 20px 25px 25px 15px;
   }
@@ -970,13 +964,16 @@ footer {
     margin-bottom: 12px;
     margin-top: 10px;
   }
+  .section__box--diseño .box3 dd {
+    font-size: 10px;
+  }
   .section__box--diseño .box4 {
-    height: 60vh;
+    height: 70vh;
     width: 100%;
     background-color: #a7dad1;
     color: #161616;
     text-align: center;
-    line-height: 11px;
+    line-height: 10px;
     font-size: 12px;
     padding-top: 25px;
     display: -ms-grid;
@@ -985,50 +982,11 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .section__box--diseño .box4 .textobox2 {
-    text-decoration: underline;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  .section__box--diseño .box4 .textobox4 {
     font-size: 16px;
-    padding-bottom: 0px;
-    margin-bottom: 12px;
-    margin-top: 10px;
   }
-  .section__box--diseño .box4 .textobox2 .notas {
-    font-size: 12px;
-  }
-  .article__fotosalpie .expoarmenia-icon,
-  .article__fotosalpie .expoescultura-icon {
-    height: 250px;
-    width: 200px;
-    border: 2px solid, #232324;
-  }
-  .article__fotosalpie .expoarmenia-icon {
-    background-image: url("../img2/expoarmenia.jpg");
-    background-size: cover;
-    background-position: center;
-    float: left;
-    margin: 32px 35px 35px 12rem;
-    padding-left: 5px;
-    display: -ms-grid;
-    display: grid;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .article__fotosalpie .expoescultura-icon {
-    background-image: url("../img2/expoescultura.jpg");
-    background-size: cover;
-    background-position: center;
-    float: left;
-    margin: 32px 35px 35px 12rem;
-    padding-left: 5px;
-    display: -ms-grid;
-    display: grid;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .section__box--diseño .box4 .notas dl dd {
+    font-size: 11px;
   }
   .article__fotosalpie .bucle-1 {
     width: 100%;
@@ -1117,7 +1075,7 @@ footer {
     padding: 0px;
   }
   .section__box--diseño .box3 {
-    height: 95vh;
+    height: 100vh;
     width: 100%;
     background-color: rgba(192, 231, 225, 0.842);
     color: #1d1d1d;
@@ -1132,9 +1090,9 @@ footer {
     padding: 0px;
   }
   .section__box--diseño .box4 {
-    height: 100vh;
+    height: 70vh;
     width: 100%;
-    background-color: rgba(192, 231, 225, 0.842);
+    background-color: #a7dad1;
     color: #1d1d1d;
     text-align: center;
     line-height: 28px;
@@ -1145,32 +1103,6 @@ footer {
     font-size: 16px;
     padding: 0px;
     margin-bottom: 15px;
-  }
-  .article__fotosalpie .expoarmenia-icon,
-  .article__fotosalpie .expoescultura-icon {
-    height: 350px;
-    width: 310px;
-    border: 2px solid, #232324;
-  }
-  .article__fotosalpie .expoarmenia-icon {
-    background-image: url("../img2/expoarmenia.jpg");
-    background-size: cover;
-    text-align: center;
-    display: -ms-grid;
-    display: grid;
-    margin: 35px 35px 35px 2rem;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .article__fotosalpie .expoescultura-icon {
-    background-image: url("../img2/expoescultura.jpg");
-    background-size: cover;
-    text-align: center;
-    display: -ms-grid;
-    display: grid;
-    margin: 35px 35px 35px 2rem;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
   .article__fotosalpie .bucle-1 {
     width: 100%;
@@ -1277,36 +1209,6 @@ footer {
     text-decoration: underline;
     margin-bottom: 35px;
   }
-  .article__fotosalpie .expoarmenia-icon,
-  .article__fotosalpie .expoescultura-icon {
-    height: 410px;
-    width: 370px;
-    border: 2px solid, #232324;
-  }
-  .article__fotosalpie .expoarmenia-icon {
-    background-image: url("../img2/expoarmenia.jpg");
-    background-size: cover;
-    background-position: center;
-    float: left;
-    margin: 40px 35px 30px 7rem;
-    padding-left: 5px;
-    display: -ms-grid;
-    display: grid;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .article__fotosalpie .expoescultura-icon {
-    background-image: url("../img2/expoescultura.jpg");
-    background-size: cover;
-    background-position: center;
-    float: left;
-    margin: 40px 35px 30px 7rem;
-    padding-left: 5px;
-    display: -ms-grid;
-    display: grid;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
   .article__fotosalpie .bucle-1 {
     width: 100%;
     height: 10vh;
@@ -1412,7 +1314,7 @@ footer {
 }
 
 .box4 {
-  height: 70vh;
+  height: 60vh;
   width: 100%;
   background-color: #a7dad1;
   color: #161616;
@@ -1428,40 +1330,34 @@ footer {
           justify-content: center;
 }
 
-.expoarmenia-icon,
-.expoescultura-icon {
-  height: 500px;
-  width: 400px;
+.box4 dl {
+  margin-top: 25px;
+}
+
+.article__fotosalpie .expoarmenia-icon,
+.article__fotosalpie .expoescultura-icon {
+  height: 90vh;
+  width: 10%;
   border: 2px solid, #232324;
 }
 
-.expoarmenia-icon {
+.article__fotosalpie .expoarmenia-icon {
   background-image: url("../img2/expoarmenia.jpg");
   background-size: cover;
-  background-position: center;
-  float: left;
-  margin: 35px 35px 45px 11rem;
-  padding-left: 20px;
-  display: -ms-grid;
-  display: grid;
+  text-align: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-.expoescultura-icon {
+.article__fotosalpie .expoescultura-icon {
   background-image: url("../img2/expoescultura.jpg");
   background-size: cover;
-  background-position: center;
-  float: left;
-  margin: 35px 35px 45px 11rem;
-  padding-left: 20px;
-  display: -ms-grid;
-  display: grid;
+  text-align: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-.bucle-1 {
+.article__fotosalpie .bucle-1 {
   width: 100%;
   height: 9vh;
   background-color: rgba(219, 239, 241, 0.719);
@@ -1472,7 +1368,7 @@ footer {
   text-align: center;
 }
 
-.bucle-2 {
+.article__fotosalpie .bucle-2 {
   width: 100%;
   height: 9vh;
   background-color: rgba(208, 234, 236, 0.719);
@@ -1489,7 +1385,6 @@ footer {
   color: #050505;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 14px;
-  padding-top: 700px;
   text-align: center;
   -webkit-box-align: end;
       -ms-flex-align: end;
