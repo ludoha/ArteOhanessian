@@ -187,6 +187,10 @@ $base-color: rgba(230, 244, 245, 0.719);
     }
 }
 }
+.footer__expo {
+    font-size: 7px;
+    padding-top: 2px;
+}
 }
 @media only screen and (min-width: 577px) and (max-width: 992px) {
     .titulo__h1--sizeexpo {
@@ -515,13 +519,11 @@ $base-color: rgba(230, 244, 245, 0.719);
 }
 .footer__expo {
     background-color:rgba(131, 182, 173, 0.534);
-    height: 30px;
+    height: 40px;
     color: #050505;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 14px;
+    font-size: 10px;
     text-align: center;
-    align-items: flex-end;
-    align-content: flex-end;
     font-variant: small-caps; 
 }
 
