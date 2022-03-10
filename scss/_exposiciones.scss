@@ -105,7 +105,7 @@
     display:grid;
     justify-content: center;
     line-height: 13px;
-    font-size: 12px;
+    font-size: 11px;
     padding: 20px 25px 25px 15px;
     .textobox1{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -122,7 +122,7 @@
     display:grid;
     justify-content: center;
     line-height: 13px;
-    font-size: 12px;
+    font-size: 11px;
     padding: 20px 25px 25px 15px;
     .textobox2{
         text-decoration: underline;
@@ -138,7 +138,7 @@
     justify-content: center;
     text-align: center;
     line-height: 12px;
-    font-size: 12px;
+    font-size: 11px;
     padding: 20px 25px 25px 15px;
     .textobox2{
         text-decoration: underline;
@@ -157,7 +157,7 @@
     color: rgb(22, 22, 22);
     text-align: center;
     line-height: 10px;
-    font-size: 12px;
+    font-size: 11px;
     padding-top: 25px;
     display:grid;
     justify-content: center;
@@ -171,25 +171,30 @@
 }
 
 .article__fotosalpie{
- 
+    .imagenesPie{
+        .expoarmenia-icon,
+        .expoescultura-icon {
+            height: 66vh;
+            width: 300px;
+            justify-content: flex-end;
+        }
+       
 $base-color: rgba(230, 244, 245, 0.719);
 
 @for $in from 1 through 2{
     .bucle-#{$in}{
         width: 100%;
-        height: 9vh;
+        height: 10vh;
         background-color: darken($base-color, $in * 3%);
         border: 1px inset  rgba(197, 235, 235, 0.911);
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 9px;
+        font-size: 10px;
+        padding-top: 7px;
         line-height: 13px;
         text-align: center;
     }
+} 
 }
-}
-.footer__expo {
-    font-size: 7px;
-    padding-top: 2px;
 }
 }
 @media only screen and (min-width: 577px) and (max-width: 992px) {
@@ -285,21 +290,29 @@ $base-color: rgba(230, 244, 245, 0.719);
 }
 }
 .article__fotosalpie{
-
+    .imagenesPie{
+    .expoarmenia-icon,
+    .expoescultura-icon {
+        height: 400px;
+        width: 140px;
+        padding: 0px;
+    }
 $base-color: rgba(230, 244, 245, 0.719);
 
 @for $in from 1 through 2{
     .bucle-#{$in}{
         width: 100%;
-        height: 9vh;
+        height: 10vh;
         background-color: darken($base-color, $in * 3%);
         border: 1px inset  rgba(197, 235, 235, 0.911);
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 12px;
+        font-size: 11px;
+        padding-top: 6px;
         line-height: 15px;
         text-align: center;
     }
 }
+} 
 }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -486,10 +499,11 @@ $base-color: rgba(230, 244, 245, 0.719);
 }
 
 .article__fotosalpie{
+.imagenesPie {   
 .expoarmenia-icon,
 .expoescultura-icon {
-    height: 90vh;
-    width: 10%;
+    height: 92vh;
+    width: 340px;
     border: 2px solid, rgb(35, 35, 36);
 }
 
@@ -501,7 +515,7 @@ $base-color: rgba(230, 244, 245, 0.719);
     justify-content:space-around;
     }
 }
-
+}
 $base-color: rgba(230, 244, 245, 0.719);
 
 @for $in from 1 through 2{
@@ -519,10 +533,10 @@ $base-color: rgba(230, 244, 245, 0.719);
 }
 .footer__expo {
     background-color:rgba(131, 182, 173, 0.534);
-    height: 40px;
+    height: 30px;
     color: #050505;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 10px;
+    font-size: 11px;
     text-align: center;
     font-variant: small-caps; 
 }
