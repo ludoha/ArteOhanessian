@@ -28,6 +28,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
 }
+
 h4{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
@@ -70,13 +71,31 @@ h4{
 }
 
 footer {
-    background-color: rgba(43, 182, 117, 0.74);
-    height: 30px;
+    
+    background-image: linear-gradient(rgb(113, 196, 102), rgb(53, 92, 47));
+    height: 90px;
     color: #050505;
-    font-size: 11px;
+    font-size: 16px;
     text-align: center;
     font-variant: small-caps;
-}
+    .footer__nav__index {
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        color: #050505;
+        .nav__index{
+            text-align: center;
+            justify-content: center;
+            li a{
+                color:black;
+                text-decoration: underline;
+            }
+        }
+    }
+    p{
+        padding-top: 10px;
+    }
+ }
 
 @import "_secciones";
 @import "_media";
