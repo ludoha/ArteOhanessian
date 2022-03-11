@@ -38,11 +38,14 @@
         padding: 0;
         text-align: center;
     }
-    footer{
-        font-size: 8px;
-        text-align: center;
-        padding-top: 2px;
+    
+    .footer__index--estilo{
+        font-size: 11px; 
+        .nav__index{
+            font-size: 13px;
+        }
     }
+    
     }
     
     @media only screen and (min-width: 577px) and (max-width: 992px) {

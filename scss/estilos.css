@@ -28,10 +28,6 @@
   letter-spacing: 5px;
 }
 
-.redesenIndex {
-  margin-right: 90px;
-}
-
 .section__parrafo__h2--style {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bold;
@@ -87,7 +83,7 @@ h4 {
   transition: all 1.2s;
 }
 
-footer {
+.footer__index--estilo {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#71c466), to(#355c2f));
   background-image: linear-gradient(#71c466, #355c2f);
   height: 90px;
@@ -97,26 +93,26 @@ footer {
   font-variant: small-caps;
 }
 
-footer .footer__nav__index {
+.footer__index--estilo .footer__nav__index {
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 18px;
   color: #050505;
 }
 
-footer .footer__nav__index .nav__index {
+.footer__index--estilo .footer__nav__index .nav__index {
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-footer .footer__nav__index .nav__index li a {
+.footer__index--estilo .footer__nav__index .nav__index li a {
   color: black;
   text-decoration: underline;
 }
 
-footer p {
+.footer__index--estilo p {
   padding-top: 10px;
 }
 
@@ -191,10 +187,11 @@ footer p {
     padding: 0;
     text-align: center;
   }
-  footer {
-    font-size: 8px;
-    text-align: center;
-    padding-top: 2px;
+  .footer__index--estilo {
+    font-size: 11px;
+  }
+  .footer__index--estilo .nav__index {
+    font-size: 13px;
   }
 }
 
@@ -435,13 +432,36 @@ footer p {
 }
 
 .footer__tienda {
-  background-color: rgba(117, 164, 252, 0.637);
-  height: 30px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#aabeca), to(#66737a));
+  background-image: linear-gradient(#aabeca, #66737a);
+  height: 90px;
   color: #050505;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 11px;
+  font-size: 16px;
   text-align: center;
   font-variant: small-caps;
+}
+
+.footer__tienda .footer__nav__tienda {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  color: #050505;
+}
+
+.footer__tienda .footer__nav__tienda .nav__tienda {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__tienda .footer__nav__tienda .nav__tienda li a {
+  color: black;
+  text-decoration: underline;
+}
+
+.footer__tienda p {
+  padding-top: 10px;
 }
 
 * {
@@ -750,6 +770,7 @@ footer p {
   .galeriadefotos .contenedor {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 3rem;
   }
   .img1 {
     -ms-grid-column: 1;
@@ -831,15 +852,36 @@ footer p {
 }
 
 .footer__galeria {
-  background-color: rgba(215, 128, 250, 0.637);
-  width: 100%;
-  height: 30px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(215, 128, 250, 0.637)), to(rgba(112, 68, 129, 0.925)));
+  background-image: linear-gradient(rgba(215, 128, 250, 0.637), rgba(112, 68, 129, 0.925));
+  height: 90px;
   color: #050505;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 11px;
+  font-size: 16px;
   text-align: center;
   font-variant: small-caps;
-  padding-top: 2rem;
+}
+
+.footer__galeria .footer__nav__galeria {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  color: #050505;
+}
+
+.footer__galeria .footer__nav__galeria .nav__galeria {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__galeria .footer__nav__galeria .nav__galeria li a {
+  color: black;
+  text-decoration: underline;
+}
+
+.footer__galeria p {
+  padding-top: 10px;
 }
 
 * {
@@ -1441,13 +1483,36 @@ footer p {
 }
 
 .footer__expo {
-  background-color: rgba(131, 182, 173, 0.534);
-  height: 30px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c7ebe3), to(#95ada9));
+  background-image: linear-gradient(#c7ebe3, #95ada9);
+  height: 90px;
   color: #050505;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 11px;
+  font-size: 16px;
   text-align: center;
   font-variant: small-caps;
+}
+
+.footer__expo .footer__nav__expo {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  color: #050505;
+}
+
+.footer__expo .footer__nav__expo .nav__expo {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__expo .footer__nav__expo .nav__expo li a {
+  color: black;
+  text-decoration: underline;
+}
+
+.footer__expo p {
+  padding-top: 10px;
 }
 
 * {
@@ -1551,6 +1616,29 @@ footer p {
   .mensaje1 {
     margin-top: 15px;
     margin-bottom: 35px;
+  }
+  .footer__contacto {
+    height: 90px;
+    font-size: 5px;
+  }
+  .footer__contacto .footer__nav__contacto {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 5px;
+    color: #050505;
+  }
+  .footer__contacto .footer__nav__contacto .nav__contacto {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__contacto .footer__nav__contacto .nav__contacto li a {
+    color: black;
+    text-decoration: underline;
+  }
+  .footer__contacto p {
+    padding-top: 8px;
   }
 }
 
@@ -1669,14 +1757,36 @@ footer p {
   line-height: 25px;
 }
 
-.footer__contactos {
-  background-color: rgba(36, 88, 54, 0.637);
-  width: 100%;
-  height: 30px;
+.footer__contacto {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(138, 221, 193, 0.822)), to(rgba(73, 117, 103, 0.938)));
+  background-image: linear-gradient(rgba(138, 221, 193, 0.822), rgba(73, 117, 103, 0.938));
+  height: 90px;
   color: #050505;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 11px;
+  font-size: 16px;
   text-align: center;
   font-variant: small-caps;
+}
+
+.footer__contacto .footer__nav__contacto {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  color: #050505;
+}
+
+.footer__contacto .footer__nav__contacto .nav__contacto {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__contacto .footer__nav__contacto .nav__contacto li a {
+  color: black;
+  text-decoration: underline;
+}
+
+.footer__contacto p {
+  padding-top: 10px;
 }
 /*# sourceMappingURL=estilos.css.map */

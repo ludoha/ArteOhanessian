@@ -532,12 +532,28 @@ $base-color: rgba(230, 244, 245, 0.719);
 }
 }
 .footer__expo {
-    background-color:rgba(131, 182, 173, 0.534);
-    height: 30px;
+    background-image: linear-gradient(  rgb(199, 235, 227), rgb(149, 173, 169));
+    height: 90px;
     color: #050505;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 11px;
+    font-size: 16px;
     text-align: center;
-    font-variant: small-caps; 
+    font-variant: small-caps;
+    .footer__nav__expo {
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        color: #050505;
+        .nav__expo{
+            text-align: center;
+            justify-content: center;
+            li a{
+            color:black;
+            text-decoration: underline;
+            }
+        }
+}
+p{
+padding-top: 10px;
+}
 }
 

@@ -205,11 +205,27 @@
     text-align: center;
 }
 .footer__tienda{
-        background-color:rgba(117, 164, 252, 0.637) ;
-        height: 30px;
+        background-image: linear-gradient(rgb(170, 190, 202),rgb(102, 115, 122));
+        height: 90px;
         color: #050505;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 11px;
+        font-size: 16px;
         text-align: center;
         font-variant: small-caps;
-}
+        .footer__nav__tienda {
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            color: #050505;
+            .nav__tienda{
+                text-align: center;
+                justify-content: center;
+                li a{
+                color:black;
+                text-decoration: underline;
+                }
+            }
+    }
+    p{
+    padding-top: 10px;
+    }
+    }
