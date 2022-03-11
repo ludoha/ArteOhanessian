@@ -145,6 +145,18 @@
         margin-right: 35px;
         margin-top: 8px;
     }
+.galeriadefotos .contenedor{
+    padding-bottom: 1rem;
+}  
+.footer__galeria{
+    font-size: 11px; 
+    .nav__galeria{
+    font-size: 12px;
+    }
+    p{
+        font-size: 12px;
+    }
+}
 }
 @media only screen and (min-width: 577px) and (max-width: 992px){
     .titulo__h1--sizegaleria {

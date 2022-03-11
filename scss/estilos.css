@@ -191,7 +191,11 @@ h4 {
     font-size: 11px;
   }
   .footer__index--estilo .nav__index {
-    font-size: 13px;
+    font-size: 10px;
+  }
+  .footer__index--estilo p {
+    font-size: 10px;
+    margin-top: 10px;
   }
 }
 
@@ -647,6 +651,18 @@ h4 {
     margin-left: 35px;
     margin-right: 35px;
     margin-top: 8px;
+  }
+  .galeriadefotos .contenedor {
+    padding-bottom: 1rem;
+  }
+  .footer__galeria {
+    font-size: 11px;
+  }
+  .footer__galeria .nav__galeria {
+    font-size: 12px;
+  }
+  .footer__galeria p {
+    font-size: 12px;
   }
 }
 
