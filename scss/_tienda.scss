@@ -114,12 +114,14 @@
     }
     }
     .footer__tienda{
-        height: 35px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 5px;
-        line-height: 20px;
-        text-align: center;
-}
+        font-size: 11px; 
+        .nav__tienda{
+        font-size: 11px;
+        }
+        p{
+            font-size: 11px;
+        }
+    }
 }
 @media only screen and (min-width: 577px) and (max-width: 992px){
     .titulo__h1--sizetienda {

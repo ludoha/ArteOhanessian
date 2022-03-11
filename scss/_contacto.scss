@@ -97,27 +97,16 @@
         margin-top: 15px;
         margin-bottom: 35px;
     }
+    
     .footer__contacto{
-        height: 90px;
-        font-size: 5px;
-        .footer__nav__contacto {
-            text-align: center;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: 5px;
-            color: #050505;
-            .nav__contacto{
-                text-align: center;
-                justify-content: center;
-                li a{
-                color:black;
-                text-decoration: underline;
-                }
-            }
+        font-size: 11px; 
+        .nav__contacto{
+        font-size: 11px;
         }
         p{
-            padding-top: 8px;
-        }   
-    } 
+            font-size: 11px;
+        }
+    }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 992px){

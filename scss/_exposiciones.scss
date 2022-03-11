@@ -151,6 +151,7 @@
     dd{
         font-size: 10px;
     }
+
 }
 .box4 {
     @include sizes(100%, 70vh, rgb(167, 218, 209));
@@ -171,14 +172,15 @@
 }
 
 .article__fotosalpie{
-    .imagenesPie{
+    .imagenesPie {   
         .expoarmenia-icon,
         .expoescultura-icon {
-            height: 66vh;
-            width: 300px;
-            justify-content: flex-end;
+            height: 80px;
+            width: 130px;
+            border: 2px solid, rgb(35, 35, 36);
         }
-       
+
+
 $base-color: rgba(230, 244, 245, 0.719);
 
 @for $in from 1 through 2{
@@ -189,12 +191,22 @@ $base-color: rgba(230, 244, 245, 0.719);
         border: 1px inset  rgba(197, 235, 235, 0.911);
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 10px;
-        padding-top: 7px;
+        padding: 0px;
+        margin: 0px;
         line-height: 13px;
         text-align: center;
     }
 } 
+ }
 }
+.footer__expo{
+    font-size: 11px; 
+    .nav__expo{
+    font-size: 11px;
+    }
+    p{
+        font-size: 11px;
+    }
 }
 }
 @media only screen and (min-width: 577px) and (max-width: 992px) {
@@ -293,8 +305,8 @@ $base-color: rgba(230, 244, 245, 0.719);
     .imagenesPie{
     .expoarmenia-icon,
     .expoescultura-icon {
-        height: 400px;
-        width: 140px;
+        height: 150px;
+        width: 10px;
         padding: 0px;
     }
 $base-color: rgba(230, 244, 245, 0.719);
@@ -502,8 +514,8 @@ $base-color: rgba(230, 244, 245, 0.719);
 .imagenesPie {   
 .expoarmenia-icon,
 .expoescultura-icon {
-    height: 92vh;
-    width: 340px;
+    height: 480px;
+    width: 230px;
     border: 2px solid, rgb(35, 35, 36);
 }
 
@@ -511,6 +523,7 @@ $base-color: rgba(230, 244, 245, 0.719);
     .#{$expo}-icon {
     background-image: url("../img2/#{$expo}.jpg");
     background-size: cover;
+    object-fit: contain;
     text-align: center;
     justify-content:space-around;
     }
@@ -532,7 +545,7 @@ $base-color: rgba(230, 244, 245, 0.719);
 }
 }
 .footer__expo {
-    background-image: linear-gradient(  rgb(199, 235, 227), rgb(149, 173, 169));
+    background-image: linear-gradient(  rgb(188, 221, 214), rgb(149, 173, 169));
     height: 90px;
     color: #050505;
     font-size: 16px;

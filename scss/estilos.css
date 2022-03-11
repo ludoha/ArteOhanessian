@@ -190,11 +190,10 @@ h4 {
     text-align: center;
   }
   .footer__index--estilo {
-    font-size: 12px;
-    width: 100%;
+    font-size: 11px;
   }
   .footer__index--estilo .nav__index {
-    font-size: 12px;
+    font-size: 11px;
   }
   .footer__index--estilo p {
     font-size: 10px;
@@ -347,11 +346,13 @@ h4 {
     margin-left: 4px;
   }
   .footer__tienda {
-    height: 35px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 5px;
-    line-height: 20px;
-    text-align: center;
+    font-size: 11px;
+  }
+  .footer__tienda .nav__tienda {
+    font-size: 11px;
+  }
+  .footer__tienda p {
+    font-size: 11px;
   }
 }
 
@@ -1093,11 +1094,9 @@ h4 {
   }
   .article__fotosalpie .imagenesPie .expoarmenia-icon,
   .article__fotosalpie .imagenesPie .expoescultura-icon {
-    height: 66vh;
-    width: 300px;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    height: 80px;
+    width: 130px;
+    border: 2px solid, #232324;
   }
   .article__fotosalpie .imagenesPie .bucle-1 {
     width: 100%;
@@ -1106,7 +1105,8 @@ h4 {
     border: 1px inset rgba(197, 235, 235, 0.911);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 10px;
-    padding-top: 7px;
+    padding: 0px;
+    margin: 0px;
     line-height: 13px;
     text-align: center;
   }
@@ -1117,9 +1117,19 @@ h4 {
     border: 1px inset rgba(197, 235, 235, 0.911);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 10px;
-    padding-top: 7px;
+    padding: 0px;
+    margin: 0px;
     line-height: 13px;
     text-align: center;
+  }
+  .footer__expo {
+    font-size: 11px;
+  }
+  .footer__expo .nav__expo {
+    font-size: 11px;
+  }
+  .footer__expo p {
+    font-size: 11px;
   }
 }
 
@@ -1219,8 +1229,8 @@ h4 {
   }
   .article__fotosalpie .imagenesPie .expoarmenia-icon,
   .article__fotosalpie .imagenesPie .expoescultura-icon {
-    height: 400px;
-    width: 140px;
+    height: 150px;
+    width: 10px;
     padding: 0px;
   }
   .article__fotosalpie .imagenesPie .bucle-1 {
@@ -1457,14 +1467,16 @@ h4 {
 
 .article__fotosalpie .imagenesPie .expoarmenia-icon,
 .article__fotosalpie .imagenesPie .expoescultura-icon {
-  height: 92vh;
-  width: 340px;
+  height: 480px;
+  width: 230px;
   border: 2px solid, #232324;
 }
 
 .article__fotosalpie .imagenesPie .expoarmenia-icon {
   background-image: url("../img2/expoarmenia.jpg");
   background-size: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   text-align: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -1473,6 +1485,8 @@ h4 {
 .article__fotosalpie .imagenesPie .expoescultura-icon {
   background-image: url("../img2/expoescultura.jpg");
   background-size: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   text-align: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -1501,8 +1515,8 @@ h4 {
 }
 
 .footer__expo {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#c7ebe3), to(#95ada9));
-  background-image: linear-gradient(#c7ebe3, #95ada9);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bcddd6), to(#95ada9));
+  background-image: linear-gradient(#bcddd6, #95ada9);
   height: 90px;
   color: #050505;
   font-size: 16px;
@@ -1636,27 +1650,13 @@ h4 {
     margin-bottom: 35px;
   }
   .footer__contacto {
-    height: 90px;
-    font-size: 5px;
+    font-size: 11px;
   }
-  .footer__contacto .footer__nav__contacto {
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 5px;
-    color: #050505;
-  }
-  .footer__contacto .footer__nav__contacto .nav__contacto {
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .footer__contacto .footer__nav__contacto .nav__contacto li a {
-    color: black;
-    text-decoration: underline;
+  .footer__contacto .nav__contacto {
+    font-size: 11px;
   }
   .footer__contacto p {
-    padding-top: 8px;
+    font-size: 11px;
   }
 }
 
