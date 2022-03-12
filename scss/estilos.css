@@ -33,6 +33,12 @@
   font-weight: bold;
 }
 
+.biografia--estilo .link__bio h3 {
+  font-size: 16px;
+  color: #050505;
+  text-decoration: underline;
+}
+
 h4 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 20px;
@@ -1608,6 +1614,26 @@ h4 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.section__carouselcontacto {
+  width: 60%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.fotocarouselContacto {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.contacto__estilo h3 {
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contacto__estilo h3 .seguime h3 {
+  font-size: 19px;
+}
+
 .imagenes__redescont:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -1620,6 +1646,31 @@ h4 {
     margin-left: 35px;
     margin-right: 35px;
     margin-top: 8px;
+  }
+  .section__contacto {
+    font-size: 16px;
+  }
+  .section__carouselcontacto {
+    width: 65%;
+  }
+  .section__carouselcontacto h3 {
+    font-size: 18px;
+  }
+  .contacto__estilo h3 {
+    font-size: 13px;
+  }
+  .contacto__estilo h3 .seguime {
+    font-size: 23px;
+  }
+  .section__formulario {
+    height: 90%;
+  }
+  .section__form--style {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .section__form--style h3 {
+    font-size: 17px;
+    margin-top: 5px;
   }
   .form {
     height: 80vh;
@@ -1640,7 +1691,7 @@ h4 {
   }
   .botones {
     margin-left: 0px;
-    padding-top: 4rem;
+    padding-top: 1rem;
     padding-left: 0px;
     text-align: center;
     line-height: 5px;
@@ -1700,6 +1751,15 @@ h4 {
     text-align: center;
     line-height: 5px;
   }
+}
+
+.section__form--style {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.section__form--style h3 {
+  font-size: 22px;
+  margin-top: 5px;
 }
 
 .form {
@@ -1768,11 +1828,16 @@ h4 {
 }
 
 .botones {
-  width: 70px;
+  width: 50px;
   height: 60px;
   margin-top: 10rem;
   margin-left: 1rem;
   line-height: 25px;
+}
+
+.botones .enviar__boton {
+  font-size: 8px;
+  padding: 5px 5px 5px 5px;
 }
 
 .footer__contacto {

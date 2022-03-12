@@ -54,6 +54,22 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 }
+.section__carouselcontacto {
+    width: 60%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.fotocarouselContacto{
+    width: 100%;
+    object-fit: contain;
+}
+
+.contacto__estilo h3{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    .seguime h3{
+        font-size: 19px;
+    }
+}
 
 .imagenes__redescont:hover{
     transform:scale(1.2);
@@ -66,6 +82,31 @@
         margin-left: 35px;
         margin-right: 35px;
         margin-top: 8px;
+    }
+    .section__contacto{
+        font-size: 16px;
+    }
+    .section__carouselcontacto {
+        width: 65%;
+        h3{
+            font-size: 18px;
+        }
+    }
+    .contacto__estilo h3{
+        font-size: 13px;
+        .seguime{
+            font-size: 23px;
+        }
+    }
+    .section__formulario{
+        height: 90%;
+    }
+    .section__form--style{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    h3{
+        font-size: 17px;
+        margin-top: 5px;
+    }
     }
     .form{
         height: 80vh;
@@ -88,7 +129,7 @@
     }
     .botones{  
         margin-left: 0px;
-        padding-top: 4rem;
+        padding-top: 1rem;
         padding-left: 0px;
         text-align: center;
         line-height: 5px;
@@ -152,6 +193,13 @@
     }
 }
 
+.section__form--style{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    h3{
+        font-size: 22px;
+        margin-top: 5px;
+    }
+}
 .form{
     height: 100vh;
     width: 100%;
@@ -211,12 +259,16 @@
     width: 90%;
     height: 30vh;
 }
-.botones{  
-    width: 70px;
+.botones{
+    width: 50px;
     height: 60px; 
     margin-top: 10rem;
     margin-left: 1rem;
     line-height: 25px;
+    .enviar__boton{
+        font-size: 8px;
+        padding: 5px 5px 5px 5px;
+    }
 }
 .footer__contacto{
     background-image: linear-gradient(rgba(138, 221, 193, 0.822), rgba(73, 117, 103, 0.938));
