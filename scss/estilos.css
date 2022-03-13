@@ -1665,13 +1665,16 @@ h4 {
   }
   .mensaje1 {
     margin-top: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
+  }
+  .mensaje1 #texto {
+    padding-top: 2px;
   }
   .botones {
     width: 50%;
     margin-left: 0px;
-    padding-top: 2.9rem;
-    padding-left: 39px;
+    padding-top: 3rem;
+    padding-left: 48px;
     padding-bottom: 15px;
   }
   .footer__contacto {
