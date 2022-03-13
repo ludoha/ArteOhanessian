@@ -90,6 +90,7 @@
     }
     .section__carouselcontacto {
         width: 75%;
+        justify-content: space-around;
     }
     .contacto__estilo h3{
         font-size: 13px;
@@ -104,12 +105,18 @@
         text-align: center;
         }
     }
+    .form{
+        justify-content: center;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+    }
     .form .ficha{
         width: 110%;
         height: 100vh;
         text-align: center;
-        padding: 55px 55px 10px 10px;
-        margin-right: 100px;
+        padding: 0px 0px 10px 10px;
+        margin-right: 0px;
         margin-top: 0px;
         justify-content: center;
     }
@@ -255,7 +262,7 @@
     height: 100vh;
     width: 81%;
     margin-bottom: 3px;
-    padding: 20px 20px 55px 20px;
+    padding: 20px 20px 20px 20px;
     justify-content: center;
 }
 
