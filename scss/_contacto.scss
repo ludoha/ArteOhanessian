@@ -24,7 +24,6 @@
     
     }
 }
-
 .bodycontacto{
     background-color: rgba(135, 216, 189, 0.822);
 }
@@ -55,7 +54,7 @@
     }
 }
 .section__carouselcontacto {
-    width: 65%;
+    width: 70%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .fotocarouselContacto{
@@ -75,7 +74,7 @@
     transform:scale(1.2);
 }
 
-@media (max-width: 576px){
+@media only screen and (max-width: 576px){
     .titulo__h1--sizecontacto{
         font-size: 21px;
         text-align: center;
@@ -83,84 +82,69 @@
         margin-right: 35px;
         margin-top: 8px;
     }
-
-    .section__contacto{
-        .h2__contacto{
-            font-size: 19px;
-        }   
-    }
     .section__carouselcontacto {
         width: 75%;
-        .seguime h3{
-            font-size: 18px;
-        }
     }
     .contacto__estilo h3{
         font-size: 13px;
-        .seguime{
-            font-size: 23px;
-        }
+    }
+    .seguime{
+        font-size: 23px;
     }
     .section__form--style{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    h3{
+        h3{
         font-size: 17px;
         margin-top: 5px;
-    }
-    }
-    
-    .datos{
-        height: 40px;
-        margin-top: 2rem;
-        margin-left: 1rem;
-        line-height: 5px;
-            input{
-            width: 50%;
-            border-bottom: 1px solid rgba(26, 104, 61, 0.863);
+        text-align: center;
         }
     }
+    .form .ficha{
+        height: 100vh;
+        text-align: center;
+        padding: 35px 35px 35px 35px;
+    }
+    .datos{
+            input{
+            width: 10px;
+            }
+    }
     .datos2{
-        height: 10px;
-        margin-left: 1rem;
-        line-height: 5px;
-        border-radius: 10px;
+        margin-bottom: 5px;
         input{
-            width: 46%;
+            width: 1%;
         }
     }
     .mail{
-        height: 10px;
-        margin-top: 2rem;
-        margin-left: 1rem;
-        line-height: 5px;
-        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 5px;
+        margin-top: 5px;
         input{
-            width: 40%;
+            text-align: left;
         }
     }
     .mensaje{
-        height: 20px;
-        margin-top: 3rem;
-        margin-left: 1rem;
-        line-height: 5px;
-        border-radius: 10px;
-        }
+        margin-bottom: 5px;
+        margin-top: 4rem;
+        padding-left: 16px;
     }
-
-    .botones{
-        width: 50px;
-        height: 60px; 
-        margin-top: 9rem;
-        margin-left: 1rem;
-        line-height: 25px;
-        input{
-            width: 60px;
-            height: 20px;
-            padding: 2px 2px 3px 3px;
-        }
+    .mensaje h4{
+        font-size: 15px;
+        margin-top: 12px;
+        padding-right: 25px;
+        text-align: center;
+    }
+    .mensaje1{
+        margin-top: 15px;
+        margin-bottom: 32px;
+    }
+    .botones{  
+        margin-left: 0px;
+        padding-top: 17px;
+        padding-left: 30px;
+        padding-bottom: 15px;
     }
     .footer__contacto{
-        font-size: 11px; 
+    font-size: 11px; 
         .nav__contacto{
         font-size: 11px;
         }
@@ -184,16 +168,22 @@
     .h2__contacto{
         font-size: 30px;
     }
-
+    .form .ficha{
+        height: 95vh;
+        padding: 20px 20px 20px 20px;
+    }
     .form { 
         width: 100%;
+        height: 99vh;
         .botones{  
         margin-left: 0px;
-        padding-top: 2rem;
-        padding-left: 0px;
-    }
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-bottom: 25px;
+        }
     }
 }
+
 @media only screen and (min-width: 993px){
     .titulo__h1--sizecontacto{
         font-size: 40px;
@@ -206,39 +196,50 @@
     .h2__contacto{
         font-size: 40px;
     }
+    .form .ficha{
+        height: 100vh;
+        text-align: center;
+        padding: 25px 25px 25px 25px;
+    }
+    .mensaje{
+        margin-top: 5px;
+    }
     .botones{  
         margin-left: 0px;
-        padding-top: 4rem;
-        padding-left: 0px;
+        margin-top: 15px;
+        padding-top: 52px;
+        padding-left: 19px;
         text-align: center;
         line-height: 5px;
     }
 }
 
 .section__form--style{
+    padding-left: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     h3{
         font-size: 22px;
         margin-top: 5px;
+        text-align: center;
     }
 }
 .form{
     height: 100vh;
-    width: 80%;
+    width: 81%;
     margin-bottom: 3px;
-    padding: 1rem;
-    padding: 5px 5px 5px 5px;
+    padding: 20px 20px 55px 20px;
+    justify-content: center;
 }
 
 .form .ficha{
     width: 100%;
-    height: 85vh;
+    height: 88vh;
     font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 2px solid rgba(26, 104, 61, 0.432);
     box-shadow: 7px 13px 35px rgba(7, 7, 7, 0.473);
     border-radius: 10px;
-    padding: 10px 10px 10px 10px;
+    padding: 12px 12px 12px 12px;
 }
 
 .datos{
@@ -247,7 +248,11 @@
     margin-left: 1rem;
     line-height: 5px;
         input{
-        width: 59%;
+        width: 51%;
+        background-color: rgba(253, 255, 254, 0.63);
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgba(26, 104, 61, 0.863);
         }
 }
 .datos2{
@@ -256,7 +261,7 @@
     line-height: 5px;
     border-radius: 10px;
     input{
-        width: 74%;
+        width: 70%;
         background-color: rgba(253, 255, 254, 0.63);
         border: none;
         outline: none;
@@ -270,7 +275,7 @@
     line-height: 5px;
     border-radius: 10px;
     input{
-        width: 81%;
+        width: 79%;
         background-color: rgba(253, 255, 254, 0.63);
         border: none;
         outline: none;
@@ -291,17 +296,16 @@
 .mensaje h4{
     font-size: 15px;
     margin-top: 10px;
-    margin-top: 10px;
-
+    margin-bottom: 20px;
 }
 .mensaje1{
-    margin-top: 25px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+
 }
 #texto{
     width: 90%;
     height: 30vh;
+    margin-bottom: 25px;
 }
 .botones{
     width: 50px;
