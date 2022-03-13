@@ -57,6 +57,12 @@
     width: 70%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.carousel__contacto{
+    h3:hover{
+        transform: scale(1);
+        color: rgb(13, 173, 120);
+    }
+}
 .fotocarouselContacto{
     width: 100%;
     object-fit: contain;
@@ -99,48 +105,60 @@
         }
     }
     .form .ficha{
+        width: 100%;
         height: 100vh;
         text-align: center;
-        padding: 35px 35px 35px 35px;
+        padding: 25px 25px 25px 25px;
+        margin-top: 0px;
+        position: relative;
     }
     .datos{
+        padding-top: 0px;
+        margin-top: 0px;
+        padding-bottom: 20px;
+        line-height: 5px;
             input{
-            width: 10px;
+            width: 15px;
             }
     }
     .datos2{
-        margin-bottom: 5px;
+        padding: 10px;
+        margin-top: 12px;
+        padding-bottom: 15px;
+        margin-bottom: 10px;
         input{
-            width: 1%;
+            width: 2%;
         }
     }
     .mail{
         text-align: center;
-        margin-bottom: 5px;
-        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+        padding-top: 11px;
         input{
+            width: 1%;
             text-align: left;
         }
     }
     .mensaje{
-        margin-bottom: 5px;
-        margin-top: 4rem;
+        margin-bottom: 3px;
+        margin-top: 9px;
         padding-left: 16px;
     }
     .mensaje h4{
         font-size: 15px;
         margin-top: 12px;
         padding-right: 25px;
-        text-align: center;
     }
     .mensaje1{
         margin-top: 15px;
-        margin-bottom: 32px;
+        margin-bottom: 5px;
     }
     .botones{  
+        width: 50%;
         margin-left: 0px;
-        padding-top: 17px;
-        padding-left: 30px;
+        padding-top: 2.2rem;
+        padding-left: 34px;
         padding-bottom: 15px;
     }
     .footer__contacto{
@@ -171,14 +189,15 @@
     .form .ficha{
         height: 95vh;
         padding: 20px 20px 20px 20px;
+        text-align: left;
     }
     .form { 
         width: 100%;
         height: 99vh;
         .botones{  
         margin-left: 0px;
-        padding-top: 15px;
-        padding-left: 20px;
+        padding-top: 12rem;
+        padding-left: 4px;
         padding-bottom: 25px;
         }
     }
@@ -201,6 +220,11 @@
         text-align: center;
         padding: 25px 25px 25px 25px;
     }
+    .datos{
+            input{
+            width: 1%;
+            }
+    }
     .mensaje{
         margin-top: 5px;
     }
@@ -220,7 +244,10 @@
     h3{
         font-size: 22px;
         margin-top: 5px;
-        text-align: center;
+        text-align:left;
+    }
+    h3:hover{
+        color: rgb(13, 173, 120);
     }
 }
 .form{
@@ -245,7 +272,6 @@
 .datos{
     height: 40px;
     margin-top: 2rem;
-    margin-left: 1rem;
     line-height: 5px;
         input{
         width: 51%;
@@ -255,9 +281,9 @@
         border-bottom: 1px solid rgba(26, 104, 61, 0.863);
         }
 }
+
 .datos2{
     height: 10px;
-    margin-left: 1rem;
     line-height: 5px;
     border-radius: 10px;
     input{
@@ -271,7 +297,6 @@
 .mail{
     height: 10px;
     margin-top: 2rem;
-    margin-left: 1rem;
     line-height: 5px;
     border-radius: 10px;
     input{
@@ -285,7 +310,6 @@
 .mensaje{
     height: 20px;
     margin-top: 3rem;
-    margin-left: 1rem;
     line-height: 5px;
     border-radius: 10px;
     #texto{
@@ -296,7 +320,7 @@
 .mensaje h4{
     font-size: 15px;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .mensaje1{
     margin-top: 20px;
@@ -305,14 +329,15 @@
 #texto{
     width: 90%;
     height: 30vh;
-    margin-bottom: 25px;
+    margin-bottom: 0.5rem;
 }
 .botones{
     width: 50px;
     height: 60px; 
-    margin-top: 9rem;
-    margin-left: 1rem;
+    padding-top: 12rem;
+    padding-left: 20px;
     line-height: 25px;
+    float: length;
     input{
         width: 100px;
         height: 30px;
@@ -320,7 +345,13 @@
         border-bottom: 1px solid rgba(26, 104, 61, 0.788);
         padding: 2px 2px 3px 3px;
     }
+    input:hover{
+        border: 2px dotted black;
+        color: rgb(13, 173, 120);
+    }
 }
+
+
 .footer__contacto{
     background-image: linear-gradient(rgba(138, 221, 193, 0.822), rgba(73, 117, 103, 0.938));
     height: 90px;
