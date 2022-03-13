@@ -33,8 +33,14 @@
   font-weight: bold;
 }
 
+.biografia--estilo .massobremi {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 .biografia--estilo .link__bio h3 {
-  font-size: 16px;
+  font-size: 18px;
   color: #050505;
   text-decoration: underline;
 }
@@ -69,12 +75,6 @@ h4 {
 .main__carousel .carousel-inner img .carousel-indicators li {
   height: 6px;
   width: 40px;
-}
-
-.massobremi {
-  text-align: center;
-  margin-bottom: 10px;
-  text-decoration: underline;
 }
 
 .redes__index:hover {
@@ -146,7 +146,7 @@ h4 {
 }
 
 .section__article--color5 {
-  background-color: #c59459;
+  background-color: #caa271;
 }
 
 .section__article--color6 {
@@ -171,11 +171,12 @@ h4 {
     margin-top: 8px;
   }
   .redesenIndex {
-    width: 1%;
-    margin-right: 0px;
+    width: 12%;
     margin-left: 0px;
     margin-top: 1px;
+    padding-left: 0px;
     padding-top: 1px;
+    text-decoration: none;
   }
   h2 {
     font-size: 20px;
@@ -401,6 +402,7 @@ h4 {
     margin-top: 8px;
     margin-bottom: 15px;
     letter-spacing: 5px;
+    text-align: center;
   }
   .sectiontienda2 {
     width: 100%;
@@ -570,6 +572,12 @@ h4 {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+  .imgg:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: all 1.2s;
+    transition: all 1.2s;
+  }
   .img1 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -678,11 +686,15 @@ h4 {
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   .titulo__h1--sizegaleria {
     font-size: 35px;
-    margin-left: 0px;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
     margin-top: 8px;
     text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .titulo__h1--sizegaleria .titulo__h1--colorcontacto {
+  .titulo__h1--sizegaleria .titulo__h1--colorgaleria {
     text-align: center;
   }
 }
@@ -694,10 +706,11 @@ h4 {
     margin-top: 8px;
     margin-bottom: 15px;
     letter-spacing: 5px;
+    text-align: center;
   }
 }
 
-/*--fin media titulo pagina--*/
+/*--fin media TITULO pagina--*/
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .galeriadefotos .contenedor {
     -ms-grid-columns: (1fr)[3];
@@ -783,15 +796,6 @@ h4 {
 }
 
 @media only screen and (min-width: 768px) {
-  .titulo__h1--sizegaleria {
-    font-size: 40px;
-    text-align: center;
-    margin-left: 10rem;
-    margin-top: 8px;
-  }
-  .titulo__h1--sizegaleria .titulo__h1--colorgaleria {
-    text-align: center;
-  }
   .galeriadefotos .contenedor {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
@@ -1098,34 +1102,36 @@ h4 {
   .section__box--diseño .box4 .notas dl dd {
     font-size: 11px;
   }
-  .article__fotosalpie .imagenesPie .expoarmenia-icon,
-  .article__fotosalpie .imagenesPie .expoescultura-icon {
-    height: 80px;
-    width: 130px;
-    border: 2px solid, #232324;
-  }
-  .article__fotosalpie .imagenesPie .bucle-1 {
+  .article__fotosalpie .imagenesPie {
     width: 100%;
-    height: 10vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-right: 3rem;
+  }
+  .article__fotosalpie .bucle-1 {
+    width: 100%;
+    height: 100vh;
     background-color: rgba(219, 239, 241, 0.719);
     border: 1px inset rgba(197, 235, 235, 0.911);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 10px;
     padding: 0px;
     margin: 0px;
-    line-height: 13px;
+    line-height: 3px;
     text-align: center;
   }
-  .article__fotosalpie .imagenesPie .bucle-2 {
+  .article__fotosalpie .bucle-2 {
     width: 100%;
-    height: 10vh;
+    height: 100vh;
     background-color: rgba(208, 234, 236, 0.719);
     border: 1px inset rgba(197, 235, 235, 0.911);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 10px;
     padding: 0px;
     margin: 0px;
-    line-height: 13px;
+    line-height: 3px;
     text-align: center;
   }
   .footer__expo {
@@ -1235,30 +1241,29 @@ h4 {
   }
   .article__fotosalpie .imagenesPie .expoarmenia-icon,
   .article__fotosalpie .imagenesPie .expoescultura-icon {
-    height: 150px;
-    width: 10px;
-    padding: 0px;
+    height: 90vh;
+    width: 30%;
   }
   .article__fotosalpie .imagenesPie .bucle-1 {
     width: 100%;
-    height: 10vh;
+    height: 11vh;
     background-color: rgba(219, 239, 241, 0.719);
     border: 1px inset rgba(197, 235, 235, 0.911);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 11px;
-    padding-top: 6px;
-    line-height: 15px;
+    padding-top: 5px;
+    line-height: 14px;
     text-align: center;
   }
   .article__fotosalpie .imagenesPie .bucle-2 {
     width: 100%;
-    height: 10vh;
+    height: 11vh;
     background-color: rgba(208, 234, 236, 0.719);
     border: 1px inset rgba(197, 235, 235, 0.911);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 11px;
-    padding-top: 6px;
-    line-height: 15px;
+    padding-top: 5px;
+    line-height: 14px;
     text-align: center;
   }
 }
@@ -1348,7 +1353,7 @@ h4 {
   }
   .article__fotosalpie .bucle-1 {
     width: 100%;
-    height: 10vh;
+    height: 50vh;
     background-color: rgba(219, 239, 241, 0.719);
     border: 1px inset rgba(197, 235, 235, 0.911);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -1358,7 +1363,7 @@ h4 {
   }
   .article__fotosalpie .bucle-2 {
     width: 100%;
-    height: 10vh;
+    height: 50vh;
     background-color: rgba(208, 234, 236, 0.719);
     border: 1px inset rgba(197, 235, 235, 0.911);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -1473,8 +1478,8 @@ h4 {
 
 .article__fotosalpie .imagenesPie .expoarmenia-icon,
 .article__fotosalpie .imagenesPie .expoescultura-icon {
-  height: 480px;
-  width: 230px;
+  height: 90vh;
+  width: 100%;
   border: 2px solid, #232324;
 }
 
@@ -1484,8 +1489,6 @@ h4 {
   -o-object-fit: contain;
      object-fit: contain;
   text-align: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .article__fotosalpie .imagenesPie .expoescultura-icon {
@@ -1494,8 +1497,6 @@ h4 {
   -o-object-fit: contain;
      object-fit: contain;
   text-align: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .article__fotosalpie .bucle-1 {
@@ -1615,7 +1616,7 @@ h4 {
 }
 
 .section__carouselcontacto {
-  width: 60%;
+  width: 65%;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -1630,8 +1631,8 @@ h4 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.contacto__estilo h3 .seguime h3 {
-  font-size: 19px;
+.contacto__estilo h3 .seguime {
+  font-size: 20px;
 }
 
 .imagenes__redescont:hover {
@@ -1651,13 +1652,18 @@ h4 {
     font-size: 16px;
   }
   .section__carouselcontacto {
-    width: 65%;
+    width: 75%;
   }
-  .section__carouselcontacto h3 {
+  .section__carouselcontacto .seguime h3 {
     font-size: 18px;
   }
   .contacto__estilo h3 {
     font-size: 13px;
+  }
+  .contacto__estilo h3 .mailCentro {
+    padding-right: 55px;
+    margin-right: 55px;
+    text-align: center;
   }
   .contacto__estilo h3 .seguime {
     font-size: 23px;
@@ -1672,8 +1678,59 @@ h4 {
     font-size: 17px;
     margin-top: 5px;
   }
+  .datos {
+    height: 40px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    line-height: 5px;
+  }
+  .datos input {
+    width: 61%;
+    background-color: rgba(253, 255, 254, 0.63);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(26, 104, 61, 0.863);
+  }
+  .datos2 {
+    height: 10px;
+    margin-left: 1rem;
+    line-height: 5px;
+    border-radius: 10px;
+  }
+  .datos2 input {
+    width: 46%;
+    background-color: rgba(253, 255, 254, 0.63);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(26, 104, 61, 0.863);
+  }
+  .mail {
+    height: 10px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    line-height: 5px;
+    border-radius: 10px;
+  }
+  .mail input {
+    width: 35%;
+    background-color: rgba(253, 255, 254, 0.63);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(26, 104, 61, 0.863);
+  }
+  .mensaje {
+    height: 20px;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    line-height: 5px;
+    border-radius: 10px;
+  }
+  .mensaje #texto {
+    background-color: rgba(253, 255, 254, 0.63);
+    border-bottom: 1px solid rgba(26, 104, 61, 0.863);
+  }
   .form {
-    height: 80vh;
+    height: 41vh;
     width: 100%;
     margin-bottom: 3px;
     padding: 1rem;
@@ -1708,6 +1765,20 @@ h4 {
   }
   .footer__contacto p {
     font-size: 11px;
+  }
+  .botones {
+    width: 50px;
+    height: 60px;
+    margin-top: 9rem;
+    margin-left: 1rem;
+    line-height: 25px;
+  }
+  .botones input {
+    width: 60px;
+    height: 20px;
+    background-color: rgba(253, 255, 254, 0.63);
+    border-bottom: 1px solid rgba(26, 104, 61, 0.788);
+    padding: 2px 2px 3px 3px;
   }
 }
 
@@ -1767,6 +1838,7 @@ h4 {
   width: 100%;
   margin-bottom: 3px;
   padding: 1rem;
+  padding: 5px 5px 5xp 5px;
 }
 
 .form .ficha {
@@ -1775,6 +1847,8 @@ h4 {
   font-size: 15px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border: 2px solid rgba(26, 104, 61, 0.432);
+  -webkit-box-shadow: 7px 13px 35px rgba(7, 7, 7, 0.473);
+          box-shadow: 7px 13px 35px rgba(7, 7, 7, 0.473);
   border-radius: 10px;
   padding: 10px 10px 10px 10px;
 }
@@ -1784,7 +1858,14 @@ h4 {
   margin-top: 2rem;
   margin-left: 1rem;
   line-height: 5px;
-  border-radius: 10px;
+}
+
+.datos input {
+  width: 59%;
+  background-color: rgba(253, 255, 254, 0.63);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(26, 104, 61, 0.863);
 }
 
 .datos2 {
@@ -1792,6 +1873,14 @@ h4 {
   margin-left: 1rem;
   line-height: 5px;
   border-radius: 10px;
+}
+
+.datos2 input {
+  width: 74%;
+  background-color: rgba(253, 255, 254, 0.63);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(26, 104, 61, 0.863);
 }
 
 .mail {
@@ -1802,12 +1891,25 @@ h4 {
   border-radius: 10px;
 }
 
+.mail input {
+  width: 81%;
+  background-color: rgba(253, 255, 254, 0.63);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(26, 104, 61, 0.863);
+}
+
 .mensaje {
   height: 20px;
   margin-top: 3rem;
   margin-left: 1rem;
   line-height: 5px;
   border-radius: 10px;
+}
+
+.mensaje #texto {
+  background-color: rgba(253, 255, 254, 0.63);
+  border-bottom: 1px solid rgba(26, 104, 61, 0.863);
 }
 
 .mensaje h4 {
@@ -1830,14 +1932,17 @@ h4 {
 .botones {
   width: 50px;
   height: 60px;
-  margin-top: 10rem;
+  margin-top: 9rem;
   margin-left: 1rem;
   line-height: 25px;
 }
 
-.botones .enviar__boton {
-  font-size: 8px;
-  padding: 5px 5px 5px 5px;
+.botones input {
+  width: 100px;
+  height: 30px;
+  background-color: rgba(253, 255, 254, 0.63);
+  border-bottom: 1px solid rgba(26, 104, 61, 0.788);
+  padding: 2px 2px 3px 3px;
 }
 
 .footer__contacto {

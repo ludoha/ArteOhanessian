@@ -21,13 +21,19 @@
     margin-bottom: 15px;
     letter-spacing: 5px;
 }
+
 .section__parrafo__h2--style {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
 }
 .biografia--estilo{
+    .massobremi{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
     .link__bio h3{
-        font-size: 16px;
+        font-size: 18px;
         color: #050505;
         text-decoration: underline;
     }
@@ -61,11 +67,7 @@ h4{
         }
     }
 } 
-.massobremi{
-    text-align: center;
-    margin-bottom: 10px;
-    text-decoration: underline;
-}
+
 .redes__index:hover{
     transform:scale(1.2);
 }
@@ -100,7 +102,7 @@ h4{
         padding-top: 9px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
- }
+}
 
 @import "_secciones";
 @import "_media";

@@ -172,33 +172,31 @@
 }
 
 .article__fotosalpie{
-    .imagenesPie {   
-        .expoarmenia-icon,
-        .expoescultura-icon {
-            height: 80px;
-            width: 130px;
-            border: 2px solid, rgb(35, 35, 36);
-        }
+    .imagenesPie{
+        width: 100%;
+        object-fit: cover;
+        justify-content: space-around;
+        padding-right: 3rem;
+    }
 
-
-$base-color: rgba(230, 244, 245, 0.719);
+/*$base-color: rgba(230, 244, 245, 0.719);
 
 @for $in from 1 through 2{
     .bucle-#{$in}{
         width: 100%;
-        height: 10vh;
+        height: 100vh;
         background-color: darken($base-color, $in * 3%);
         border: 1px inset  rgba(197, 235, 235, 0.911);
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 10px;
         padding: 0px;
         margin: 0px;
-        line-height: 13px;
+        line-height: 3px;
         text-align: center;
     }
-} 
- }
+} */
 }
+
 .footer__expo{
     font-size: 11px; 
     .nav__expo{
@@ -305,22 +303,21 @@ $base-color: rgba(230, 244, 245, 0.719);
     .imagenesPie{
     .expoarmenia-icon,
     .expoescultura-icon {
-        height: 150px;
-        width: 10px;
-        padding: 0px;
+        height: 90vh;
+        width: 30%;
     }
 $base-color: rgba(230, 244, 245, 0.719);
 
 @for $in from 1 through 2{
     .bucle-#{$in}{
         width: 100%;
-        height: 10vh;
+        height: 11vh;
         background-color: darken($base-color, $in * 3%);
         border: 1px inset  rgba(197, 235, 235, 0.911);
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 11px;
-        padding-top: 6px;
-        line-height: 15px;
+        padding-top: 5px;
+        line-height: 14px;
         text-align: center;
     }
 }
@@ -413,7 +410,7 @@ $base-color: rgba(230, 244, 245, 0.719);
 @for $in from 1 through 2{
     .bucle-#{$in}{
         width: 100%;
-        height: 10vh;
+        height: 50vh;
         background-color: darken($base-color, $in * 3%);
         border: 1px inset  rgba(197, 235, 235, 0.911);
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -514,8 +511,8 @@ $base-color: rgba(230, 244, 245, 0.719);
 .imagenesPie {   
 .expoarmenia-icon,
 .expoescultura-icon {
-    height: 480px;
-    width: 230px;
+    height: 90vh;
+    width: 100%;
     border: 2px solid, rgb(35, 35, 36);
 }
 
@@ -525,7 +522,6 @@ $base-color: rgba(230, 244, 245, 0.719);
     background-size: cover;
     object-fit: contain;
     text-align: center;
-    justify-content:space-around;
     }
 }
 }

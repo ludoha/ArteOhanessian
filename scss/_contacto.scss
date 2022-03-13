@@ -55,7 +55,7 @@
     }
 }
 .section__carouselcontacto {
-    width: 60%;
+    width: 65%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .fotocarouselContacto{
@@ -66,8 +66,8 @@
 .contacto__estilo h3{
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    .seguime h3{
-        font-size: 19px;
+    .seguime{
+        font-size: 20px;
     }
 }
 
@@ -83,12 +83,15 @@
         margin-right: 35px;
         margin-top: 8px;
     }
+
     .section__contacto{
-        font-size: 16px;
+        .h2__contacto{
+            font-size: 19px;
+        }   
     }
     .section__carouselcontacto {
-        width: 65%;
-        h3{
+        width: 75%;
+        .seguime h3{
             font-size: 18px;
         }
     }
@@ -98,9 +101,6 @@
             font-size: 23px;
         }
     }
-    .section__formulario{
-        height: 90%;
-    }
     .section__form--style{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     h3{
@@ -108,37 +108,57 @@
         margin-top: 5px;
     }
     }
-    .form{
-        height: 80vh;
-        width: 100%;
-        margin-bottom: 3px;
-        padding: 1rem;
-        .datos .datos2 .mail{
-            margin-top: 5rem;
-            margin: bottom 50px;;
+    
+    .datos{
+        height: 40px;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        line-height: 5px;
+            input{
+            width: 50%;
+            border-bottom: 1px solid rgba(26, 104, 61, 0.863);
         }
     }
-    .section__contacto{
-        .h2__contacto{
-            font-size: 19px;
-        }   
-    }
-    #texto{
-        width: 100%;
-        height: 20vh;
-    }
-    .botones{  
-        margin-left: 0px;
-        padding-top: 1rem;
-        padding-left: 0px;
-        text-align: center;
+    .datos2{
+        height: 10px;
+        margin-left: 1rem;
         line-height: 5px;
+        border-radius: 10px;
+        input{
+            width: 46%;
+        }
     }
-    .mensaje1{
-        margin-top: 15px;
-        margin-bottom: 35px;
+    .mail{
+        height: 10px;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        line-height: 5px;
+        border-radius: 10px;
+        input{
+            width: 40%;
+        }
     }
-    
+    .mensaje{
+        height: 20px;
+        margin-top: 3rem;
+        margin-left: 1rem;
+        line-height: 5px;
+        border-radius: 10px;
+        }
+    }
+
+    .botones{
+        width: 50px;
+        height: 60px; 
+        margin-top: 9rem;
+        margin-left: 1rem;
+        line-height: 25px;
+        input{
+            width: 60px;
+            height: 20px;
+            padding: 2px 2px 3px 3px;
+        }
+    }
     .footer__contacto{
         font-size: 11px; 
         .nav__contacto{
@@ -158,18 +178,20 @@
         text-align: center;
             .titulo__h1--colorcontacto {
             text-align: center;
-        }  
+            }  
     }
     
     .h2__contacto{
         font-size: 30px;
     }
-    .botones{  
+
+    .form { 
+        width: 100%;
+        .botones{  
         margin-left: 0px;
-        padding-top: 3rem;
+        padding-top: 2rem;
         padding-left: 0px;
-        text-align: center;
-        line-height: 5px;
+    }
     }
 }
 @media only screen and (min-width: 993px){
@@ -202,9 +224,10 @@
 }
 .form{
     height: 100vh;
-    width: 100%;
+    width: 80%;
     margin-bottom: 3px;
     padding: 1rem;
+    padding: 5px 5px 5px 5px;
 }
 
 .form .ficha{
@@ -213,6 +236,7 @@
     font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 2px solid rgba(26, 104, 61, 0.432);
+    box-shadow: 7px 13px 35px rgba(7, 7, 7, 0.473);
     border-radius: 10px;
     padding: 10px 10px 10px 10px;
 }
@@ -222,13 +246,22 @@
     margin-top: 2rem;
     margin-left: 1rem;
     line-height: 5px;
-    border-radius: 10px;
+        input{
+        width: 59%;
+        }
 }
 .datos2{
     height: 10px;
     margin-left: 1rem;
     line-height: 5px;
     border-radius: 10px;
+    input{
+        width: 74%;
+        background-color: rgba(253, 255, 254, 0.63);
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgba(26, 104, 61, 0.863);
+    }
 }
 .mail{
     height: 10px;
@@ -236,6 +269,13 @@
     margin-left: 1rem;
     line-height: 5px;
     border-radius: 10px;
+    input{
+        width: 81%;
+        background-color: rgba(253, 255, 254, 0.63);
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgba(26, 104, 61, 0.863);
+    }
 }
 .mensaje{
     height: 20px;
@@ -243,6 +283,10 @@
     margin-left: 1rem;
     line-height: 5px;
     border-radius: 10px;
+    #texto{
+        background-color: rgba(253, 255, 254, 0.63);
+        border-bottom: 1px solid rgba(26, 104, 61, 0.863);
+    }
 }
 .mensaje h4{
     font-size: 15px;
@@ -262,12 +306,15 @@
 .botones{
     width: 50px;
     height: 60px; 
-    margin-top: 10rem;
+    margin-top: 9rem;
     margin-left: 1rem;
     line-height: 25px;
-    .enviar__boton{
-        font-size: 8px;
-        padding: 5px 5px 5px 5px;
+    input{
+        width: 100px;
+        height: 30px;
+        background-color: rgba(253, 255, 254, 0.63);
+        border-bottom: 1px solid rgba(26, 104, 61, 0.788);
+        padding: 2px 2px 3px 3px;
     }
 }
 .footer__contacto{
