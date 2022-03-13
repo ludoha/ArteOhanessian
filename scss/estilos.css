@@ -1615,7 +1615,7 @@ h4 {
     padding: 0px;
   }
   .form .ficha {
-    width: 110%;
+    width: 100%;
     height: 100vh;
     text-align: center;
     padding: 0px 0px 10px 10px;
@@ -1670,7 +1670,7 @@ h4 {
   .botones {
     width: 50%;
     margin-left: 0px;
-    padding-top: 2.4rem;
+    padding-top: 2.6rem;
     padding-left: 34px;
     padding-bottom: 15px;
   }
