@@ -42,7 +42,7 @@
     }
 }
 .section__tituloexpo{
-    background-color: rgb(125, 184, 174) ;
+    background-color: rgb(167, 218, 209);
     margin-top: 10px;
     .h2__exposiciones{
     color: rgb(1, 0, 12);
@@ -82,6 +82,7 @@
     height: 70vh;
 }
 .card__estilo{
+    width: 5%;
     margin: 0px;
     padding-right: 26rem;
     justify-content: center;
@@ -186,7 +187,7 @@
 }
 
 .card__estilo{
-    width:20%;
+    width: 20%;
     margin: 0px;
     padding-right: 26rem;
     justify-content: center;
@@ -305,30 +306,6 @@
     justify-content: center;
     text-align: center;
 }
-.article__fotosalpie{
-    .imagenesPie{
-    .expoarmenia-icon,
-    .expoescultura-icon {
-        height: 40vh;
-        width: 30%;
-    }
-$base-color: rgba(230, 244, 245, 0.719);
-
-@for $in from 1 through 2{
-    .bucle-#{$in}{
-        width: 100%;
-        height: 11vh;
-        background-color: darken($base-color, $in * 3%);
-        border: 1px inset  rgba(197, 235, 235, 0.911);
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 11px;
-        padding-top: 5px;
-        line-height: 14px;
-        text-align: center;
-    }
-}
-} 
-}
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .titulo__h1--sizeexpo {
@@ -409,23 +386,6 @@ $base-color: rgba(230, 244, 245, 0.719);
     }
 }
 }
-.article__fotosalpie{
-
-$base-color: rgba(230, 244, 245, 0.719);
-
-@for $in from 1 through 2{
-    .bucle-#{$in}{
-        width: 100%;
-        height: 50vh;
-        background-color: darken($base-color, $in * 3%);
-        border: 1px inset  rgba(197, 235, 235, 0.911);
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 11px;
-        line-height: 25px;
-        text-align: center;
-    }
-}
-}
 }
 
 
@@ -445,12 +405,19 @@ $base-color: rgba(230, 244, 245, 0.719);
     margin-top: 20px;
     margin-bottom: 0px;
 }
+.textobox1:hover{
+    transform: scale(1.09);
+}
+
 .textobox2{
     text-decoration: underline;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
     margin-bottom: 10px;
     margin-top: 20px;
+}
+.textobox2:hover{
+    transform: scale(1.09);
 }
 .textobox4{
     text-decoration: underline;
@@ -459,7 +426,9 @@ $base-color: rgba(230, 244, 245, 0.719);
     margin-bottom: 10px;
     margin-top: 20px;
 }
-
+.textobox4:hover{
+    transform: scale(1.09);
+}
 @mixin sizes($width, $height, $bcolor) {
     height: $height;
     width: $width;
@@ -512,39 +481,12 @@ $base-color: rgba(230, 244, 245, 0.719);
         margin-top: 25px;
     }
 }
-
-.article__fotosalpie{
-    width: 100%;
-    height: 60px;
-    display:flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    text-align: center;
-    .imagenExpo { 
-    width: 100%;
-    padding: 5px 5px 5px 5px;
-    margin: 5px 5px 5px 5px;
-    box-shadow: 2px 10px 25px #050505ea;
-    text-align: center;
-    }
+.card-img-overlay{
+    height: 15vh;
+    background-color: rgba(220, 233, 245, 0.582);
 }
-$base-color: rgba(240, 248, 248, 0.87);
-
-@for $in from 1 through 2{
-    .bucle-#{$in}{
-        width: 100%;
-        height: 9vh;
-        background-color: darken($base-color, $in * 3%);
-        border: 1px inset  rgba(93, 173, 173, 0.452);
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 12px;
-        line-height: 25px;
-        text-align: center;
-    }
-}
-
 .footer__expo {
-    background-image: linear-gradient(  rgb(188, 221, 214), rgb(149, 173, 169));
+    background-image: linear-gradient( rgb(180, 235, 225),rgb(117, 155, 148));
     height: 90px;
     color: #050505;
     font-size: 16px;
