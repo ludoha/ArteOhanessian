@@ -7,9 +7,9 @@ body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 img {
-    width: 100%;
+    width: 90%;
     margin-bottom: 10px;
-    justify-content: center;
+    justify-content: space-around;
 }
 header {
     display: flex;
@@ -147,16 +147,15 @@ p {
     border: 3px solid royalblue;
 }
 
-.boton-eliminar {
-    background-color: white;
-    color: rgb(46, 106, 101);
+.botonEliminar {
+    color: rgb(78, 219, 76);
     border: none;
     font-size: 20px;
 }
 
-.boton-eliminar:hover {
+.botonEliminar:hover {
     cursor: pointer;
 }
-.boton-eliminar:focus {
+.botonEliminar:focus {
     outline: none;
 }
