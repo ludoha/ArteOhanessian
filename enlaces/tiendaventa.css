@@ -6,6 +6,7 @@
 body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 img {
     width: 90%;
     margin-bottom: 10px;
@@ -62,6 +63,15 @@ p {
 .precioProducto {
     font-weight: 700;
 }
+#botonComprar {
+    background-color: royalblue;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 5px;
+    border:rgb(75, 110, 213);
+}
+
 .boton-agregar {
     background-color: royalblue;
     color: white;
@@ -121,7 +131,6 @@ p {
     font-size: 20px;
     color: royalblue;
     border: none;
-    background-color: white;
 }
 .modal-carrito #carritoCerrar:hover {
     cursor: pointer;

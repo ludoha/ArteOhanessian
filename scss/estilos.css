@@ -258,8 +258,12 @@ h4 {
 .navtienda ul li a {
   text-decoration: none;
   color: #0a0a0a;
-  font-size: 18px;
+  font-size: 15px;
   text-decoration: underline;
+}
+
+.iconosTienda {
+  width: 35%;
 }
 
 .bodytienda {

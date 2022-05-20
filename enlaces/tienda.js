@@ -1,3 +1,30 @@
+//Animación libreria ScrollReveal efectos 
+window.sr = ScrollReveal()
+    sr.reveal('.srollEncabezado', {
+        origin: 'left',
+        duration: 2000,
+        distance: '110%'
+    });       
+    sr.reveal('.encabezadoScroll', {
+        origin: 'top',
+        intervalo: 90,
+        duration: 5000,
+        distance: '20%'
+    });
+    sr.reveal('.scrollFrom', {
+        origin: 'top',
+        intervalo: 90,
+        duration: 2000,
+        distance: '20%'
+    });
+    sr.reveal('.containerScroll', {
+        origin: 'top',
+        duration: 3000,
+        distance: '20%'
+    });
+
+
+
 const contenedorProductos = document.getElementById('contenedor-productos')
 
 const contenedorCarrito = document.getElementById('carrito-contenedor')
@@ -21,9 +48,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
 botonVaciar.addEventListener('click', () => {
     carrito.length = 0 
+    //Libreria Toastify para anunciar que elimino todo del carrito!!
+    Toastify({
+        text:"Usted vacio todo el carrito!",
+        duration: 3000,
+    }).showToast()
     actualizarCarrito()
 })
 
+botonComprar.addEventListener('click', () => {
+    console.log(precioTotal)
+    //Seet Alert para anunciar/confirmar que quiere seguir los pasos de compra
+    swal({
+        title: "Compra en proceso",
+        text: "Sigue los pasos de pago",
+        icon: "success",
+        button: "OK",
+        background: 'width'
+    })
+})
 
 
 //AGREGAR AL HTML 
@@ -67,6 +110,11 @@ const agregarAlCarrito = (prodId) => {
         carrito.push(item)
     }
 actualizarCarrito()
+//Libreria Toastify para anunciar que se agrego al carrito!!
+Toastify({
+    text:"Se agrego al carrito!",
+    duration: 3000,
+}).showToast()
 }
 
 const eliminarDelCarrito = (prodId) => {
@@ -77,7 +125,6 @@ const eliminarDelCarrito = (prodId) => {
     carrito.splice(indice, 1) //Le pasamos el indice de mi elemento ITEM y borramos 
     // un elemento 
     actualizarCarrito() 
-    //MODIFICA EL CARRITO
     console.log(carrito)
 }
 
@@ -125,4 +172,12 @@ function validarFormulario(e){
     console.log(formulario.children[11].value);
     console.log(formulario.children[13].value);
     console.log("Datos para la obra a pedido");
+    //Sweet Alert para avisar que los datos fueron enviados correctamente!
+    swal({
+        title: "Sus datos fueron enviados!",
+        text: "En breve nos contactaremos con usted.",
+        icon: "success",
+        button: "OK",
+        background: 'width'
+    })
 }
