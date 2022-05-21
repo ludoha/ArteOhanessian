@@ -37,7 +37,7 @@ const cantidad = document.getElementById('cantidad')
 const precioTotal = document.getElementById('precioTotal')
 const cantidadTotal = document.getElementById('cantidadTotal')
 
-let carrito = []
+/*let carrito = []
 
 document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('carrito')){
@@ -45,6 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
         actualizarCarrito()
     }
 })
+*/
+let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
 botonVaciar.addEventListener('click', () => {
     carrito.length = 0 
@@ -97,7 +99,7 @@ stockProductos.forEach((producto) => {
 const agregarAlCarrito = (prodId) => {
      //Aumentar cantidad sin que se repita
     const existe = carrito.some (prod => prod.id === prodId)
-
+    
     if (existe){ //ACTUALIZAMOS LA CANTIDAD
         const prod = carrito.map (prod => { 
             if (prod.id === prodId){
@@ -142,7 +144,7 @@ const actualizarCarrito = () => {
         <p>${prod.nombre}</p>
         <p>Precio:$${prod.precio}</p>
         <p>Cantidad: <span id="cantidad">${prod.cantidad}</span></p>
-        <button oneclick="eliminarDelCarrito(${prod.id}})" class="botonEliminar"><i class="fas fa-trash-alt"></i></button>
+        <button onclick="eliminarDelCarrito(${prod.id})" class="botonEliminar"><i class="fas fa-trash-alt"></i></button>
         ` 
         contenedorCarrito.appendChild(div) 
         
