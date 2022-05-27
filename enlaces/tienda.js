@@ -64,10 +64,10 @@ botonComprar.addEventListener('click', () => {
 //AGREGAR AL HTML fetch no funciona agregar al carrito 
 
 
-/*let stockProductos = []*/
+let stockProductos = []
 
 
-if (stockProductos== "") {
+if(stockProductos== "") {
     fetch('./data.json')
     .then((res) => res.json())
     .then((data) => {
