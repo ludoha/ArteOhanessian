@@ -63,46 +63,17 @@ botonComprar.addEventListener('click', () => {
 
 //AGREGAR AL HTML fetch no funciona agregar al carrito 
 
-/*const contenedorProductos = document.querySelector('#contenedor-productos')
-if (stockProductos == "") {
+
+/*let stockProductos = []*/
+
+
+if (stockProductos== "") {
     fetch('./data.json')
     .then((res) => res.json())
     .then((data) => {
-        data.forEach((producto) => {
-            stockProductos.push(new instrumento(producto.nombre, producto.img, producto.tecnica, producto.tipo, producto.precio, producto.id))
-        })
-        
-            const div = document.createElement('div')
-            div.innerHTML = `<h3>${producto.nombre}</h3>
-            <img src=${producto.img} alt= "">
-            <h3>${producto.tecnica}</h3>
-            <h4>${producto.tipo}</h4>
-            <p class="precioProducto">Precio:$ ${producto.precio}</p>
-            <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>`
-        contenedorProductos.append(div)
 
-    //INSERTAREL HTML EN EL DOM:
-    const boton = document.getElementById(`agregar${producto.id}`)
-
-    boton.addEventListener('click', () => {
-        //Agrega Al carrito con la id del producto
-        agregarAlCarrito(producto.id)
-    })
-    })
-}*/
-let stockProductos = []
-
-//cargar productos
-if (stockProductos == "") {
-    fetch('./data.json')
-    .then((res) => res.json())
-    .then((data) => {
-        data.forEach((producto) => {
-            stockProductos.push(producto.nombre, producto.img, producto.tecnica, producto.tipo, producto.precio, producto.id)
-        })
-    })
-}
-setTimeout(() => {
+    data.forEach((producto)=> {
+    const container = document.getElementById("productos");
     const div = document.createElement('div')
     div.classList.add('producto')
     div.innerHTML = `<h3>${producto.nombre}</h3>
@@ -121,8 +92,9 @@ setTimeout(() => {
         //Agrega Al carrito con la id del producto
         agregarAlCarrito(producto.id)
     })
-}, 100)
-
+})
+})
+}
 //AGREGAR AL CARRITO
 const agregarAlCarrito = (prodId) => {
      //Aumentar cantidad sin que se repita
