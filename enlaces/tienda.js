@@ -62,18 +62,11 @@ botonComprar.addEventListener('click', () => {
 
 
 //AGREGAR AL HTML fetch no funciona agregar al carrito 
-
-
-let stockProductos = []
-
-
-if(stockProductos== "") {
-    fetch('./data.json')
+fetch('./data.json')
     .then((res) => res.json())
-    .then((data) => {
+    .then(stockProductos => {
 
-    data.forEach((producto)=> {
-    const container = document.getElementById("productos");
+    stockProductos.forEach((producto)=> {
     const div = document.createElement('div')
     div.classList.add('producto')
     div.innerHTML = `<h3>${producto.nombre}</h3>
@@ -87,15 +80,15 @@ if(stockProductos== "") {
     //INSERTAREL HTML EN EL DOM:
     const boton = document.getElementById(`agregar${producto.id}`)
 
-
     boton.addEventListener('click', () => {
         //Agrega Al carrito con la id del producto
         agregarAlCarrito(producto.id)
     })
 })
 })
-}
+
 //AGREGAR AL CARRITO
+
 const agregarAlCarrito = (prodId) => {
      //Aumentar cantidad sin que se repita
     const existe = carrito.some (prod => prod.id === prodId)
