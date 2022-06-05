@@ -1,28 +1,3 @@
-//Animación libreria ScrollReveal efectos 
-window.sr = ScrollReveal()
-    sr.reveal('.srollEncabezado', {
-        origin: 'left',
-        duration: 2000,
-        distance: '110%'
-    });       
-    sr.reveal('.encabezadoScroll', {
-        origin: 'top',
-        intervalo: 90,
-        duration: 5000,
-        distance: '20%'
-    });
-    sr.reveal('.scrollFrom', {
-        origin: 'top',
-        intervalo: 90,
-        duration: 2000,
-        distance: '20%'
-    });
-    sr.reveal('.containerScroll', {
-        origin: 'top',
-        duration: 3000,
-        distance: '20%'
-    });
-
 
 const contenedorProductos = document.getElementById('contenedor-productos')
 
@@ -36,8 +11,10 @@ const cantidad = document.getElementById('cantidad')
 const precioTotal = document.getElementById('precioTotal')
 const cantidadTotal = document.getElementById('cantidadTotal')
 
+
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
+//Boton VACIAR carrito
 botonVaciar.addEventListener('click', () => {
     carrito.length = 0 
     //Libreria Toastify para anunciar que elimino todo del carrito!!
@@ -48,6 +25,7 @@ botonVaciar.addEventListener('click', () => {
     actualizarCarrito()
 })
 
+//boton Comprar
 botonComprar.addEventListener('click', () => {
     console.log(precioTotal)
     //Seet Alert para anunciar/confirmar que quiere seguir los pasos de compra
@@ -61,10 +39,13 @@ botonComprar.addEventListener('click', () => {
 })
 
 
-//AGREGAR AL HTML fetch no funciona agregar al carrito 
+//Agregar al DOM con json (stock.json) y fetch 
+let stockProductos = [];
+
 fetch('./data.json')
     .then((res) => res.json())
-    .then(stockProductos => {
+    .then(stock => {
+        stockProductos = stock;
 
     stockProductos.forEach((producto)=> {
     const div = document.createElement('div')
@@ -77,9 +58,16 @@ fetch('./data.json')
                     <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>`
     contenedorProductos.appendChild(div)
 
-    //INSERTAREL HTML EN EL DOM:
     const boton = document.getElementById(`agregar${producto.id}`)
 
+    // Filtrado de productos
+/*let filtrado = document.getElementById("#filtro")
+function filtrado(tipo){
+    let pinturas = producto.filter(producto => producto.tipo == tipo)
+    mostrar(pinturas)
+}*/
+
+    //Agregar al carrito
     boton.addEventListener('click', () => {
         //Agrega Al carrito con la id del producto
         agregarAlCarrito(producto.id)
@@ -87,10 +75,10 @@ fetch('./data.json')
 })
 })
 
-//AGREGAR AL CARRITO
 
+//Agragar al carrito aumentando la cantidad sin que se repita
 const agregarAlCarrito = (prodId) => {
-     //Aumentar cantidad sin que se repita
+     //Aumentar cantidad sin repetir en la lista de productos
     const existe = carrito.some (prod => prod.id === prodId)
     
     if (existe){ //ACTUALIZAMOS LA CANTIDAD
@@ -150,12 +138,11 @@ const actualizarCarrito = () => {
     //empezando en 0
 }
 
-
-//Formulario de Obra por encargo 
+//Formulario de Obra de arte por encargo/pedido 
 
 let miFormulario = document.getElementById("formulario");
 miFormulario.addEventListener("submit", validarFormulario);
-
+//Obtener datos 
 function validarFormulario(e){
     e.preventDefault();
     let formulario = e.target;
@@ -176,3 +163,28 @@ function validarFormulario(e){
         background: 'width'
     })
 }
+
+//Animación libreria ScrollReveal efectos en tienda
+window.sr = ScrollReveal()
+    sr.reveal('.srollEncabezado', {
+        origin: 'left',
+        duration: 2000,
+        distance: '110%'
+    });       
+    sr.reveal('.encabezadoScroll', {
+        origin: 'top',
+        intervalo: 90,
+        duration: 5000,
+        distance: '20%'
+    });
+    sr.reveal('.scrollFrom', {
+        origin: 'top',
+        intervalo: 90,
+        duration: 2000,
+        distance: '20%'
+    });
+    sr.reveal('.containerScroll', {
+        origin: 'top',
+        duration: 3000,
+        distance: '20%'
+    });
