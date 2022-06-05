@@ -80,7 +80,6 @@ function filtrado(tipo){
 const agregarAlCarrito = (prodId) => {
      //Aumentar cantidad sin repetir en la lista de productos
     const existe = carrito.some (prod => prod.id === prodId)
-    
     if (existe){ //ACTUALIZAMOS LA CANTIDAD
         const prod = carrito.map (prod => { 
             if (prod.id === prodId){
