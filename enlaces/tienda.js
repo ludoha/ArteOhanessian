@@ -40,7 +40,7 @@ botonComprar.addEventListener('click', () => {
 
 
 //Agregar al DOM con json (stock.json) y fetch 
-let stockProductos = [];
+let stockProductos = []
 
 fetch('./data.json')
     .then((res) => res.json())
