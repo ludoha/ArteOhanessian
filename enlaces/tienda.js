@@ -60,13 +60,6 @@ fetch('./data.json')
 
     const boton = document.getElementById(`agregar${producto.id}`)
 
-    // Filtrado de productos
-/*let filtrado = document.getElementById("#filtro")
-function filtrado(tipo){
-    let pinturas = producto.filter(producto => producto.tipo == tipo)
-    mostrar(pinturas)
-}*/
-
     //Agregar al carrito
     boton.addEventListener('click', () => {
         //Agrega Al carrito con la id del producto
@@ -74,7 +67,13 @@ function filtrado(tipo){
     })
 })
 })
-
+// Filtrado de productos
+/*let miFiltro = document.getElementById("filtro");
+miFiltro.addEventListener("value", "tipo");
+function filtrador("filtro"){
+    let filtro = producto.filter(producto => producto.tipo == tipo);
+    mostrar(filtro)
+}*/
 
 //Agragar al carrito aumentando la cantidad sin que se repita
 const agregarAlCarrito = (prodId) => {
@@ -139,7 +138,7 @@ const actualizarCarrito = () => {
 
 //Formulario de Obra de arte por encargo/pedido 
 
-let miFormulario = document.getElementById("formulario");
+let miFormulario = document.getElementById("contact_form");
 miFormulario.addEventListener("submit", validarFormulario);
 //Obtener datos 
 function validarFormulario(e){
@@ -151,7 +150,6 @@ function validarFormulario(e){
     console.log(formulario.children[7].value);
     console.log(formulario.children[9].value);
     console.log(formulario.children[11].value);
-    console.log(formulario.children[13].value);
     console.log("Datos para la obra a pedido");
     //Sweet Alert para avisar que los datos fueron enviados correctamente!
     swal({
@@ -162,6 +160,17 @@ function validarFormulario(e){
         background: 'width'
     })
 }
+function SendMail() {
+    var params = { 
+        from_name : document.getElementById("fullName").value,
+        email_id : document.getElementById("email_id").value,
+        message : document.getElementById("message").value,
+        message : document.getElementById("message").value
+    }
+    emailjs.send("service_kjyspr4","template_8gtnnz5", params).then(function (res) {
+        console.log("Success! " + res.status, res.text);
+    })
+};
 
 //Animación libreria ScrollReveal efectos en tienda
 window.sr = ScrollReveal()

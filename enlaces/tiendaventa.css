@@ -21,17 +21,25 @@ header {
 }
 
 #boton-carrito {
+    width: 70px;
+    height: 45px;
+    font-size: 20px;
     border: none;
-    color: rgb(250, 7, 7);
-    margin-bottom: 5px;
-    font-size: 49px;
     background-image: url(../img/carrito.png);
+    filter:alpha(opacity=100);
+    background-size: cover;
     background-position:bottom;
-    background-color: rgba(240, 248, 255, 0.147);
-    background-size:cover;
-    border-radius: 80%;
     padding: 10px 25px;
     transition: all .3s;
+}
+#contadorCarrito{
+    width: 30px;
+    background-color: rgba(250, 151, 4, 0.876);
+    color: rgb(254, 254, 254);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 32px;
+    margin-bottom: 500px;
+    border-radius: 100%;
 }
 #boton-carrito:hover {
     cursor: pointer;
