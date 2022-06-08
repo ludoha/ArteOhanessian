@@ -100,7 +100,7 @@
 </select>
 
 <section class="section__article__tienda containerScroll container">
-    <div class="section__tiendadeventa col-xs-11 row mt-2 mb-2">  
+    <div class="section__tiendadeventa col-xs-3 col-sm-11 row mt-2 mb-2">  
     <main id="contenedor-productos">
     </main>
     </div>
@@ -123,26 +123,26 @@
 <!--Formulario para encargar una obra a pedido-->
 <div class="section__formulario container">
     <section class="row scrollFrom section__form--style justify-content-center ml-5">
-    <div class="imagenes col-xs-11 col-sm-12 col-md-12 mt-1"></div>
+    <div class="imagenes col-xs-10 col-sm-12 col-md-12 mt-1"></div>
     <div class="mt-1 mb-5" class="img-fluid">
         <h1>Ingrese los datos para calcular el presupuesto estimado de la obra a encargar.</h1>
     <br>
     <form id="contact_form">
     <h3>Nombre y Apellido</h3>
     <input type="text" id="fullName" placeholder="Nombre" required>
-    <h3>Telefono</h3>
+    <h3>Teléfono</h3>
     <input type="text" id="tel" placeholder="Telefono" required>
     <h3>Mail</h3>
-    <input type="text" id="email_id" placeholder="mail" required>
-    <h3>¿Que tipo de obra quiere encargar?</h3>
-    <input type="text" id="message" placeholder="mensaje" required>
+    <input type="text" id="email_id" placeholder="Mail" required>
+    <h3>¿Qué tipo de obra quiere encargar?</h3>
+    <input type="text" id="tipo" placeholder="Tipo" required>
     <h3>Medida de la obra</h3>
-    <input type="text" placeholder="Message" required>
+    <input type="text" id="medida" placeholder="Medida" required>
     <h3>Técnica</h3>
-    <input type="text" placeholder="Message" required>
+    <input type="text" id="tecnica" placeholder="Tecnica" required>
     <br>
     <br>
-    <input type="submit" value="Enviar">
+    <button onclick="SendMail()">Enviar</button>
     <input type="reset" value="borrar">
     <br>
     <br>
@@ -177,15 +177,13 @@
     </div>
         <p>2022.Ludmila Ohanessian Rau.</p>
 </footer> 
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script type="text/javascript">
     (function(){
-        emailjs.init(FiMxCR7FQRgkShxDh);
+    emailjs.init("FiMxCR7FQRgkShxDh");
     })();
 </script>
-<script src="https://api.emailjs.com/api/v1.0/email/send"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 <script src="scrollreveal.js"></script>

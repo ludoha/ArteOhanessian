@@ -99,6 +99,13 @@
     .h2__bienvenida{
         font-size: 19px;
     }
+    #contenedor-productos{
+        h3 {
+            font-size: 4px;
+        }h4{
+            font-size: 8px;
+        }
+    }
     .imagenesTiendadeventa {
         width: 80%;
         text-align: center;
@@ -116,6 +123,7 @@
         margin-left: 4px;
     }
     }
+
     .footer__tienda{
         font-size: 11px; 
         .nav__tienda{

@@ -50,7 +50,7 @@ fetch('./data.json')
     stockProductos.forEach((producto)=> {
     const div = document.createElement('div')
     div.classList.add('producto')
-    div.innerHTML = `<h3>${producto.nombre}</h3>
+    div.innerHTML = `<h2>${producto.nombre}</h2>
                     <img src=${producto.img} alt= "">
                     <h3>${producto.tecnica}</h3>
                     <h4>${producto.tipo}</h4>
@@ -164,11 +164,12 @@ function SendMail() {
     var params = { 
         from_name : document.getElementById("fullName").value,
         email_id : document.getElementById("email_id").value,
-        message : document.getElementById("message").value,
-        message : document.getElementById("message").value
+        message1 : document.getElementById("tipo").value,
+        message2 : document.getElementById("medida").value,
+        message3 : document.getElementById("tecnica").value
     }
     emailjs.send("service_kjyspr4","template_8gtnnz5", params).then(function (res) {
-        console.log("Success! " + res.status, res.text);
+        console.log("Success! " + res.status);
     })
 };
 

@@ -365,7 +365,12 @@
         color: rgb(13, 173, 120);
     }
 }
-
+#fullName #tel #email_id #tipo #medida #tecnica {
+    input{
+        width: 250px;
+        height: 35px;
+    }
+}
 
 .footer__contacto{
     background-image: linear-gradient(rgba(138, 221, 193, 0.822), rgba(73, 117, 103, 0.938));

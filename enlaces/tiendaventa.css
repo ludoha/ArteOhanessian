@@ -21,24 +21,23 @@ header {
 }
 
 #boton-carrito {
-    width: 70px;
-    height: 45px;
+    width: 60px;
+    height: 48px;
     font-size: 20px;
     border: none;
-    background-image: url(../img/carrito.png);
-    filter:alpha(opacity=100);
+    background-image: url(../img/carrito2.jpg);
+    background-color: rgba(240, 248, 255, 0.045);
     background-size: cover;
     background-position:bottom;
     padding: 10px 25px;
     transition: all .3s;
 }
 #contadorCarrito{
-    width: 30px;
-    background-color: rgba(250, 151, 4, 0.876);
-    color: rgb(254, 254, 254);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-left: 32px;
-    margin-bottom: 500px;
+    width: 60px;
+    color: rgb(193, 8, 8);
+    font-weight: 300;
+    margin-left: 6px;
+    margin-bottom: 980px;
     border-radius: 100%;
 }
 #boton-carrito:hover {
