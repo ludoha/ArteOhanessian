@@ -67,13 +67,21 @@ fetch('./data.json')
     })
 })
 })
-/* // Filtrado de productos
-    let miFiltro = document.getElementById("filtro");
-    miFiltro.addEventListener("value", "Pintura");
-    function Pintura(tipo){
-    let mostrarPinturas= producto.filter(mostrarPinturas => ${producto.tipo} == tipo);
+
+// Filtrado de productos
+let miFiltro = document.getElementById("#filtro")
+miFiltro.addEventListener("onchange", Pintura)
+function Pintura(){
+        let mostrarPinturas= productos.forEach(producto => producto.tipo.includes(miFiltro.value))
+        mostrar(mostrarPinturas)
+        console.log(producto.tipo)
+}
+
+/*let miFiltro = document.getElementById("#filtro");
+miFiltro.addEventListener("onchange", () => {
+    let mostrarPinturas= producto.filter(producto => producto.tipo == tipo)
     mostrar(mostrarPinturas)
-    }/*/
+});*/
 
 
 //Agragar al carrito aumentando la cantidad sin que se repita
