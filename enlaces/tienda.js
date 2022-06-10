@@ -181,29 +181,8 @@ function SendMail() {
     emailjs.send("service_kjyspr4","template_8gtnnz5", params).then(function (res) {
         console.log("Success! " + res.status);
     })
-};
-
-// Obtener datos FORMULARIO de contacto y consultas 
-let miFormularioC = document.getElementById("contacto_form");
-miFormularioC.addEventListener("submit", validarFormu);
-//Obtener datos 
-function validarFormu(e){
-    e.preventDefault();
-    let formu = e.target;
-    console.log(formu.children[1].value),
-    console.log(formu.children[4].value),
-    console.log(formu.children[7].value),
-    console.log(formu.children[10].value);
-    console.log("Datos para contactarse");
-    //Sweet Alert para avisar que los datos fueron enviados correctamente!
-    swal({
-        title: "Sus datos fueron enviados!",
-        text: "En breve nos contactaremos con usted.",
-        icon: "success",
-        button: "OK",
-        background: 'width'
-    })
 }
+
 
 //Animación libreria ScrollReveal efectos en tienda
 window.sr = ScrollReveal()

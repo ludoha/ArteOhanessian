@@ -1,16 +1,16 @@
+// Obtener datos FORMULARIO de contacto y consultas 
 
-/* Obtener datos de contacto y consultas 
-let miFormularioC = document.getElementById("contacto_form");
-miFormularioC.addEventListener("submit", validarFormu);
+let miFormularioCon = document.getElementById("contacto_form");
+miFormularioCon.addEventListener("submit", validarFormulario);
 //Obtener datos 
-function validarFormu(e){
+function validarFormulario(e){
     e.preventDefault();
-    let formu = e.target;
-    console.log(formu.children[1].value),
-    console.log(formu.children[4].value),
-    console.log(formu.children[7].value),
-    console.log(formu.children[10].value);
-    console.log("Datos para contactarse");
+    let formulario = e.target;
+    console.log(formulario.children[1].value);
+    console.log(formulario.children[5].value);
+    console.log(formulario.children[7].value);
+    console.log(formulario.children[11].value);
+    console.log("Datos para la obra a pedido");
     //Sweet Alert para avisar que los datos fueron enviados correctamente!
     swal({
         title: "Sus datos fueron enviados!",
@@ -20,6 +20,7 @@ function validarFormu(e){
         background: 'width'
     })
 }
+
 /*function SendMail() {
     var params = { 
         from_name : document.getElementById("fullName").value,
