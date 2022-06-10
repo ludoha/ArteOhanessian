@@ -1,13 +1,15 @@
+
+/* Obtener datos de contacto y consultas 
 let miFormularioC = document.getElementById("contacto_form");
-miFormularioC.addEventListener("submit", validarFormularioC);
+miFormularioC.addEventListener("submit", validarFormu);
 //Obtener datos 
-function validarFormularioC(f){
-    f.preventDefault();
-    let formularios = f.target;
-    console.log(formularios.children[1]);
-    console.log(formularios.children[4]);
-    console.log(formularios.children[7]);
-    console.log(formularios.children[10]);
+function validarFormu(e){
+    e.preventDefault();
+    let formu = e.target;
+    console.log(formu.children[1].value),
+    console.log(formu.children[4].value),
+    console.log(formu.children[7].value),
+    console.log(formu.children[10].value);
     console.log("Datos para contactarse");
     //Sweet Alert para avisar que los datos fueron enviados correctamente!
     swal({

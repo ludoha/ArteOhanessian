@@ -69,19 +69,21 @@ fetch('./data.json')
 })
 
 // Filtrado de productos SIN TERMINAR
-/*function mostrar = () {
-let miFiltro = document.getElementById("filtro");
-miFiltro.EventListener("change", Pintura);
+/*function mostrar(){
+    stockProductos.forEach(producto => producto.tipo.includes(Pintura.value))
+    mostrar(producto)
+} 
 
-function mostrar(){
-        stockProductos.forEach(producto => producto.tipo.includes(Pintura.value))
-        mostrar(producto)
-} }/}
+
 // Filtrado de productos
-function mostrar = () {
 let miFiltro = document.getElementById("filtro");
 miFiltro.EventListener("change", value);
-}*/
+
+function value(){
+        let mostrar = stockProductos.filter(producto => producto.tipo == tipo)
+        mostrar()
+} */
+
 
 //Agregar al carrito aumentando la cantidad sin que se repita
 const agregarAlCarrito = (prodId) => {
@@ -180,6 +182,28 @@ function SendMail() {
         console.log("Success! " + res.status);
     })
 };
+
+// Obtener datos FORMULARIO de contacto y consultas 
+let miFormularioC = document.getElementById("contacto_form");
+miFormularioC.addEventListener("submit", validarFormu);
+//Obtener datos 
+function validarFormu(e){
+    e.preventDefault();
+    let formu = e.target;
+    console.log(formu.children[1].value),
+    console.log(formu.children[4].value),
+    console.log(formu.children[7].value),
+    console.log(formu.children[10].value);
+    console.log("Datos para contactarse");
+    //Sweet Alert para avisar que los datos fueron enviados correctamente!
+    swal({
+        title: "Sus datos fueron enviados!",
+        text: "En breve nos contactaremos con usted.",
+        icon: "success",
+        button: "OK",
+        background: 'width'
+    })
+}
 
 //Animación libreria ScrollReveal efectos en tienda
 window.sr = ScrollReveal()
