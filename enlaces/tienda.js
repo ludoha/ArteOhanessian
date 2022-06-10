@@ -68,23 +68,22 @@ fetch('./data.json')
 })
 })
 
+// Filtrado de productos SIN TERMINAR
+/*function mostrar = () {
+let miFiltro = document.getElementById("filtro");
+miFiltro.EventListener("change", Pintura);
+
+function mostrar(){
+        stockProductos.forEach(producto => producto.tipo.includes(Pintura.value))
+        mostrar(producto)
+} }/}
 // Filtrado de productos
-let miFiltro = document.getElementById("filtro")
-miFiltro.addEventListener("onchange", Pintura)
-function Pintura(){
-        let mostrarPinturas= productos.forEach(producto => producto.tipo.includes(miFiltro.value))
-        mostrar(mostrarPinturas)
-        console.log(producto.tipo)
-}
- 
-/*let miFiltro = document.getElementById("#filtro");
-miFiltro.addEventListener("onchange", () => {
-    let mostrarPinturas= producto.filter(producto => producto.tipo == tipo)
-    mostrar(mostrarPinturas)
-});*/
+function mostrar = () {
+let miFiltro = document.getElementById("filtro");
+miFiltro.EventListener("change", value);
+}*/
 
-
-//Agragar al carrito aumentando la cantidad sin que se repita
+//Agregar al carrito aumentando la cantidad sin que se repita
 const agregarAlCarrito = (prodId) => {
      //Aumentar cantidad sin repetir en la lista de productos
     const existe = carrito.some (prod => prod.id === prodId)
