@@ -154,13 +154,20 @@ miFormulario.addEventListener("submit", validarFormulario);
 function validarFormulario(e){
     e.preventDefault();
     let formulario = e.target;
+    console.log("Datos para la obra a pedido:");
+    console.log("Nombre y Apellido:");
     console.log(formulario.children[1].value);
+    console.log("Teléfono:");
     console.log(formulario.children[3].value);
+    console.log("Mail:");
     console.log(formulario.children[5].value);
+    console.log("Tematica:");
     console.log(formulario.children[7].value);
+    console.log("Medida de la obra:");
     console.log(formulario.children[9].value);
+    console.log("Técnica:");
     console.log(formulario.children[11].value);
-    console.log("Datos para la obra a pedido");
+
     //Sweet Alert para avisar que los datos fueron enviados correctamente!
     swal({
         title: "Sus datos fueron enviados!",
@@ -170,6 +177,7 @@ function validarFormulario(e){
         background: 'width'
     })
 }
+//Envio de mail automático al enviar la información para encargar una obra
 function SendMail() {
     var params = { 
         from_name : document.getElementById("fullName").value,
