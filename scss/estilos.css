@@ -1627,6 +1627,7 @@ h4 {
   .ficha {
     height: 90vh;
     width: 100%;
+    margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
   }
@@ -1797,7 +1798,7 @@ h4 {
 
 .ficha {
   height: 86vh;
-  width: 30%;
+  width: 35%;
   font-size: 15px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border: 2px solid rgba(26, 104, 61, 0.432);
