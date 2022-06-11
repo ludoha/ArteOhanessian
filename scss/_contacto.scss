@@ -101,42 +101,42 @@
     .section__form--style{
         h3{
         font-size: 17px;
-        margin-top: 5px;
+        margin-top: 3px;
         text-align: center;
         margin-left: 0px;
         }
     }
-    .form{
-        justify-content: center;
+    #form{
+        width: 100%;
+        height: 99vh;
         text-align: center;
         margin: 0px;
         padding: 0px;
     }
-    .form .ficha{
+    .ficha{
+        height: 90vh;
         width: 100%;
-        height: 100vh;
-        text-align: center;
-        padding: 0px 0px 10px 10px;
         margin-right: 0px;
         margin-top: 0px;
-        justify-content: center;
     }
     .datos{
         padding-top: 0px;
         margin-top: 0px;
-        padding-bottom: 20px;
-        line-height: 5px;
+        padding-bottom: 15px;
             input{
-            width: 15px;
+            width: 2%;
+            margin-left: 0px;
+            margin-right: 0px;
             }
     }
     .datos2{
-        padding: 10px;
         margin-top: 12px;
         padding-bottom: 15px;
         margin-bottom: 10px;
         input{
             width: 2%;
+            margin-left: 0px;
+            margin-right: 0px;
         }
     }
     .mail{
@@ -147,24 +147,28 @@
         input{
             width: 1%;
             text-align: left;
+            margin-left: 0px;
+            margin-right: 0px;
         }
     }
     .mensaje{
         margin-bottom: 3px;
         margin-top: 9px;
-        padding-left: 16px;
+        padding-left: 5px;
     }
     .mensaje h4{
         font-size: 15px;
         margin-top: 5px;
-        padding-right: 25px;
     }
     .mensaje1{
         margin-top: 15px;
         margin-bottom: 1px;
-        #texto{
-            padding-top: 2px;
-        }
+    }
+    textarea #texto{
+        height: 20vh;
+        width: 100%;
+        padding-top: 2px;
+        margin-left: 0px;
     }
     .botones{  
         width: 50%;
@@ -198,20 +202,24 @@
     .h2__contacto{
         font-size: 30px;
     }
-    .form .ficha{
-        height: 95vh;
-        padding: 20px 20px 20px 20px;
-        text-align: left;
+
+    #form { 
+        width: 98%;
+        height: 100vh;
     }
-    .form { 
-        width: 100%;
-        height: 99vh;
-        .botones{  
+    textarea #texto{
+        background-color: rgba(253, 255, 254, 0.63);
+        border-bottom: 1px solid rgba(26, 104, 61, 0.863);
+    }
+    #texto{
+        height: 25vh;
+        width: 80%;
+    }
+    .botones{  
         margin-left: 0px;
         padding-top: 12rem;
         padding-left: 4px;
         padding-bottom: 25px;
-        }
     }
 }
 
@@ -257,7 +265,7 @@
     margin: 30px;
     padding: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    justify-content: center;
+    justify-content: space-around;
     h3{
         font-size: 22px;
         margin-top: 5px;
@@ -267,31 +275,33 @@
     }
 }
 #form{
-    height: 100vh;
-    width: 80%;
+    height: 87vh;
+    width: 35%;
+    margin-left: 32%;
     margin-bottom: 3px;
+    text-align: left;
     padding: 20px 20px 20px 20px;
     justify-content: space-around;
-    align-items: center;
 }
 
-#form .ficha{
-    height: 100vh;
-    width: 50%;
+.ficha{
+    height: 86vh;
+    width: 30%;
     font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 2px solid rgba(26, 104, 61, 0.432);
     box-shadow: 7px 13px 35px rgba(7, 7, 7, 0.699);
     border-radius: 10px;
-    padding: 12px 12px 12px 12px;
 }
 
 .datos{
     height: 40px;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-left: 19px;
     line-height: 5px;
         input{
         width: 100%;
+        margin-left: 19px;
         background-color: rgba(253, 255, 254, 0.63);
         border: none;
         outline: none;
@@ -303,8 +313,10 @@
     height: 10px;
     line-height: 5px;
     border-radius: 10px;
+    margin-left: 19px;
     input{
         width: 90%;
+        margin-left: 19px;
         background-color: rgba(253, 255, 254, 0.63);
         border: none;
         outline: none;
@@ -314,10 +326,12 @@
 .mail{
     height: 10px;
     margin-top: 2rem;
+    margin-left: 19px;
     line-height: 5px;
     border-radius: 10px;
     input{
         width: 90%;
+        margin-left: 10%;
         background-color: rgba(253, 255, 254, 0.63);
         border: none;
         outline: none;
@@ -327,28 +341,37 @@
 .mensaje{
     height: 18px;
     margin-top: 3rem;
+    margin-left: 10%;
     line-height: 5px;
     border-radius: 10px;
 }
 textarea #texto{
-    height: 100px;
-    width: 100%;
+    height: 80vh;
+    width: 90%;
+    margin-left: 10%;
     background-color: rgba(253, 255, 254, 0.63);
     border-bottom: 1px solid rgba(26, 104, 61, 0.863);
+}
+#texto{
+    margin-left: 19px;
 }
 .mensaje h4{
     font-size: 15px;
     margin-top: 10px;
+    margin-left: 19px;
 }
 .mensaje1{
     margin-top: 20px;
+    margin-left: 19px;
 
 }
 
 #buttonCont{
-        height: 40px;
+        height: 30px;
         width: 60px;
+        margin-left: 19px;
         font-size: 15px;
+        margin-top: 12px;
         background-color: rgba(253, 255, 254, 0.63);
         border-bottom: 1px solid rgba(26, 104, 61, 0.788);
 }
