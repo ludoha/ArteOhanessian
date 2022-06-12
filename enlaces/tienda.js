@@ -13,6 +13,7 @@ const cantidadTotal = document.getElementById('cantidadTotal')
 
 
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+let mostrar = [];
 
 //Boton VACIAR carrito
 botonVaciar.addEventListener('click', () => {
@@ -72,17 +73,18 @@ fetch('./data.json')
 /*function mostrar(){
     stockProductos.forEach(producto => producto.tipo.includes(Pintura.value))
     mostrar(producto)
-} 
+} */
 
 
 // Filtrado de productos
-let miFiltro = document.getElementById("filtro");
-miFiltro.EventListener("change", value);
+/*let miFiltro = document.getElementById("filtro");
+miFiltro.EventListener("change", filtrado);
 
-function value(){
-        let mostrar = stockProductos.filter(producto => producto.tipo == tipo)
-        mostrar()
-} */
+function filtrado(){
+    function mostrar ()
+    stockProductos.filter(producto => producto.tipo.includes(miFiltro.value))
+    mostrar(filtrado);
+}  /*
 
 
 //Agregar al carrito aumentando la cantidad sin que se repita
