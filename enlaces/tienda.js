@@ -73,7 +73,7 @@ fetch('./data.json')
 /*function mostrar(){
     stockProductos.forEach(producto => producto.tipo.includes(Pintura.value))
     mostrar(producto)
-} */
+} 
 
 
 // Filtrado de productos
@@ -84,7 +84,7 @@ function filtrado(){
     function mostrar ()
     stockProductos.filter(producto => producto.tipo.includes(miFiltro.value))
     mostrar(filtrado);
-}  /*
+}  */
 
 
 //Agregar al carrito aumentando la cantidad sin que se repita
