@@ -1,8 +1,11 @@
 # Ludmila-Ohanessian-30340-ArteOhanessian
 http://arteludmilaohanessian.com/
+
 Proyecto final Javascript 
-Soy Ludmila Ohanessian, dejo un pequeño texto como pidió en la ultima clase, para contar un poco sobre mi. Soy artista plástica estudiando la carrera Frontend. Me intereso esta profesión de programación para tener otra salida laboral y además llevando mi lado artístico al crear páginas webs. 
-Aquí entrego el Proyecto Final; el simulador es mi propia tienda de venta de arte.
+
+Soy Ludmila Ohanessian artista plástica estudiando la carrera Frontend en Coder House. Me intereso 
+esta profesión de programación para tener otra salida laboral y además llevando mi lado artístico al crear páginas webs. 
+Aquí entrego el Proyecto Fina, el simulador es mi propia tienda de venta de arte.
 
 Realizado en el enlace de => tienda.html / tienda.js y contactos.html / contactarse.js
 En tienda: 
@@ -16,11 +19,12 @@ Carrito con ventana modal: modal.js
 Además hice un formulario para obras realizadas a pedido, para que ingresen los datos y pedir un presupuesto.
 -Captura de datos del formulario.
 API EMIAL.JS :
--Envío de mail automático al enviar el formulario, informando los datos que ingreso y comunicando que en breve me contactare para coordinar y conversar sobre el diseño.
+-Envío de mail automático al enviar el formulario, informando los datos que ingreso y comunicando que
+ en breve me contactare para coordinar y conversar sobre el diseño.
 
 En el enlace de “Contacto” (contacto.html / contactarse.js)
 realice la captura de los datos ingresados en el formulario, de esta área.
-Como también el envío de mail automático en respuesta con EMAIL.JS, avisando que me pondré en contacto y que recibí su consulta.
+Como también el envío de mail automático con EMAIL.JS, avisando que me pondré en contacto y que recibí su consulta.
 
 LIBRERÍAS en: tienda.js
 Agregue Scroll Reveal: https://scrollrevealjs.org/
@@ -29,7 +33,8 @@ Para generar más dinamismo y efectos en el encabezado , el título, el containe
 
 Luego con Toastify mediante el CDN para anunciar que se vacío el carrito y cuando se agregó un producto al mismo.
 
-Sweet Alert mediante el CDN también para que al hacer clic cuando se envían los formularios confirme que fue realizado, como también en la ventana modal del carrito al clickear comprar, para confirmar.
+Sweet Alert mediante el CDN para que al hacer clic cuando se envían los formularios confirme que fue realizado, 
+como también en la ventana modal del carrito al clickear comprar, para confirmar.
 ¡Espero que esté bien! Muchísimas gracias.
 Ludmila Ohanessian.
 Saludos!!!
