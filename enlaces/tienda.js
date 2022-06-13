@@ -68,13 +68,13 @@ fetch('./data.json')
 })
 
 
-// FILTRO de productos con select, option
+// FILTRO de productos con select
 let miFiltro = document.getElementById("filtro");
-miFiltro.addEventListener("change", Pintura);
+miFiltro.addEventListener("change", filtrado);
 
-function Pintura(){
+function filtrado(){
     const productosFiltrados = stockProductos.filter(
-        (producto) => producto.tipo === miFiltro.value
+        (producto) => producto.tipo === miFiltro.value 
     );
     mostrar(productosFiltrados);
 } 
@@ -93,6 +93,7 @@ function mostrar(listadoProductos) {
                         </div>`;
     });
 }
+
 
 //Agregar al carrito aumentando la cantidad sin que se repita
 const agregarAlCarrito = (prodId) => {
