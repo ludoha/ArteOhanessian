@@ -1,19 +1,18 @@
+//Ludmila Ohanessian 
+//Entrega Proyecto Final
+//Comisión: 30340
+const contenedorProductos = document.getElementById('contenedor-productos');
+const contenedorCarrito = document.getElementById('carrito-contenedor');
+const botonVaciar = document.getElementById('vaciar-carrito');
+const contadorCarrito = document.getElementById('contadorCarrito');
+const cantidad = document.getElementById('cantidad');
+const precioTotal = document.getElementById('precioTotal');
+const cantidadTotal = document.getElementById('cantidadTotal');
 
-const contenedorProductos = document.getElementById('contenedor-productos')
-
-const contenedorCarrito = document.getElementById('carrito-contenedor')
-
-const botonVaciar = document.getElementById('vaciar-carrito')
-
-const contadorCarrito = document.getElementById('contadorCarrito')
-
-const cantidad = document.getElementById('cantidad')
-const precioTotal = document.getElementById('precioTotal')
-const cantidadTotal = document.getElementById('cantidadTotal')
-
+const mostrar = document.getElementById('filtro');
 
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-let mostrar = [];
+
 
 //Boton VACIAR carrito
 botonVaciar.addEventListener('click', () => {
@@ -69,22 +68,16 @@ fetch('./data.json')
 })
 })
 
-// Filtrado de productos SIN TERMINAR
-/*function mostrar(){
-    stockProductos.forEach(producto => producto.tipo.includes(Pintura.value))
-    mostrar(producto)
-} 
-
 
 // Filtrado de productos
-/*let miFiltro = document.getElementById("filtro");
-miFiltro.EventListener("change", filtrado);
+let miFiltro = document.getElementById("filtro");
+miFiltro.EventListener("change", value);
 
-function filtrado(){
-    function mostrar ()
-    stockProductos.filter(producto => producto.tipo.includes(miFiltro.value))
-    mostrar(filtrado);
-}  */
+function value(){
+    let listaFiltrada = stockProductos.filter(producto => producto.tipo == tipo.includes(value))
+    mostrar(listaFiltrada);
+    console.log(listaFiltrada)
+} 
 
 
 //Agregar al carrito aumentando la cantidad sin que se repita
@@ -192,7 +185,6 @@ function SendMail() {
         console.log("Success! " + res.status);
     })
 }
-
 
 //Animación libreria ScrollReveal efectos en tienda
 window.sr = ScrollReveal()
