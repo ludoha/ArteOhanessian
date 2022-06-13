@@ -107,24 +107,24 @@
         }
     }
     #form{
-        width: 100%;
-        height: 99vh;
-        margin: 0px;
-        padding: 0px;
+        width: 1000px;
+        margin-right: 600px;
+        padding-right: 600px;
+        text-align: center;
+        line-height: 8px;
+        flex-direction: row;
     }
     .ficha{
-        height: 100vh;
-        width: 100%;
         margin-left: 0px;
-        margin-right: 0px;
+        margin-right: 500px;
         margin-top: 0px;
+        text-align: center;
     }
     .datos{
         padding-top: 0px;
         margin-top: 0px;
         padding-bottom: 15px;
             input{
-            width: 2%;
             margin-left: 0px;
             margin-right: 0px;
             }
@@ -134,7 +134,7 @@
         padding-bottom: 15px;
         margin-bottom: 10px;
         input{
-            width: 2%;
+            width: 1%;
             margin-left: 0px;
             margin-right: 0px;
         }
@@ -165,10 +165,11 @@
         margin-bottom: 1px;
     }
     textarea #texto{
-        height: 20vh;
-        width: 100%;
+        height: 18vh;
+        width: 10%;
         padding-top: 2px;
-        margin-left: 0px;
+        margin-right: 20px;
+        text-align: center;
     }
     .botones{  
         width: 50%;
@@ -276,7 +277,7 @@
 }
 #form{
     height: 87vh;
-    width: 38%;
+    width: 40%;
     margin-left: 32%;
     margin-bottom: 3px;
     text-align: left;
@@ -286,12 +287,13 @@
 
 .ficha{
     height: 86vh;
-    width: 38%;
+    width: 40%;
     font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 2px solid rgba(26, 104, 61, 0.432);
     box-shadow: 7px 13px 35px rgba(7, 7, 7, 0.699);
     border-radius: 10px;
+    justify-content: space-around;
 }
 
 .datos{

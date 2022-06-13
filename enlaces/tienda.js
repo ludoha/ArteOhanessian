@@ -73,7 +73,9 @@ let miFiltro = document.getElementById("filtro");
 miFiltro.addEventListener("change", filtrado);
 
 function filtrado(){
-    const productosFiltrados = stockProductos.filter(
+    let productosFiltrados = stockProductos;
+    if(miFiltro.value !== 'all')
+    productosFiltrados = stockProductos.filter(
         (producto) => producto.tipo === miFiltro.value 
     );
     mostrar(productosFiltrados);
@@ -214,14 +216,14 @@ window.sr = ScrollReveal()
         duration: 5000,
         distance: '20%'
     });
-    sr.reveal('.scrollFrom', {
+    sr.reveal('.scrollForm', {
         origin: 'top',
-        intervalo: 90,
+        intervalo: 200,
         duration: 2000,
         distance: '20%'
     });
     sr.reveal('.containerScroll', {
         origin: 'top',
-        duration: 3000,
+        duration: 1000,
         distance: '20%'
     });
