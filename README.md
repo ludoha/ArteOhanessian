@@ -25,6 +25,8 @@ Carrito con ventana modal: modal.js
  
 -Sumar el total de los productos en el carrito.
  
+ 
+ 
 
 
 Además hice un formulario para obras realizadas a pedido, para que ingresen los datos y pedir un presupuesto.
@@ -32,6 +34,7 @@ Además hice un formulario para obras realizadas a pedido, para que ingresen los
 API EMIAL.JS :
 -Envío de mail automático al enviar el formulario, informando los datos que ingreso y comunicando que
  en breve me contactare para coordinar y conversar sobre el diseño.
+ 
 
  
 En el enlace de “Contacto” (contacto.html / contactarse.js)
