@@ -16,6 +16,7 @@ Carrito con ventana modal: modal.js
 
 -Filtro de productos con  <select> <option> en html, y filtrado en tienda.js.
  
+ 
 -Se pueden agregar productos al carrito, aumentando la cantidad sin que se repitan.
  
  
@@ -24,7 +25,7 @@ Carrito con ventana modal: modal.js
  
 -Sumar el total de los productos en el carrito.
  
- 
+
 
 Además hice un formulario para obras realizadas a pedido, para que ingresen los datos y pedir un presupuesto.
 -Captura de datos del formulario.
