@@ -5,8 +5,8 @@ Proyecto final Javascript
 
 Soy Ludmila Ohanessian artista plástica estudiando la carrera Frontend en Coder House. Me intereso 
 esta profesión de programación para tener otra salida laboral y además llevando mi lado artístico al crear páginas webs. 
-Aquí entrego el Proyecto Fina, el simulador es mi propia tienda de venta de arte.
 
+Aquí entrego el Proyecto Final, el simulador es mi propia tienda de venta de arte.
 Realizado en el enlace de => tienda.html / tienda.js y contactos.html / contactarse.js
 
 En tienda: 
@@ -18,9 +18,12 @@ Carrito con ventana modal: modal.js
  
 -Se pueden agregar productos al carrito, aumentando la cantidad sin que se repitan.
  
+ 
 -Eliminar productos dentro del carrito, como su vaciado por completo.
  
+ 
 -Sumar el total de los productos en el carrito.
+ 
  
 
 Además hice un formulario para obras realizadas a pedido, para que ingresen los datos y pedir un presupuesto.
