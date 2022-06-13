@@ -107,17 +107,14 @@
         }
     }
     #form{
-        width: 1000px;
-        margin-right: 600px;
-        padding-right: 600px;
+        margin-right: 1000px;
+        padding-right: 1000px;
         text-align: center;
         line-height: 8px;
-        flex-direction: row;
-        align-items: flex-end;
+        justify-items: center;
     }
     .ficha{
         margin-left: 0px;
-        margin-right: 500px;
         margin-top: 0px;
         text-align: center;
     }
@@ -167,9 +164,10 @@
     }
     textarea #texto{
         height: 18vh;
-        width: 10%;
+        width: 5%;
         padding-top: 2px;
-        margin-right: 100px;
+        margin-right: 600px;
+        padding-right: 500px;
         text-align: center;
     }
     .botones{  
@@ -278,12 +276,14 @@
 }
 #form{
     height: 87vh;
-    width: 60%;
-    margin-left: 20vh;
+    width: 43%;
+    margin-top: 5px;
+    margin-left: 28%;
     margin-bottom: 3px;
     text-align: left;
     padding: 20px 20px 20px 20px;
-    justify-content: space-around;
+    align-items: center;
+    text-align: center;
 }
 
 .ficha{
