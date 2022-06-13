@@ -7,7 +7,10 @@
     {"id": 6, "nombre": "Terracota", "tecnica": "Modelado a mano y horneado", "tipo": "Escultura", "cantidad": 1, "precio": 50000, "img": "../img3/terracota.jpg"},
     {"id": 7, "nombre": "Esteros del Iberá", "tecnica": "Microfibra sobre papel", "tipo": "Dibujo", "cantidad": 1, "precio": 7000, "img": "../img3/ibera.jpg"},
     {"id": 8, "nombre": "Campiña Francesa", "tecnica": "Oleo sobre tela", "tipo": "Pintura", "cantidad": 1, "precio": 60000, "img": "../img3/campiña.jpg"},
-    {"id": 9, "nombre": "Caos", "tecnica": "Escultura de ensamblaje", "tipo": "Escultura", "cantidad": 1, "precio": 40000, "img": "../img3/ensamble.jpg"}
+    {"id": 9, "nombre": "Caos", "tecnica": "Escultura de ensamblaje", "tipo": "Escultura", "cantidad": 1, "precio": 40000, "img": "../img3/ensamble.jpg"},
+    {"id": 10, "nombre": "Merakio", "tecnica": "Acuarela sobre papel", "tipo": "Acuarela", "cantidad": 1, "precio": 8000, "img": "../img3/merakio.jpg"},
+    {"id": 11, "nombre": "Tomates", "tecnica": "Oleo sobre papel", "tipo": "Pintura", "cantidad": 1, "precio": 60000, "img": "../img3/tomates.jpg"},
+    {"id": 12, "nombre": "Mariposas", "tecnica": "Acuarela sobre papel", "tipo": "Acuarela", "cantidad": 1, "precio": 8000, "img": "../img3/mariposas.jpg"}
 ]
 
 

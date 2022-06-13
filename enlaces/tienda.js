@@ -9,7 +9,6 @@ const cantidad = document.getElementById('cantidad');
 const precioTotal = document.getElementById('precioTotal');
 const cantidadTotal = document.getElementById('cantidadTotal');
 
-const mostrar = document.getElementById('filtro');
 
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
@@ -54,7 +53,7 @@ fetch('./data.json')
                     <img src=${producto.img} alt= "">
                     <h3>${producto.tecnica}</h3>
                     <h4>${producto.tipo}</h4>
-                    <p class="precioProducto">Precio:$ ${producto.precio}</p>
+                    <p class="precioProducto">Precio: $ ${producto.precio}</p>
                     <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>`
     contenedorProductos.appendChild(div)
 
@@ -69,16 +68,31 @@ fetch('./data.json')
 })
 
 
-// Filtrado de productos
+// FILTRO de productos con select, option
 let miFiltro = document.getElementById("filtro");
-miFiltro.EventListener("change", value);
+miFiltro.addEventListener("change", Pintura);
 
-function value(){
-    let listaFiltrada = stockProductos.filter(producto => producto.tipo == tipo.includes(value))
-    mostrar(listaFiltrada);
-    console.log(listaFiltrada)
+function Pintura(){
+    const productosFiltrados = stockProductos.filter(
+        (producto) => producto.tipo === miFiltro.value
+    );
+    mostrar(productosFiltrados);
 } 
-
+function mostrar(listadoProductos) {
+    console.log(listadoProductos);
+    contenedorProductos.innerHTML = "";
+    listadoProductos.forEach((producto) => {
+        contenedorProductos.innerHTML += `
+                        <div class='producto'>
+                        <h2>${producto.nombre}</h2>
+                        <img src=${producto.img} alt= "">
+                        <h3>${producto.tecnica}</h3>
+                        <h4>${producto.tipo}</h4>
+                        <p class="precioProducto">Precio:$ ${producto.precio}</p>
+                        <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
+                        </div>`;
+    });
+}
 
 //Agregar al carrito aumentando la cantidad sin que se repita
 const agregarAlCarrito = (prodId) => {
