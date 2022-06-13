@@ -113,6 +113,7 @@
         text-align: center;
         line-height: 8px;
         flex-direction: row;
+        align-items: flex-end;
     }
     .ficha{
         margin-left: 0px;
@@ -168,7 +169,7 @@
         height: 18vh;
         width: 10%;
         padding-top: 2px;
-        margin-right: 20px;
+        margin-right: 100px;
         text-align: center;
     }
     .botones{  
@@ -277,8 +278,8 @@
 }
 #form{
     height: 87vh;
-    width: 40%;
-    margin-left: 32%;
+    width: 60%;
+    margin-left: 20vh;
     margin-bottom: 3px;
     text-align: left;
     padding: 20px 20px 20px 20px;
