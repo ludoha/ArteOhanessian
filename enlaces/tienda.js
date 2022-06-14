@@ -92,7 +92,14 @@ function mostrar(listadoProductos) {
                         <h4>${producto.tipo}</h4>
                         <p class="precioProducto">Precio:$ ${producto.precio}</p>
                         <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
-                        </div>`;
+                        </div>`
+         const boton = document.getElementById(`agregar${producto.id}`)
+
+    //Agregar al carrito
+    boton.addEventListener('click', () => {
+        //Agrega Al carrito con la id del producto
+        agregarAlCarrito(producto.id)
+    })
    
     });
 }
