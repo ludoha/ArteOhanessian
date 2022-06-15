@@ -46,27 +46,8 @@ fetch('./data.json')
     .then(stock => {
         stockProductos = stock;
 
-    stockProductos.forEach((producto)=> {
-    const div = document.createElement('div')
-    div.classList.add('producto')
-    div.innerHTML = `<h2>${producto.nombre}</h2>
-                    <img src=${producto.img} alt= "">
-                    <h3>${producto.tecnica}</h3>
-                    <h4>${producto.tipo}</h4>
-                    <p class="precioProducto">Precio: $ ${producto.precio}</p>
-                    <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>`
-    contenedorProductos.appendChild(div)
-
-    const boton = document.getElementById(`agregar${producto.id}`)
-
-    //Agregar al carrito
-    boton.addEventListener('click', () => {
-        //Agrega Al carrito con la id del producto
-        agregarAlCarrito(producto.id)
+        mostrar(stockProductos);
     })
-})
-})
-
 
 // FILTRO de productos con select
 let miFiltro = document.getElementById("filtro");
@@ -75,27 +56,33 @@ miFiltro.addEventListener("change", filtrado);
 function filtrado(){
     let productosFiltrados = stockProductos;
     if(miFiltro.value !== 'all')
-    productosFiltrados = stockProductos.filter(
-        (producto) => producto.tipo === miFiltro.value 
+        productosFiltrados = stockProductos.filter(
+            (producto) => producto.tipo === miFiltro.value 
     );
     mostrar(productosFiltrados);
 } 
 function mostrar(listadoProductos) {
-    console.log(listadoProductos);
     contenedorProductos.innerHTML = "";
     listadoProductos.forEach((producto) => {
-        contenedorProductos.innerHTML += `
-                        <div class='producto'>
-                        <h2>${producto.nombre}</h2>
+        const div = document.createElement('div')
+        div.classList.add('producto')
+        div.innerHTML = `<h2>${producto.nombre}</h2>
                         <img src=${producto.img} alt= "">
                         <h3>${producto.tecnica}</h3>
                         <h4>${producto.tipo}</h4>
-                        <p class="precioProducto">Precio:$ ${producto.precio}</p>
-                        <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
-                        </div>`;
-    });
-}
+                        <p class="precioProducto">Precio: $ ${producto.precio}</p>
+                        <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>`
+        contenedorProductos.appendChild(div)
 
+        const boton = document.getElementById(`agregar${producto.id}`)
+
+        //Agregar al carrito
+        boton.addEventListener('click', () => {
+            //Agrega Al carrito con la id del producto
+            agregarAlCarrito(producto.id)
+        })
+    })
+}
 
 //Agregar al carrito aumentando la cantidad sin que se repita
 const agregarAlCarrito = (prodId) => {
@@ -148,9 +135,8 @@ const actualizarCarrito = () => {
         <button onclick="eliminarDelCarrito(${prod.id})" class="botonEliminar"><i class="fas fa-trash-alt"></i></button>
         ` 
         contenedorCarrito.appendChild(div) 
-        
-        localStorage.setItem('carrito', JSON.stringify(carrito))
     })
+    localStorage.setItem('carrito', JSON.stringify(carrito))
     contadorCarrito.innerText = carrito.length // actualizamos con la longitud del carrito.
     console.log(carrito)
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
