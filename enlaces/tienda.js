@@ -49,7 +49,7 @@ fetch('./data.json')
         mostrar(stockProductos);
     })
 
-// FILTRO de productos con select
+// FILTRO de productos con select, mostrar en DOM
 let miFiltro = document.getElementById("filtro");
 miFiltro.addEventListener("change", filtrado);
 
